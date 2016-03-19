@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+body{
+	line-height: 25px;
+	background-color: #f0f8ff;
+	color: #000000;
+	font-family: "‚l‚r ‚oƒSƒVƒbƒN",sans-serif;
+	font-size: 16px;
+}
+p {
+	line-height: 0px;
+}
+input{
+	width: 47px;
+}
+input.name{
+	width: 160px;
+}
+input.button{
+	width: 27px;
+	padding: 1px;
+}
+input.updown{
+	width: 19px;
+	padding: 1px;
+}
+input.check{
+	width: 20px;
+}
+input.mega{
+	width: 60px;
+	visibility: hidden;
+}
