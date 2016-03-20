@@ -75,21 +75,21 @@ function mega_button(){
 		document.nForm.elements['mega3'].value="スピード";
 		visi(6);
 	}else if((document.nForm.elements['pokename'].value=="バケッチャ")||
-		(document.nForm.elements['pokename'].value=="バケッチャ(轍)")||
+		(document.nForm.elements['pokename'].value=="バケッチャ(特大)")||
 		(document.nForm.elements['pokename'].value=="バケッチャ(大きい)")||
 		(document.nForm.elements['pokename'].value=="バケッチャ(普通)")||
 		(document.nForm.elements['pokename'].value=="バケッチャ(小さい)")){
-		document.nForm.elements['mega0'].value="轍";
+		document.nForm.elements['mega0'].value="特大";
 		document.nForm.elements['mega1'].value="大きい";
 		document.nForm.elements['mega2'].value="普通";
 		document.nForm.elements['mega3'].value="小さい";
 		visi(4);
 	}else if((document.nForm.elements['pokename'].value=="パンプジン")||
-		(document.nForm.elements['pokename'].value=="パンプジン(轍)")||
+		(document.nForm.elements['pokename'].value=="パンプジン(特大)")||
 		(document.nForm.elements['pokename'].value=="パンプジン(大きい)")||
 		(document.nForm.elements['pokename'].value=="パンプジン(普通)")||
 		(document.nForm.elements['pokename'].value=="パンプジン(小さい)")){
-		document.nForm.elements['mega0'].value="轍";
+		document.nForm.elements['mega0'].value="特大";
 		document.nForm.elements['mega1'].value="大きい";
 		document.nForm.elements['mega2'].value="普通";
 		document.nForm.elements['mega3'].value="小さい";
@@ -335,12 +335,12 @@ function megachange(num){
  			document.nForm.elements['pokename'].value="デオキシス(スピード)";
  		}
  	}else if((document.nForm.elements['pokename'].value=="バケッチャ")||
-		(document.nForm.elements['pokename'].value=="バケッチャ(轍)")||
+		(document.nForm.elements['pokename'].value=="バケッチャ(特大)")||
 		(document.nForm.elements['pokename'].value=="バケッチャ(大きい)")||
 		(document.nForm.elements['pokename'].value=="バケッチャ(普通)")||
 		(document.nForm.elements['pokename'].value=="バケッチャ(小さい)")){
 		if(parseInt(num)==0){
- 			document.nForm.elements['pokename'].value="バケッチャ(轍)";
+ 			document.nForm.elements['pokename'].value="バケッチャ(特大)";
  		}else if(parseInt(num)==1){
  			document.nForm.elements['pokename'].value="バケッチャ(大きい)";
  		}else if(parseInt(num)==2){
@@ -349,12 +349,12 @@ function megachange(num){
  			document.nForm.elements['pokename'].value="バケッチャ(小さい)";
  		}
  	}else if((document.nForm.elements['pokename'].value=="パンプジン")||
-		(document.nForm.elements['pokename'].value=="パンプジン(轍)")||
+		(document.nForm.elements['pokename'].value=="パンプジン(特大)")||
 		(document.nForm.elements['pokename'].value=="パンプジン(大きい)")||
 		(document.nForm.elements['pokename'].value=="パンプジン(普通)")||
 		(document.nForm.elements['pokename'].value=="パンプジン(小さい)")){
 		if(parseInt(num)==0){
- 			document.nForm.elements['pokename'].value="パンプジン(轍)";
+ 			document.nForm.elements['pokename'].value="パンプジン(特大)";
  		}else if(parseInt(num)==1){
  			document.nForm.elements['pokename'].value="パンプジン(大きい)";
  		}else if(parseInt(num)==2){
