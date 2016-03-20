@@ -1,170 +1,170 @@
-//ƒƒKƒVƒ“ƒJƒ{ƒ^ƒ“‚Ì•ÏX
+//ãƒ¡ã‚¬ã‚·ãƒ³ã‚«ãƒœã‚¿ãƒ³ã®å¤‰æ›´
 function mega_button(){
-	if((document.nForm.elements['pokename'].value=="ƒMƒ‹ƒKƒ‹ƒh")||
-		(document.nForm.elements['pokename'].value=="ƒMƒ‹ƒKƒ‹ƒh(ƒuƒŒ[ƒh)")||
-		(document.nForm.elements['pokename'].value=="ƒMƒ‹ƒKƒ‹ƒh(ƒV[ƒ‹ƒh)")){
-		document.nForm.elements['mega0'].value="ƒuƒŒ[ƒh";
-		document.nForm.elements['mega1'].value="ƒV[ƒ‹ƒh";
+	if((document.nForm.elements['pokename'].value=="ã‚®ãƒ«ã‚¬ãƒ«ãƒ‰")||
+		(document.nForm.elements['pokename'].value=="ã‚®ãƒ«ã‚¬ãƒ«ãƒ‰(ãƒ–ãƒ¬ãƒ¼ãƒ‰)")||
+		(document.nForm.elements['pokename'].value=="ã‚®ãƒ«ã‚¬ãƒ«ãƒ‰(ã‚·ãƒ¼ãƒ«ãƒ‰)")){
+		document.nForm.elements['mega0'].value="ãƒ–ãƒ¬ãƒ¼ãƒ‰";
+		document.nForm.elements['mega1'].value="ã‚·ãƒ¼ãƒ«ãƒ‰";
 		visi(2);
-	}else if((document.nForm.elements['pokename'].value=="ƒqƒqƒ_ƒ‹ƒ}")||
-		(document.nForm.elements['pokename'].value=="ƒqƒqƒ_ƒ‹ƒ}(ƒm[ƒ}ƒ‹)")||
-		(document.nForm.elements['pokename'].value=="ƒqƒqƒ_ƒ‹ƒ}(ƒ_ƒ‹ƒ})")){
-		document.nForm.elements['mega0'].value="ƒm[ƒ}ƒ‹";
-		document.nForm.elements['mega1'].value="ƒ_ƒ‹ƒ}";
+	}else if((document.nForm.elements['pokename'].value=="ãƒ’ãƒ’ãƒ€ãƒ«ãƒ")||
+		(document.nForm.elements['pokename'].value=="ãƒ’ãƒ’ãƒ€ãƒ«ãƒ(ãƒãƒ¼ãƒãƒ«)")||
+		(document.nForm.elements['pokename'].value=="ãƒ’ãƒ’ãƒ€ãƒ«ãƒ(ãƒ€ãƒ«ãƒ)")){
+		document.nForm.elements['mega0'].value="ãƒãƒ¼ãƒãƒ«";
+		document.nForm.elements['mega1'].value="ãƒ€ãƒ«ãƒ";
 		visi(2);
-	}else if((document.nForm.elements['pokename'].value=="ƒVƒFƒCƒ~")||
-		(document.nForm.elements['pokename'].value=="ƒVƒFƒCƒ~(ƒ‰ƒ“ƒh)")||
-		(document.nForm.elements['pokename'].value=="ƒVƒFƒCƒ~(ƒXƒJƒC)")){
-		document.nForm.elements['mega0'].value="ƒ‰ƒ“ƒh";
-		document.nForm.elements['mega1'].value="ƒXƒJƒC";
+	}else if((document.nForm.elements['pokename'].value=="ã‚·ã‚§ã‚¤ãƒŸ")||
+		(document.nForm.elements['pokename'].value=="ã‚·ã‚§ã‚¤ãƒŸ(ãƒ©ãƒ³ãƒ‰)")||
+		(document.nForm.elements['pokename'].value=="ã‚·ã‚§ã‚¤ãƒŸ(ã‚¹ã‚«ã‚¤)")){
+		document.nForm.elements['mega0'].value="ãƒ©ãƒ³ãƒ‰";
+		document.nForm.elements['mega1'].value="ã‚¹ã‚«ã‚¤";
 		visi(2);
-	}else if((document.nForm.elements['pokename'].value=="ƒƒƒGƒbƒ^")||
-		(document.nForm.elements['pokename'].value=="ƒƒƒGƒbƒ^(ƒ{ƒCƒX)")||
-		(document.nForm.elements['pokename'].value=="ƒƒƒGƒbƒ^(ƒXƒeƒbƒv)")){
-		document.nForm.elements['mega0'].value="ƒ{ƒCƒX";
-		document.nForm.elements['mega1'].value="ƒXƒeƒbƒv";
+	}else if((document.nForm.elements['pokename'].value=="ãƒ¡ãƒ­ã‚¨ãƒƒã‚¿")||
+		(document.nForm.elements['pokename'].value=="ãƒ¡ãƒ­ã‚¨ãƒƒã‚¿(ãƒœã‚¤ã‚¹)")||
+		(document.nForm.elements['pokename'].value=="ãƒ¡ãƒ­ã‚¨ãƒƒã‚¿(ã‚¹ãƒ†ãƒƒãƒ—)")){
+		document.nForm.elements['mega0'].value="ãƒœã‚¤ã‚¹";
+		document.nForm.elements['mega1'].value="ã‚¹ãƒ†ãƒƒãƒ—";
 		visi(2);
-	}else if((document.nForm.elements['pokename'].value=="ƒMƒ‰ƒeƒBƒi")||
-		(document.nForm.elements['pokename'].value=="ƒMƒ‰ƒeƒBƒi(ƒAƒiƒU[)")||
-		(document.nForm.elements['pokename'].value=="ƒMƒ‰ƒeƒBƒi(ƒIƒŠƒWƒ“)")){
-		document.nForm.elements['mega0'].value="ƒAƒiƒU[";
-		document.nForm.elements['mega1'].value="ƒIƒŠƒWƒ“";
+	}else if((document.nForm.elements['pokename'].value=="ã‚®ãƒ©ãƒ†ã‚£ãƒŠ")||
+		(document.nForm.elements['pokename'].value=="ã‚®ãƒ©ãƒ†ã‚£ãƒŠ(ã‚¢ãƒŠã‚¶ãƒ¼)")||
+		(document.nForm.elements['pokename'].value=="ã‚®ãƒ©ãƒ†ã‚£ãƒŠ(ã‚ªãƒªã‚¸ãƒ³)")){
+		document.nForm.elements['mega0'].value="ã‚¢ãƒŠã‚¶ãƒ¼";
+		document.nForm.elements['mega1'].value="ã‚ªãƒªã‚¸ãƒ³";
 		visi(2);
-	}else if((document.nForm.elements['pokename'].value=="ƒ{ƒ‹ƒgƒƒX")||
-		(document.nForm.elements['pokename'].value=="ƒ{ƒ‹ƒgƒƒX(‰»g)")||
-		(document.nForm.elements['pokename'].value=="ƒ{ƒ‹ƒgƒƒX(—ìb)")||
-		(document.nForm.elements['pokename'].value=="ƒ‰ƒ“ƒhƒƒX")||
-		(document.nForm.elements['pokename'].value=="ƒ‰ƒ“ƒhƒƒX(‰»g)")||
-		(document.nForm.elements['pokename'].value=="ƒ‰ƒ“ƒhƒƒX(—ìb)")||
-		(document.nForm.elements['pokename'].value=="ƒgƒ‹ƒlƒƒX")||
-		(document.nForm.elements['pokename'].value=="ƒgƒ‹ƒlƒƒX(‰»g)")||
-		(document.nForm.elements['pokename'].value=="ƒgƒ‹ƒlƒƒX(—ìb)")){
-		document.nForm.elements['mega0'].value="‰»g";
-		document.nForm.elements['mega1'].value="—ìb";
+	}else if((document.nForm.elements['pokename'].value=="ãƒœãƒ«ãƒˆãƒ­ã‚¹")||
+		(document.nForm.elements['pokename'].value=="ãƒœãƒ«ãƒˆãƒ­ã‚¹(åŒ–èº«)")||
+		(document.nForm.elements['pokename'].value=="ãƒœãƒ«ãƒˆãƒ­ã‚¹(éœŠç£)")||
+		(document.nForm.elements['pokename'].value=="ãƒ©ãƒ³ãƒ‰ãƒ­ã‚¹")||
+		(document.nForm.elements['pokename'].value=="ãƒ©ãƒ³ãƒ‰ãƒ­ã‚¹(åŒ–èº«)")||
+		(document.nForm.elements['pokename'].value=="ãƒ©ãƒ³ãƒ‰ãƒ­ã‚¹(éœŠç£)")||
+		(document.nForm.elements['pokename'].value=="ãƒˆãƒ«ãƒãƒ­ã‚¹")||
+		(document.nForm.elements['pokename'].value=="ãƒˆãƒ«ãƒãƒ­ã‚¹(åŒ–èº«)")||
+		(document.nForm.elements['pokename'].value=="ãƒˆãƒ«ãƒãƒ­ã‚¹(éœŠç£)")){
+		document.nForm.elements['mega0'].value="åŒ–èº«";
+		document.nForm.elements['mega1'].value="éœŠç£";
 		visi(2);
-	}else if((document.nForm.elements['pokename'].value=="ƒt[ƒp")||
-		(document.nForm.elements['pokename'].value=="ƒt[ƒp(‚¢‚Ü‚µ‚ß‚ç‚ê‚µ)")||
-		(document.nForm.elements['pokename'].value=="ƒt[ƒp(‚Æ‚«‚Í‚È‚½‚ê‚µ)")){
-		document.nForm.elements['mega0'].value="‚¢‚Ü‚µ‚ß‚ç‚ê‚µ";
-		document.nForm.elements['mega1'].value="‚Æ‚«‚Í‚È‚½‚ê‚µ";
+	}else if((document.nForm.elements['pokename'].value=="ãƒ•ãƒ¼ãƒ‘")||
+		(document.nForm.elements['pokename'].value=="ãƒ•ãƒ¼ãƒ‘(ã„ã¾ã—ã‚ã‚‰ã‚Œã—)")||
+		(document.nForm.elements['pokename'].value=="ãƒ•ãƒ¼ãƒ‘(ã¨ãã¯ãªãŸã‚Œã—)")){
+		document.nForm.elements['mega0'].value="ã„ã¾ã—ã‚ã‚‰ã‚Œã—";
+		document.nForm.elements['mega1'].value="ã¨ãã¯ãªãŸã‚Œã—";
 		visi(5);
-	}else if((document.nForm.elements['pokename'].value=="ƒLƒ…ƒŒƒ€")||
-		(document.nForm.elements['pokename'].value=="ƒLƒ…ƒŒƒ€(’Êí)")||
-		(document.nForm.elements['pokename'].value=="ƒuƒ‰ƒbƒNƒLƒ…ƒŒƒ€")||
-		(document.nForm.elements['pokename'].value=="ƒzƒƒCƒgƒLƒ…ƒŒƒ€")){
-		document.nForm.elements['mega0'].value="’Êí";
-		document.nForm.elements['mega1'].value="ƒuƒ‰ƒbƒN";
-		document.nForm.elements['mega2'].value="ƒzƒƒCƒg";
+	}else if((document.nForm.elements['pokename'].value=="ã‚­ãƒ¥ãƒ¬ãƒ ")||
+		(document.nForm.elements['pokename'].value=="ã‚­ãƒ¥ãƒ¬ãƒ (é€šå¸¸)")||
+		(document.nForm.elements['pokename'].value=="ãƒ–ãƒ©ãƒƒã‚¯ã‚­ãƒ¥ãƒ¬ãƒ ")||
+		(document.nForm.elements['pokename'].value=="ãƒ›ãƒ¯ã‚¤ãƒˆã‚­ãƒ¥ãƒ¬ãƒ ")){
+		document.nForm.elements['mega0'].value="é€šå¸¸";
+		document.nForm.elements['mega1'].value="ãƒ–ãƒ©ãƒƒã‚¯";
+		document.nForm.elements['mega2'].value="ãƒ›ãƒ¯ã‚¤ãƒˆ";
 		visi(3);
-	}else if((document.nForm.elements['pokename'].value=="ƒ~ƒmƒ}ƒ_ƒ€")||
-		(document.nForm.elements['pokename'].value=="ƒ~ƒmƒ}ƒ_ƒ€(‘–Ø)")||
-		(document.nForm.elements['pokename'].value=="ƒ~ƒmƒ}ƒ_ƒ€(»’n)")||
-		(document.nForm.elements['pokename'].value=="ƒ~ƒmƒ}ƒ_ƒ€(ƒSƒ~)")){
-		document.nForm.elements['mega0'].value="‘–Ø";
-		document.nForm.elements['mega1'].value="»’n";
-		document.nForm.elements['mega2'].value="ƒSƒ~";
+	}else if((document.nForm.elements['pokename'].value=="ãƒŸãƒãƒãƒ€ãƒ ")||
+		(document.nForm.elements['pokename'].value=="ãƒŸãƒãƒãƒ€ãƒ (è‰æœ¨)")||
+		(document.nForm.elements['pokename'].value=="ãƒŸãƒãƒãƒ€ãƒ (ç ‚åœ°)")||
+		(document.nForm.elements['pokename'].value=="ãƒŸãƒãƒãƒ€ãƒ (ã‚´ãƒŸ)")){
+		document.nForm.elements['mega0'].value="è‰æœ¨";
+		document.nForm.elements['mega1'].value="ç ‚åœ°";
+		document.nForm.elements['mega2'].value="ã‚´ãƒŸ";
 		visi(3);
-	}else if((document.nForm.elements['pokename'].value=="ƒfƒIƒLƒVƒX")||
-		(document.nForm.elements['pokename'].value=="ƒfƒIƒLƒVƒX(ƒm[ƒ}ƒ‹)")||
-		(document.nForm.elements['pokename'].value=="ƒfƒIƒLƒVƒX(ƒAƒ^ƒbƒN)")||
-		(document.nForm.elements['pokename'].value=="ƒfƒIƒLƒVƒX(ƒfƒBƒtƒFƒ“ƒX)")||
-		(document.nForm.elements['pokename'].value=="ƒfƒIƒLƒVƒX(ƒXƒs[ƒh)")){
-		document.nForm.elements['mega0'].value="ƒm[ƒ}ƒ‹";
-		document.nForm.elements['mega1'].value="ƒAƒ^ƒbƒN";
-		document.nForm.elements['mega2'].value="ƒfƒBƒtƒFƒ“ƒX";
-		document.nForm.elements['mega3'].value="ƒXƒs[ƒh";
+	}else if((document.nForm.elements['pokename'].value=="ãƒ‡ã‚ªã‚­ã‚·ã‚¹")||
+		(document.nForm.elements['pokename'].value=="ãƒ‡ã‚ªã‚­ã‚·ã‚¹(ãƒãƒ¼ãƒãƒ«)")||
+		(document.nForm.elements['pokename'].value=="ãƒ‡ã‚ªã‚­ã‚·ã‚¹(ã‚¢ã‚¿ãƒƒã‚¯)")||
+		(document.nForm.elements['pokename'].value=="ãƒ‡ã‚ªã‚­ã‚·ã‚¹(ãƒ‡ã‚£ãƒ•ã‚§ãƒ³ã‚¹)")||
+		(document.nForm.elements['pokename'].value=="ãƒ‡ã‚ªã‚­ã‚·ã‚¹(ã‚¹ãƒ”ãƒ¼ãƒ‰)")){
+		document.nForm.elements['mega0'].value="ãƒãƒ¼ãƒãƒ«";
+		document.nForm.elements['mega1'].value="ã‚¢ã‚¿ãƒƒã‚¯";
+		document.nForm.elements['mega2'].value="ãƒ‡ã‚£ãƒ•ã‚§ãƒ³ã‚¹";
+		document.nForm.elements['mega3'].value="ã‚¹ãƒ”ãƒ¼ãƒ‰";
 		visi(6);
-	}else if((document.nForm.elements['pokename'].value=="ƒoƒPƒbƒ`ƒƒ")||
-		(document.nForm.elements['pokename'].value=="ƒoƒPƒbƒ`ƒƒ(“Á‘å)")||
-		(document.nForm.elements['pokename'].value=="ƒoƒPƒbƒ`ƒƒ(‘å‚«‚¢)")||
-		(document.nForm.elements['pokename'].value=="ƒoƒPƒbƒ`ƒƒ(•’Ê)")||
-		(document.nForm.elements['pokename'].value=="ƒoƒPƒbƒ`ƒƒ(¬‚³‚¢)")){
-		document.nForm.elements['mega0'].value="“Á‘å";
-		document.nForm.elements['mega1'].value="‘å‚«‚¢";
-		document.nForm.elements['mega2'].value="•’Ê";
-		document.nForm.elements['mega3'].value="¬‚³‚¢";
+	}else if((document.nForm.elements['pokename'].value=="ãƒã‚±ãƒƒãƒãƒ£")||
+		(document.nForm.elements['pokename'].value=="ãƒã‚±ãƒƒãƒãƒ£(è½î”€)")||
+		(document.nForm.elements['pokename'].value=="ãƒã‚±ãƒƒãƒãƒ£(å¤§ãã„)")||
+		(document.nForm.elements['pokename'].value=="ãƒã‚±ãƒƒãƒãƒ£(æ™®é€š)")||
+		(document.nForm.elements['pokename'].value=="ãƒã‚±ãƒƒãƒãƒ£(å°ã•ã„)")){
+		document.nForm.elements['mega0'].value="è½î”€";
+		document.nForm.elements['mega1'].value="å¤§ãã„";
+		document.nForm.elements['mega2'].value="æ™®é€š";
+		document.nForm.elements['mega3'].value="å°ã•ã„";
 		visi(4);
-	}else if((document.nForm.elements['pokename'].value=="ƒpƒ“ƒvƒWƒ“")||
-		(document.nForm.elements['pokename'].value=="ƒpƒ“ƒvƒWƒ“(“Á‘å)")||
-		(document.nForm.elements['pokename'].value=="ƒpƒ“ƒvƒWƒ“(‘å‚«‚¢)")||
-		(document.nForm.elements['pokename'].value=="ƒpƒ“ƒvƒWƒ“(•’Ê)")||
-		(document.nForm.elements['pokename'].value=="ƒpƒ“ƒvƒWƒ“(¬‚³‚¢)")){
-		document.nForm.elements['mega0'].value="“Á‘å";
-		document.nForm.elements['mega1'].value="‘å‚«‚¢";
-		document.nForm.elements['mega2'].value="•’Ê";
-		document.nForm.elements['mega3'].value="¬‚³‚¢";
+	}else if((document.nForm.elements['pokename'].value=="ãƒ‘ãƒ³ãƒ—ã‚¸ãƒ³")||
+		(document.nForm.elements['pokename'].value=="ãƒ‘ãƒ³ãƒ—ã‚¸ãƒ³(è½î”€)")||
+		(document.nForm.elements['pokename'].value=="ãƒ‘ãƒ³ãƒ—ã‚¸ãƒ³(å¤§ãã„)")||
+		(document.nForm.elements['pokename'].value=="ãƒ‘ãƒ³ãƒ—ã‚¸ãƒ³(æ™®é€š)")||
+		(document.nForm.elements['pokename'].value=="ãƒ‘ãƒ³ãƒ—ã‚¸ãƒ³(å°ã•ã„)")){
+		document.nForm.elements['mega0'].value="è½î”€";
+		document.nForm.elements['mega1'].value="å¤§ãã„";
+		document.nForm.elements['mega2'].value="æ™®é€š";
+		document.nForm.elements['mega3'].value="å°ã•ã„";
 		visi(4);
-	}else if((document.nForm.elements['pokename'].value=="ƒƒgƒ€")||
-		(document.nForm.elements['pokename'].value=="ƒƒgƒ€(ƒm[ƒ}ƒ‹)")||
-		(document.nForm.elements['pokename'].value=="ƒƒgƒ€(ƒq[ƒg")||
-		(document.nForm.elements['pokename'].value=="ƒƒgƒ€(ƒJƒbƒg)")||
-		(document.nForm.elements['pokename'].value=="ƒƒgƒ€(ƒXƒsƒ“)")||
-		(document.nForm.elements['pokename'].value=="ƒƒgƒ€(ƒtƒƒXƒg)")||
-		(document.nForm.elements['pokename'].value=="ƒƒgƒ€(ƒEƒHƒbƒVƒ…)")||
-		(document.nForm.elements['pokename'].value=="ƒƒgƒ€(FC)")){
-		document.nForm.elements['mega0'].value="ƒm[ƒ}ƒ‹";
+	}else if((document.nForm.elements['pokename'].value=="ãƒ­ãƒˆãƒ ")||
+		(document.nForm.elements['pokename'].value=="ãƒ­ãƒˆãƒ (ãƒãƒ¼ãƒãƒ«)")||
+		(document.nForm.elements['pokename'].value=="ãƒ­ãƒˆãƒ (ãƒ’ãƒ¼ãƒˆ")||
+		(document.nForm.elements['pokename'].value=="ãƒ­ãƒˆãƒ (ã‚«ãƒƒãƒˆ)")||
+		(document.nForm.elements['pokename'].value=="ãƒ­ãƒˆãƒ (ã‚¹ãƒ”ãƒ³)")||
+		(document.nForm.elements['pokename'].value=="ãƒ­ãƒˆãƒ (ãƒ•ãƒ­ã‚¹ãƒˆ)")||
+		(document.nForm.elements['pokename'].value=="ãƒ­ãƒˆãƒ (ã‚¦ã‚©ãƒƒã‚·ãƒ¥)")||
+		(document.nForm.elements['pokename'].value=="ãƒ­ãƒˆãƒ (FC)")){
+		document.nForm.elements['mega0'].value="ãƒãƒ¼ãƒãƒ«";
 		document.nForm.elements['mega1'].value="FC";
 		visi(2);
-	}else if((document.nForm.elements['pokename'].value=="ƒŠƒU[ƒhƒ“")||
-		(document.nForm.elements['pokename'].value=="ƒƒKƒŠƒU[ƒhƒ“X")||
-		(document.nForm.elements['pokename'].value=="ƒƒKƒŠƒU[ƒhƒ“Y")){
-		document.nForm.elements['mega0'].value="’Êí";
-		document.nForm.elements['mega1'].value="ƒƒK‚w";
-		document.nForm.elements['mega2'].value="ƒƒK‚x";
+	}else if((document.nForm.elements['pokename'].value=="ãƒªã‚¶ãƒ¼ãƒ‰ãƒ³")||
+		(document.nForm.elements['pokename'].value=="ãƒ¡ã‚¬ãƒªã‚¶ãƒ¼ãƒ‰ãƒ³X")||
+		(document.nForm.elements['pokename'].value=="ãƒ¡ã‚¬ãƒªã‚¶ãƒ¼ãƒ‰ãƒ³Y")){
+		document.nForm.elements['mega0'].value="é€šå¸¸";
+		document.nForm.elements['mega1'].value="ãƒ¡ã‚¬ï¼¸";
+		document.nForm.elements['mega2'].value="ãƒ¡ã‚¬ï¼¹";
 		visi(3);
-	}else if((document.nForm.elements['pokename'].value=="ƒ~ƒ…ƒEƒc[")||
-		(document.nForm.elements['pokename'].value=="ƒƒKƒ~ƒ…ƒEƒc[X")||
-		(document.nForm.elements['pokename'].value=="ƒƒKƒ~ƒ…ƒEƒc[Y")){
-		document.nForm.elements['mega0'].value="’Êí";
-		document.nForm.elements['mega1'].value="ƒƒK‚w";
-		document.nForm.elements['mega2'].value="ƒƒK‚x";
+	}else if((document.nForm.elements['pokename'].value=="ãƒŸãƒ¥ã‚¦ãƒ„ãƒ¼")||
+		(document.nForm.elements['pokename'].value=="ãƒ¡ã‚¬ãƒŸãƒ¥ã‚¦ãƒ„ãƒ¼X")||
+		(document.nForm.elements['pokename'].value=="ãƒ¡ã‚¬ãƒŸãƒ¥ã‚¦ãƒ„ãƒ¼Y")){
+		document.nForm.elements['mega0'].value="é€šå¸¸";
+		document.nForm.elements['mega1'].value="ãƒ¡ã‚¬ï¼¸";
+		document.nForm.elements['mega2'].value="ãƒ¡ã‚¬ï¼¹";
 		visi(3);
 	}else if(
-	(document.nForm.elements['pokename'].value=="ƒtƒVƒMƒoƒi")||(document.nForm.elements['pokename'].value=="ƒƒKƒtƒVƒMƒoƒi")||
-	(document.nForm.elements['pokename'].value=="ƒJƒƒbƒNƒX")||(document.nForm.elements['pokename'].value=="ƒƒKƒJƒƒbƒNƒX")||
-	(document.nForm.elements['pokename'].value=="ƒt[ƒfƒBƒ“")||(document.nForm.elements['pokename'].value=="ƒƒKƒt[ƒfƒBƒ“")||
-	(document.nForm.elements['pokename'].value=="ƒQƒ“ƒK[")||(document.nForm.elements['pokename'].value=="ƒƒKƒQƒ“ƒK[")||
-	(document.nForm.elements['pokename'].value=="ƒKƒ‹[ƒ‰")||(document.nForm.elements['pokename'].value=="ƒƒKƒKƒ‹[ƒ‰")||
-	(document.nForm.elements['pokename'].value=="ƒJƒCƒƒX")||(document.nForm.elements['pokename'].value=="ƒƒKƒJƒCƒƒX")||
-	(document.nForm.elements['pokename'].value=="ƒMƒƒƒ‰ƒhƒX")||(document.nForm.elements['pokename'].value=="ƒƒKƒMƒƒƒ‰ƒhƒX")||
-	(document.nForm.elements['pokename'].value=="ƒvƒeƒ‰")||(document.nForm.elements['pokename'].value=="ƒƒKƒvƒeƒ‰")||
-	(document.nForm.elements['pokename'].value=="ƒfƒ“ƒŠƒ…ƒE")||(document.nForm.elements['pokename'].value=="ƒƒKƒfƒ“ƒŠƒ…ƒE")||
-	(document.nForm.elements['pokename'].value=="ƒnƒbƒTƒ€")||(document.nForm.elements['pokename'].value=="ƒƒKƒnƒbƒTƒ€")||
-	(document.nForm.elements['pokename'].value=="ƒwƒ‰ƒNƒƒX")||(document.nForm.elements['pokename'].value=="ƒƒKƒwƒ‰ƒNƒƒX")||
-	(document.nForm.elements['pokename'].value=="ƒwƒ‹ƒK[")||(document.nForm.elements['pokename'].value=="ƒƒKƒwƒ‹ƒK[")||
-	(document.nForm.elements['pokename'].value=="ƒoƒ“ƒMƒ‰ƒX")||(document.nForm.elements['pokename'].value=="ƒoƒ“ƒMƒ‰ƒX")||
-	(document.nForm.elements['pokename'].value=="ƒoƒVƒƒ[ƒ‚")||(document.nForm.elements['pokename'].value=="ƒƒKƒoƒVƒƒ[ƒ‚")||
-	(document.nForm.elements['pokename'].value=="ƒT[ƒiƒCƒg")||(document.nForm.elements['pokename'].value=="ƒƒKƒT[ƒiƒCƒg")||
-	(document.nForm.elements['pokename'].value=="ƒNƒ`[ƒg")||(document.nForm.elements['pokename'].value=="ƒƒKƒNƒ`[ƒg")||
-	(document.nForm.elements['pokename'].value=="ƒ{ƒXƒSƒhƒ‰")||(document.nForm.elements['pokename'].value=="ƒƒKƒ{ƒXƒSƒhƒ‰")||
-	(document.nForm.elements['pokename'].value=="ƒ`ƒƒ[ƒŒƒ€")||(document.nForm.elements['pokename'].value=="ƒƒKƒ`ƒƒ[ƒŒƒ€")||
-	(document.nForm.elements['pokename'].value=="ƒWƒ…ƒyƒbƒ^")||(document.nForm.elements['pokename'].value=="ƒƒKƒWƒ…ƒyƒbƒ^")||
-	(document.nForm.elements['pokename'].value=="ƒAƒuƒ\ƒ‹")||(document.nForm.elements['pokename'].value=="ƒƒKƒAƒuƒ\ƒ‹")||
-	(document.nForm.elements['pokename'].value=="ƒKƒuƒŠƒAƒX")||(document.nForm.elements['pokename'].value=="ƒƒKƒKƒuƒŠƒAƒX")||
-	(document.nForm.elements['pokename'].value=="ƒ‹ƒJƒŠƒI")||(document.nForm.elements['pokename'].value=="ƒƒKƒ‹ƒJƒŠƒI")||
-	(document.nForm.elements['pokename'].value=="ƒ†ƒLƒmƒI[")||(document.nForm.elements['pokename'].value=="ƒƒKƒ†ƒLƒmƒI[")||
-	(document.nForm.elements['pokename'].value=="ƒXƒsƒA[")||(document.nForm.elements['pokename'].value=="ƒƒKƒXƒsƒA[")||
-	(document.nForm.elements['pokename'].value=="ƒsƒWƒ‡ƒbƒg")||(document.nForm.elements['pokename'].value=="ƒƒKƒsƒWƒ‡ƒbƒg")||
-	(document.nForm.elements['pokename'].value=="ƒ„ƒhƒ‰ƒ“")||(document.nForm.elements['pokename'].value=="ƒƒKƒ„ƒhƒ‰ƒ“")||
-	(document.nForm.elements['pokename'].value=="ƒnƒKƒl[ƒ‹")||(document.nForm.elements['pokename'].value=="ƒƒKƒnƒKƒl[ƒ‹")||
-	(document.nForm.elements['pokename'].value=="ƒWƒ…ƒJƒCƒ“")||(document.nForm.elements['pokename'].value=="ƒƒKƒWƒ…ƒJƒCƒ“")||
-	(document.nForm.elements['pokename'].value=="ƒ‰ƒOƒ‰[ƒW")||(document.nForm.elements['pokename'].value=="ƒƒKƒ‰ƒOƒ‰[ƒW")||
-	(document.nForm.elements['pokename'].value=="ƒ„ƒ~ƒ‰ƒ~")||(document.nForm.elements['pokename'].value=="ƒƒKƒ„ƒ~ƒ‰ƒ~")||
-	(document.nForm.elements['pokename'].value=="ƒTƒƒnƒ_[")||(document.nForm.elements['pokename'].value=="ƒƒKƒTƒƒnƒ_[")||
-	(document.nForm.elements['pokename'].value=="ƒoƒN[ƒ_")||(document.nForm.elements['pokename'].value=="ƒƒKƒoƒN[ƒ_")||
-	(document.nForm.elements['pokename'].value=="ƒ`ƒ‹ƒ^ƒŠƒX")||(document.nForm.elements['pokename'].value=="ƒƒKƒ`ƒ‹ƒ^ƒŠƒX")||
-	(document.nForm.elements['pokename'].value=="ƒIƒjƒS[ƒŠ")||(document.nForm.elements['pokename'].value=="ƒƒKƒIƒjƒS[ƒŠ")||
-	(document.nForm.elements['pokename'].value=="ƒ{[ƒ}ƒ“ƒ_")||(document.nForm.elements['pokename'].value=="ƒƒKƒ{[ƒ}ƒ“ƒ_")||
-	(document.nForm.elements['pokename'].value=="ƒƒ^ƒOƒƒX")||(document.nForm.elements['pokename'].value=="ƒƒKƒƒ^ƒOƒƒX")||
-	(document.nForm.elements['pokename'].value=="ƒ‰ƒeƒBƒAƒX")||(document.nForm.elements['pokename'].value=="ƒƒKƒ‰ƒeƒBƒAƒX")||
-	(document.nForm.elements['pokename'].value=="ƒ‰ƒeƒBƒIƒX")||(document.nForm.elements['pokename'].value=="ƒƒKƒ‰ƒeƒBƒIƒX")||
-	(document.nForm.elements['pokename'].value=="ƒŒƒbƒNƒEƒU")||(document.nForm.elements['pokename'].value=="ƒƒKƒŒƒbƒNƒEƒU")||
-	(document.nForm.elements['pokename'].value=="ƒ~ƒ~ƒƒbƒv")||(document.nForm.elements['pokename'].value=="ƒƒKƒ~ƒ~ƒƒbƒv")||
-	(document.nForm.elements['pokename'].value=="ƒGƒ‹ƒŒƒCƒh")||(document.nForm.elements['pokename'].value=="ƒƒKƒGƒ‹ƒŒƒCƒh")||
-	(document.nForm.elements['pokename'].value=="ƒ^ƒuƒ“ƒl")||(document.nForm.elements['pokename'].value=="ƒƒKƒ^ƒuƒ“ƒl")||
-	(document.nForm.elements['pokename'].value=="ƒfƒBƒAƒ“ƒV[")||(document.nForm.elements['pokename'].value=="ƒfƒBƒAƒ“ƒV[")){
-		document.nForm.elements['mega0'].value="’Êí";
-		document.nForm.elements['mega1'].value="ƒƒK";
+	(document.nForm.elements['pokename'].value=="ãƒ•ã‚·ã‚®ãƒãƒŠ")||(document.nForm.elements['pokename'].value=="ãƒ¡ã‚¬ãƒ•ã‚·ã‚®ãƒãƒŠ")||
+	(document.nForm.elements['pokename'].value=="ã‚«ãƒ¡ãƒƒã‚¯ã‚¹")||(document.nForm.elements['pokename'].value=="ãƒ¡ã‚¬ã‚«ãƒ¡ãƒƒã‚¯ã‚¹")||
+	(document.nForm.elements['pokename'].value=="ãƒ•ãƒ¼ãƒ‡ã‚£ãƒ³")||(document.nForm.elements['pokename'].value=="ãƒ¡ã‚¬ãƒ•ãƒ¼ãƒ‡ã‚£ãƒ³")||
+	(document.nForm.elements['pokename'].value=="ã‚²ãƒ³ã‚¬ãƒ¼")||(document.nForm.elements['pokename'].value=="ãƒ¡ã‚¬ã‚²ãƒ³ã‚¬ãƒ¼")||
+	(document.nForm.elements['pokename'].value=="ã‚¬ãƒ«ãƒ¼ãƒ©")||(document.nForm.elements['pokename'].value=="ãƒ¡ã‚¬ã‚¬ãƒ«ãƒ¼ãƒ©")||
+	(document.nForm.elements['pokename'].value=="ã‚«ã‚¤ãƒ­ã‚¹")||(document.nForm.elements['pokename'].value=="ãƒ¡ã‚¬ã‚«ã‚¤ãƒ­ã‚¹")||
+	(document.nForm.elements['pokename'].value=="ã‚®ãƒ£ãƒ©ãƒ‰ã‚¹")||(document.nForm.elements['pokename'].value=="ãƒ¡ã‚¬ã‚®ãƒ£ãƒ©ãƒ‰ã‚¹")||
+	(document.nForm.elements['pokename'].value=="ãƒ—ãƒ†ãƒ©")||(document.nForm.elements['pokename'].value=="ãƒ¡ã‚¬ãƒ—ãƒ†ãƒ©")||
+	(document.nForm.elements['pokename'].value=="ãƒ‡ãƒ³ãƒªãƒ¥ã‚¦")||(document.nForm.elements['pokename'].value=="ãƒ¡ã‚¬ãƒ‡ãƒ³ãƒªãƒ¥ã‚¦")||
+	(document.nForm.elements['pokename'].value=="ãƒãƒƒã‚µãƒ ")||(document.nForm.elements['pokename'].value=="ãƒ¡ã‚¬ãƒãƒƒã‚µãƒ ")||
+	(document.nForm.elements['pokename'].value=="ãƒ˜ãƒ©ã‚¯ãƒ­ã‚¹")||(document.nForm.elements['pokename'].value=="ãƒ¡ã‚¬ãƒ˜ãƒ©ã‚¯ãƒ­ã‚¹")||
+	(document.nForm.elements['pokename'].value=="ãƒ˜ãƒ«ã‚¬ãƒ¼")||(document.nForm.elements['pokename'].value=="ãƒ¡ã‚¬ãƒ˜ãƒ«ã‚¬ãƒ¼")||
+	(document.nForm.elements['pokename'].value=="ãƒãƒ³ã‚®ãƒ©ã‚¹")||(document.nForm.elements['pokename'].value=="ãƒãƒ³ã‚®ãƒ©ã‚¹")||
+	(document.nForm.elements['pokename'].value=="ãƒã‚·ãƒ£ãƒ¼ãƒ¢")||(document.nForm.elements['pokename'].value=="ãƒ¡ã‚¬ãƒã‚·ãƒ£ãƒ¼ãƒ¢")||
+	(document.nForm.elements['pokename'].value=="ã‚µãƒ¼ãƒŠã‚¤ãƒˆ")||(document.nForm.elements['pokename'].value=="ãƒ¡ã‚¬ã‚µãƒ¼ãƒŠã‚¤ãƒˆ")||
+	(document.nForm.elements['pokename'].value=="ã‚¯ãƒãƒ¼ãƒˆ")||(document.nForm.elements['pokename'].value=="ãƒ¡ã‚¬ã‚¯ãƒãƒ¼ãƒˆ")||
+	(document.nForm.elements['pokename'].value=="ãƒœã‚¹ã‚´ãƒ‰ãƒ©")||(document.nForm.elements['pokename'].value=="ãƒ¡ã‚¬ãƒœã‚¹ã‚´ãƒ‰ãƒ©")||
+	(document.nForm.elements['pokename'].value=="ãƒãƒ£ãƒ¼ãƒ¬ãƒ ")||(document.nForm.elements['pokename'].value=="ãƒ¡ã‚¬ãƒãƒ£ãƒ¼ãƒ¬ãƒ ")||
+	(document.nForm.elements['pokename'].value=="ã‚¸ãƒ¥ãƒšãƒƒã‚¿")||(document.nForm.elements['pokename'].value=="ãƒ¡ã‚¬ã‚¸ãƒ¥ãƒšãƒƒã‚¿")||
+	(document.nForm.elements['pokename'].value=="ã‚¢ãƒ–ã‚½ãƒ«")||(document.nForm.elements['pokename'].value=="ãƒ¡ã‚¬ã‚¢ãƒ–ã‚½ãƒ«")||
+	(document.nForm.elements['pokename'].value=="ã‚¬ãƒ–ãƒªã‚¢ã‚¹")||(document.nForm.elements['pokename'].value=="ãƒ¡ã‚¬ã‚¬ãƒ–ãƒªã‚¢ã‚¹")||
+	(document.nForm.elements['pokename'].value=="ãƒ«ã‚«ãƒªã‚ª")||(document.nForm.elements['pokename'].value=="ãƒ¡ã‚¬ãƒ«ã‚«ãƒªã‚ª")||
+	(document.nForm.elements['pokename'].value=="ãƒ¦ã‚­ãƒã‚ªãƒ¼")||(document.nForm.elements['pokename'].value=="ãƒ¡ã‚¬ãƒ¦ã‚­ãƒã‚ªãƒ¼")||
+	(document.nForm.elements['pokename'].value=="ã‚¹ãƒ”ã‚¢ãƒ¼")||(document.nForm.elements['pokename'].value=="ãƒ¡ã‚¬ã‚¹ãƒ”ã‚¢ãƒ¼")||
+	(document.nForm.elements['pokename'].value=="ãƒ”ã‚¸ãƒ§ãƒƒãƒˆ")||(document.nForm.elements['pokename'].value=="ãƒ¡ã‚¬ãƒ”ã‚¸ãƒ§ãƒƒãƒˆ")||
+	(document.nForm.elements['pokename'].value=="ãƒ¤ãƒ‰ãƒ©ãƒ³")||(document.nForm.elements['pokename'].value=="ãƒ¡ã‚¬ãƒ¤ãƒ‰ãƒ©ãƒ³")||
+	(document.nForm.elements['pokename'].value=="ãƒã‚¬ãƒãƒ¼ãƒ«")||(document.nForm.elements['pokename'].value=="ãƒ¡ã‚¬ãƒã‚¬ãƒãƒ¼ãƒ«")||
+	(document.nForm.elements['pokename'].value=="ã‚¸ãƒ¥ã‚«ã‚¤ãƒ³")||(document.nForm.elements['pokename'].value=="ãƒ¡ã‚¬ã‚¸ãƒ¥ã‚«ã‚¤ãƒ³")||
+	(document.nForm.elements['pokename'].value=="ãƒ©ã‚°ãƒ©ãƒ¼ã‚¸")||(document.nForm.elements['pokename'].value=="ãƒ¡ã‚¬ãƒ©ã‚°ãƒ©ãƒ¼ã‚¸")||
+	(document.nForm.elements['pokename'].value=="ãƒ¤ãƒŸãƒ©ãƒŸ")||(document.nForm.elements['pokename'].value=="ãƒ¡ã‚¬ãƒ¤ãƒŸãƒ©ãƒŸ")||
+	(document.nForm.elements['pokename'].value=="ã‚µãƒ¡ãƒãƒ€ãƒ¼")||(document.nForm.elements['pokename'].value=="ãƒ¡ã‚¬ã‚µãƒ¡ãƒãƒ€ãƒ¼")||
+	(document.nForm.elements['pokename'].value=="ãƒã‚¯ãƒ¼ãƒ€")||(document.nForm.elements['pokename'].value=="ãƒ¡ã‚¬ãƒã‚¯ãƒ¼ãƒ€")||
+	(document.nForm.elements['pokename'].value=="ãƒãƒ«ã‚¿ãƒªã‚¹")||(document.nForm.elements['pokename'].value=="ãƒ¡ã‚¬ãƒãƒ«ã‚¿ãƒªã‚¹")||
+	(document.nForm.elements['pokename'].value=="ã‚ªãƒ‹ã‚´ãƒ¼ãƒª")||(document.nForm.elements['pokename'].value=="ãƒ¡ã‚¬ã‚ªãƒ‹ã‚´ãƒ¼ãƒª")||
+	(document.nForm.elements['pokename'].value=="ãƒœãƒ¼ãƒãƒ³ãƒ€")||(document.nForm.elements['pokename'].value=="ãƒ¡ã‚¬ãƒœãƒ¼ãƒãƒ³ãƒ€")||
+	(document.nForm.elements['pokename'].value=="ãƒ¡ã‚¿ã‚°ãƒ­ã‚¹")||(document.nForm.elements['pokename'].value=="ãƒ¡ã‚¬ãƒ¡ã‚¿ã‚°ãƒ­ã‚¹")||
+	(document.nForm.elements['pokename'].value=="ãƒ©ãƒ†ã‚£ã‚¢ã‚¹")||(document.nForm.elements['pokename'].value=="ãƒ¡ã‚¬ãƒ©ãƒ†ã‚£ã‚¢ã‚¹")||
+	(document.nForm.elements['pokename'].value=="ãƒ©ãƒ†ã‚£ã‚ªã‚¹")||(document.nForm.elements['pokename'].value=="ãƒ¡ã‚¬ãƒ©ãƒ†ã‚£ã‚ªã‚¹")||
+	(document.nForm.elements['pokename'].value=="ãƒ¬ãƒƒã‚¯ã‚¦ã‚¶")||(document.nForm.elements['pokename'].value=="ãƒ¡ã‚¬ãƒ¬ãƒƒã‚¯ã‚¦ã‚¶")||
+	(document.nForm.elements['pokename'].value=="ãƒŸãƒŸãƒ­ãƒƒãƒ—")||(document.nForm.elements['pokename'].value=="ãƒ¡ã‚¬ãƒŸãƒŸãƒ­ãƒƒãƒ—")||
+	(document.nForm.elements['pokename'].value=="ã‚¨ãƒ«ãƒ¬ã‚¤ãƒ‰")||(document.nForm.elements['pokename'].value=="ãƒ¡ã‚¬ã‚¨ãƒ«ãƒ¬ã‚¤ãƒ‰")||
+	(document.nForm.elements['pokename'].value=="ã‚¿ãƒ–ãƒ³ãƒ")||(document.nForm.elements['pokename'].value=="ãƒ¡ã‚¬ã‚¿ãƒ–ãƒ³ãƒ")||
+	(document.nForm.elements['pokename'].value=="ãƒ‡ã‚£ã‚¢ãƒ³ã‚·ãƒ¼")||(document.nForm.elements['pokename'].value=="ãƒ‡ã‚£ã‚¢ãƒ³ã‚·ãƒ¼")){
+		document.nForm.elements['mega0'].value="é€šå¸¸";
+		document.nForm.elements['mega1'].value="ãƒ¡ã‚¬";
 		visi(2);
 	}else{
 		visi(0);
@@ -224,232 +224,232 @@ function visi(num){
 
 
 
-//ƒƒKƒVƒ“ƒJƒ{ƒ^ƒ“
+//ãƒ¡ã‚¬ã‚·ãƒ³ã‚«ãƒœã‚¿ãƒ³
 function megachange(num){
-	if((document.nForm.elements['pokename'].value=="ƒMƒ‹ƒKƒ‹ƒh")||
-		(document.nForm.elements['pokename'].value=="ƒMƒ‹ƒKƒ‹ƒh(ƒuƒŒ[ƒh)")||
-		(document.nForm.elements['pokename'].value=="ƒMƒ‹ƒKƒ‹ƒh(ƒV[ƒ‹ƒh)")){
+	if((document.nForm.elements['pokename'].value=="ã‚®ãƒ«ã‚¬ãƒ«ãƒ‰")||
+		(document.nForm.elements['pokename'].value=="ã‚®ãƒ«ã‚¬ãƒ«ãƒ‰(ãƒ–ãƒ¬ãƒ¼ãƒ‰)")||
+		(document.nForm.elements['pokename'].value=="ã‚®ãƒ«ã‚¬ãƒ«ãƒ‰(ã‚·ãƒ¼ãƒ«ãƒ‰)")){
 		if(parseInt(num)==0){
- 			document.nForm.elements['pokename'].value="ƒMƒ‹ƒKƒ‹ƒh(ƒuƒŒ[ƒh)";
+ 			document.nForm.elements['pokename'].value="ã‚®ãƒ«ã‚¬ãƒ«ãƒ‰(ãƒ–ãƒ¬ãƒ¼ãƒ‰)";
  		}else if(parseInt(num)==1){
- 			document.nForm.elements['pokename'].value="ƒMƒ‹ƒKƒ‹ƒh(ƒV[ƒ‹ƒh)";
+ 			document.nForm.elements['pokename'].value="ã‚®ãƒ«ã‚¬ãƒ«ãƒ‰(ã‚·ãƒ¼ãƒ«ãƒ‰)";
  		}
-	}else if((document.nForm.elements['pokename'].value=="ƒqƒqƒ_ƒ‹ƒ}")||
-		(document.nForm.elements['pokename'].value=="ƒqƒqƒ_ƒ‹ƒ}(ƒm[ƒ}ƒ‹)")||
-		(document.nForm.elements['pokename'].value=="ƒqƒqƒ_ƒ‹ƒ}(ƒ_ƒ‹ƒ})")){
+	}else if((document.nForm.elements['pokename'].value=="ãƒ’ãƒ’ãƒ€ãƒ«ãƒ")||
+		(document.nForm.elements['pokename'].value=="ãƒ’ãƒ’ãƒ€ãƒ«ãƒ(ãƒãƒ¼ãƒãƒ«)")||
+		(document.nForm.elements['pokename'].value=="ãƒ’ãƒ’ãƒ€ãƒ«ãƒ(ãƒ€ãƒ«ãƒ)")){
 		if(parseInt(num)==0){
- 			document.nForm.elements['pokename'].value="ƒqƒqƒ_ƒ‹ƒ}(ƒm[ƒ}ƒ‹)";
+ 			document.nForm.elements['pokename'].value="ãƒ’ãƒ’ãƒ€ãƒ«ãƒ(ãƒãƒ¼ãƒãƒ«)";
  		}else if(parseInt(num)==1){
- 			document.nForm.elements['pokename'].value="ƒqƒqƒ_ƒ‹ƒ}(ƒ_ƒ‹ƒ})";
+ 			document.nForm.elements['pokename'].value="ãƒ’ãƒ’ãƒ€ãƒ«ãƒ(ãƒ€ãƒ«ãƒ)";
  		}
-	}else if((document.nForm.elements['pokename'].value=="ƒVƒFƒCƒ~")||
-		(document.nForm.elements['pokename'].value=="ƒVƒFƒCƒ~(ƒ‰ƒ“ƒh)")||
-		(document.nForm.elements['pokename'].value=="ƒVƒFƒCƒ~(ƒXƒJƒC)")){
+	}else if((document.nForm.elements['pokename'].value=="ã‚·ã‚§ã‚¤ãƒŸ")||
+		(document.nForm.elements['pokename'].value=="ã‚·ã‚§ã‚¤ãƒŸ(ãƒ©ãƒ³ãƒ‰)")||
+		(document.nForm.elements['pokename'].value=="ã‚·ã‚§ã‚¤ãƒŸ(ã‚¹ã‚«ã‚¤)")){
 		if(parseInt(num)==0){
- 			document.nForm.elements['pokename'].value="ƒVƒFƒCƒ~(ƒ‰ƒ“ƒh)";
+ 			document.nForm.elements['pokename'].value="ã‚·ã‚§ã‚¤ãƒŸ(ãƒ©ãƒ³ãƒ‰)";
  		}else if(parseInt(num)==1){
- 			document.nForm.elements['pokename'].value="ƒVƒFƒCƒ~(ƒXƒJƒC)";
+ 			document.nForm.elements['pokename'].value="ã‚·ã‚§ã‚¤ãƒŸ(ã‚¹ã‚«ã‚¤)";
  		}
-	}else if((document.nForm.elements['pokename'].value=="ƒƒƒGƒbƒ^")||
-		(document.nForm.elements['pokename'].value=="ƒƒƒGƒbƒ^(ƒ{ƒCƒX)")||
-		(document.nForm.elements['pokename'].value=="ƒƒƒGƒbƒ^(ƒXƒeƒbƒv)")){
+	}else if((document.nForm.elements['pokename'].value=="ãƒ¡ãƒ­ã‚¨ãƒƒã‚¿")||
+		(document.nForm.elements['pokename'].value=="ãƒ¡ãƒ­ã‚¨ãƒƒã‚¿(ãƒœã‚¤ã‚¹)")||
+		(document.nForm.elements['pokename'].value=="ãƒ¡ãƒ­ã‚¨ãƒƒã‚¿(ã‚¹ãƒ†ãƒƒãƒ—)")){
 		if(parseInt(num)==0){
- 			document.nForm.elements['pokename'].value="ƒƒƒGƒbƒ^(ƒ{ƒCƒX)";
+ 			document.nForm.elements['pokename'].value="ãƒ¡ãƒ­ã‚¨ãƒƒã‚¿(ãƒœã‚¤ã‚¹)";
  		}else if(parseInt(num)==1){
- 			document.nForm.elements['pokename'].value="ƒƒƒGƒbƒ^(ƒXƒeƒbƒv)";
+ 			document.nForm.elements['pokename'].value="ãƒ¡ãƒ­ã‚¨ãƒƒã‚¿(ã‚¹ãƒ†ãƒƒãƒ—)";
  		}
-	}else if((document.nForm.elements['pokename'].value=="ƒMƒ‰ƒeƒBƒi")||
-		(document.nForm.elements['pokename'].value=="ƒMƒ‰ƒeƒBƒi(ƒAƒiƒU[)")||
-		(document.nForm.elements['pokename'].value=="ƒMƒ‰ƒeƒBƒi(ƒIƒŠƒWƒ“)")){
+	}else if((document.nForm.elements['pokename'].value=="ã‚®ãƒ©ãƒ†ã‚£ãƒŠ")||
+		(document.nForm.elements['pokename'].value=="ã‚®ãƒ©ãƒ†ã‚£ãƒŠ(ã‚¢ãƒŠã‚¶ãƒ¼)")||
+		(document.nForm.elements['pokename'].value=="ã‚®ãƒ©ãƒ†ã‚£ãƒŠ(ã‚ªãƒªã‚¸ãƒ³)")){
 		if(parseInt(num)==0){
- 			document.nForm.elements['pokename'].value="ƒMƒ‰ƒeƒBƒi(ƒAƒiƒU[)";
+ 			document.nForm.elements['pokename'].value="ã‚®ãƒ©ãƒ†ã‚£ãƒŠ(ã‚¢ãƒŠã‚¶ãƒ¼)";
  		}else if(parseInt(num)==1){
- 			document.nForm.elements['pokename'].value="ƒMƒ‰ƒeƒBƒi(ƒIƒŠƒWƒ“)";
+ 			document.nForm.elements['pokename'].value="ã‚®ãƒ©ãƒ†ã‚£ãƒŠ(ã‚ªãƒªã‚¸ãƒ³)";
  		}
-	}else if((document.nForm.elements['pokename'].value=="ƒ{ƒ‹ƒgƒƒX")||
-		(document.nForm.elements['pokename'].value=="ƒ{ƒ‹ƒgƒƒX(‰»g)")||
-		(document.nForm.elements['pokename'].value=="ƒ{ƒ‹ƒgƒƒX(—ìb)")){
+	}else if((document.nForm.elements['pokename'].value=="ãƒœãƒ«ãƒˆãƒ­ã‚¹")||
+		(document.nForm.elements['pokename'].value=="ãƒœãƒ«ãƒˆãƒ­ã‚¹(åŒ–èº«)")||
+		(document.nForm.elements['pokename'].value=="ãƒœãƒ«ãƒˆãƒ­ã‚¹(éœŠç£)")){
 		if(parseInt(num)==0){
- 			document.nForm.elements['pokename'].value="ƒ{ƒ‹ƒgƒƒX(‰»g)";
+ 			document.nForm.elements['pokename'].value="ãƒœãƒ«ãƒˆãƒ­ã‚¹(åŒ–èº«)";
  		}else if(parseInt(num)==1){
- 			document.nForm.elements['pokename'].value="ƒ{ƒ‹ƒgƒƒX(—ìb)";
+ 			document.nForm.elements['pokename'].value="ãƒœãƒ«ãƒˆãƒ­ã‚¹(éœŠç£)";
  		}
-	}else if((document.nForm.elements['pokename'].value=="ƒ‰ƒ“ƒhƒƒX")||
-		(document.nForm.elements['pokename'].value=="ƒ‰ƒ“ƒhƒƒX(‰»g)")||
-		(document.nForm.elements['pokename'].value=="ƒ‰ƒ“ƒhƒƒX(—ìb)")){
+	}else if((document.nForm.elements['pokename'].value=="ãƒ©ãƒ³ãƒ‰ãƒ­ã‚¹")||
+		(document.nForm.elements['pokename'].value=="ãƒ©ãƒ³ãƒ‰ãƒ­ã‚¹(åŒ–èº«)")||
+		(document.nForm.elements['pokename'].value=="ãƒ©ãƒ³ãƒ‰ãƒ­ã‚¹(éœŠç£)")){
 		if(parseInt(num)==0){
- 			document.nForm.elements['pokename'].value="ƒ‰ƒ“ƒhƒƒX(‰»g)";
+ 			document.nForm.elements['pokename'].value="ãƒ©ãƒ³ãƒ‰ãƒ­ã‚¹(åŒ–èº«)";
  		}else if(parseInt(num)==1){
- 			document.nForm.elements['pokename'].value="ƒ‰ƒ“ƒhƒƒX(—ìb)";
+ 			document.nForm.elements['pokename'].value="ãƒ©ãƒ³ãƒ‰ãƒ­ã‚¹(éœŠç£)";
  		}
-	}else if((document.nForm.elements['pokename'].value=="ƒgƒ‹ƒlƒƒX")||
-		(document.nForm.elements['pokename'].value=="ƒgƒ‹ƒlƒƒX(‰»g)")||
-		(document.nForm.elements['pokename'].value=="ƒgƒ‹ƒlƒƒX(—ìb)")){
+	}else if((document.nForm.elements['pokename'].value=="ãƒˆãƒ«ãƒãƒ­ã‚¹")||
+		(document.nForm.elements['pokename'].value=="ãƒˆãƒ«ãƒãƒ­ã‚¹(åŒ–èº«)")||
+		(document.nForm.elements['pokename'].value=="ãƒˆãƒ«ãƒãƒ­ã‚¹(éœŠç£)")){
 		if(parseInt(num)==0){
- 			document.nForm.elements['pokename'].value="ƒgƒ‹ƒlƒƒX(‰»g)";
+ 			document.nForm.elements['pokename'].value="ãƒˆãƒ«ãƒãƒ­ã‚¹(åŒ–èº«)";
  		}else if(parseInt(num)==1){
- 			document.nForm.elements['pokename'].value="ƒgƒ‹ƒlƒƒX(—ìb)";
+ 			document.nForm.elements['pokename'].value="ãƒˆãƒ«ãƒãƒ­ã‚¹(éœŠç£)";
  		}
-	}else if((document.nForm.elements['pokename'].value=="ƒt[ƒp")||
-		(document.nForm.elements['pokename'].value=="ƒt[ƒp(‚¢‚Ü‚µ‚ß‚ç‚ê‚µ)")||
-		(document.nForm.elements['pokename'].value=="ƒt[ƒp(‚Æ‚«‚Í‚È‚½‚ê‚µ)")){
+	}else if((document.nForm.elements['pokename'].value=="ãƒ•ãƒ¼ãƒ‘")||
+		(document.nForm.elements['pokename'].value=="ãƒ•ãƒ¼ãƒ‘(ã„ã¾ã—ã‚ã‚‰ã‚Œã—)")||
+		(document.nForm.elements['pokename'].value=="ãƒ•ãƒ¼ãƒ‘(ã¨ãã¯ãªãŸã‚Œã—)")){
 		if(parseInt(num)==0){
- 			document.nForm.elements['pokename'].value="ƒt[ƒp(‚¢‚Ü‚µ‚ß‚ç‚ê‚µ)";
+ 			document.nForm.elements['pokename'].value="ãƒ•ãƒ¼ãƒ‘(ã„ã¾ã—ã‚ã‚‰ã‚Œã—)";
  		}else if(parseInt(num)==1){
- 			document.nForm.elements['pokename'].value="ƒt[ƒp(‚Æ‚«‚Í‚È‚½‚ê‚µ)";
+ 			document.nForm.elements['pokename'].value="ãƒ•ãƒ¼ãƒ‘(ã¨ãã¯ãªãŸã‚Œã—)";
  		}
-	}else if((document.nForm.elements['pokename'].value=="ƒLƒ…ƒŒƒ€")||
-		(document.nForm.elements['pokename'].value=="ƒLƒ…ƒŒƒ€(’Êí)")||
-		(document.nForm.elements['pokename'].value=="ƒuƒ‰ƒbƒNƒLƒ…ƒŒƒ€")||
-		(document.nForm.elements['pokename'].value=="ƒzƒƒCƒgƒLƒ…ƒŒƒ€")){
+	}else if((document.nForm.elements['pokename'].value=="ã‚­ãƒ¥ãƒ¬ãƒ ")||
+		(document.nForm.elements['pokename'].value=="ã‚­ãƒ¥ãƒ¬ãƒ (é€šå¸¸)")||
+		(document.nForm.elements['pokename'].value=="ãƒ–ãƒ©ãƒƒã‚¯ã‚­ãƒ¥ãƒ¬ãƒ ")||
+		(document.nForm.elements['pokename'].value=="ãƒ›ãƒ¯ã‚¤ãƒˆã‚­ãƒ¥ãƒ¬ãƒ ")){
 		if(parseInt(num)==0){
- 			document.nForm.elements['pokename'].value="ƒLƒ…ƒŒƒ€(’Êí)";
+ 			document.nForm.elements['pokename'].value="ã‚­ãƒ¥ãƒ¬ãƒ (é€šå¸¸)";
  		}else if(parseInt(num)==1){
- 			document.nForm.elements['pokename'].value="ƒuƒ‰ƒbƒNƒLƒ…ƒŒƒ€";
+ 			document.nForm.elements['pokename'].value="ãƒ–ãƒ©ãƒƒã‚¯ã‚­ãƒ¥ãƒ¬ãƒ ";
  		}else if(parseInt(num)==2){
- 			document.nForm.elements['pokename'].value="ƒzƒƒCƒgƒLƒ…ƒŒƒ€";
+ 			document.nForm.elements['pokename'].value="ãƒ›ãƒ¯ã‚¤ãƒˆã‚­ãƒ¥ãƒ¬ãƒ ";
  		}
- 	}else if((document.nForm.elements['pokename'].value=="ƒ~ƒmƒ}ƒ_ƒ€")||
- 		(document.nForm.elements['pokename'].value=="ƒ~ƒmƒ}ƒ_ƒ€(‘–Ø)")||
-		(document.nForm.elements['pokename'].value=="ƒ~ƒmƒ}ƒ_ƒ€(»’n)")||
-		(document.nForm.elements['pokename'].value=="ƒ~ƒmƒ}ƒ_ƒ€(ƒSƒ~)")){
+ 	}else if((document.nForm.elements['pokename'].value=="ãƒŸãƒãƒãƒ€ãƒ ")||
+ 		(document.nForm.elements['pokename'].value=="ãƒŸãƒãƒãƒ€ãƒ (è‰æœ¨)")||
+		(document.nForm.elements['pokename'].value=="ãƒŸãƒãƒãƒ€ãƒ (ç ‚åœ°)")||
+		(document.nForm.elements['pokename'].value=="ãƒŸãƒãƒãƒ€ãƒ (ã‚´ãƒŸ)")){
 		if(parseInt(num)==0){
- 			document.nForm.elements['pokename'].value="ƒ~ƒmƒ}ƒ_ƒ€(‘–Ø)";
+ 			document.nForm.elements['pokename'].value="ãƒŸãƒãƒãƒ€ãƒ (è‰æœ¨)";
  		}else if(parseInt(num)==1){
- 			document.nForm.elements['pokename'].value="ƒ~ƒmƒ}ƒ_ƒ€(»’n)";
+ 			document.nForm.elements['pokename'].value="ãƒŸãƒãƒãƒ€ãƒ (ç ‚åœ°)";
  		}else if(parseInt(num)==2){
- 			document.nForm.elements['pokename'].value="ƒ~ƒmƒ}ƒ_ƒ€(ƒSƒ~)";
+ 			document.nForm.elements['pokename'].value="ãƒŸãƒãƒãƒ€ãƒ (ã‚´ãƒŸ)";
  		}
-	}else if((document.nForm.elements['pokename'].value=="ƒfƒIƒLƒVƒX")||
-		(document.nForm.elements['pokename'].value=="ƒfƒIƒLƒVƒX(ƒm[ƒ}ƒ‹)")||
-		(document.nForm.elements['pokename'].value=="ƒfƒIƒLƒVƒX(ƒAƒ^ƒbƒN)")||
-		(document.nForm.elements['pokename'].value=="ƒfƒIƒLƒVƒX(ƒfƒBƒtƒFƒ“ƒX)")||
-		(document.nForm.elements['pokename'].value=="ƒfƒIƒLƒVƒX(ƒXƒs[ƒh)")){
+	}else if((document.nForm.elements['pokename'].value=="ãƒ‡ã‚ªã‚­ã‚·ã‚¹")||
+		(document.nForm.elements['pokename'].value=="ãƒ‡ã‚ªã‚­ã‚·ã‚¹(ãƒãƒ¼ãƒãƒ«)")||
+		(document.nForm.elements['pokename'].value=="ãƒ‡ã‚ªã‚­ã‚·ã‚¹(ã‚¢ã‚¿ãƒƒã‚¯)")||
+		(document.nForm.elements['pokename'].value=="ãƒ‡ã‚ªã‚­ã‚·ã‚¹(ãƒ‡ã‚£ãƒ•ã‚§ãƒ³ã‚¹)")||
+		(document.nForm.elements['pokename'].value=="ãƒ‡ã‚ªã‚­ã‚·ã‚¹(ã‚¹ãƒ”ãƒ¼ãƒ‰)")){
 		if(parseInt(num)==0){
- 			document.nForm.elements['pokename'].value="ƒfƒIƒLƒVƒX(ƒm[ƒ}ƒ‹)";
+ 			document.nForm.elements['pokename'].value="ãƒ‡ã‚ªã‚­ã‚·ã‚¹(ãƒãƒ¼ãƒãƒ«)";
  		}else if(parseInt(num)==1){
- 			document.nForm.elements['pokename'].value="ƒfƒIƒLƒVƒX(ƒAƒ^ƒbƒN)";
+ 			document.nForm.elements['pokename'].value="ãƒ‡ã‚ªã‚­ã‚·ã‚¹(ã‚¢ã‚¿ãƒƒã‚¯)";
  		}else if(parseInt(num)==2){
- 			document.nForm.elements['pokename'].value="ƒfƒIƒLƒVƒX(ƒfƒBƒtƒFƒ“ƒX)";
+ 			document.nForm.elements['pokename'].value="ãƒ‡ã‚ªã‚­ã‚·ã‚¹(ãƒ‡ã‚£ãƒ•ã‚§ãƒ³ã‚¹)";
  		}else if(parseInt(num)==3){
- 			document.nForm.elements['pokename'].value="ƒfƒIƒLƒVƒX(ƒXƒs[ƒh)";
+ 			document.nForm.elements['pokename'].value="ãƒ‡ã‚ªã‚­ã‚·ã‚¹(ã‚¹ãƒ”ãƒ¼ãƒ‰)";
  		}
- 	}else if((document.nForm.elements['pokename'].value=="ƒoƒPƒbƒ`ƒƒ")||
-		(document.nForm.elements['pokename'].value=="ƒoƒPƒbƒ`ƒƒ(“Á‘å)")||
-		(document.nForm.elements['pokename'].value=="ƒoƒPƒbƒ`ƒƒ(‘å‚«‚¢)")||
-		(document.nForm.elements['pokename'].value=="ƒoƒPƒbƒ`ƒƒ(•’Ê)")||
-		(document.nForm.elements['pokename'].value=="ƒoƒPƒbƒ`ƒƒ(¬‚³‚¢)")){
+ 	}else if((document.nForm.elements['pokename'].value=="ãƒã‚±ãƒƒãƒãƒ£")||
+		(document.nForm.elements['pokename'].value=="ãƒã‚±ãƒƒãƒãƒ£(è½î”€)")||
+		(document.nForm.elements['pokename'].value=="ãƒã‚±ãƒƒãƒãƒ£(å¤§ãã„)")||
+		(document.nForm.elements['pokename'].value=="ãƒã‚±ãƒƒãƒãƒ£(æ™®é€š)")||
+		(document.nForm.elements['pokename'].value=="ãƒã‚±ãƒƒãƒãƒ£(å°ã•ã„)")){
 		if(parseInt(num)==0){
- 			document.nForm.elements['pokename'].value="ƒoƒPƒbƒ`ƒƒ(“Á‘å)";
+ 			document.nForm.elements['pokename'].value="ãƒã‚±ãƒƒãƒãƒ£(è½î”€)";
  		}else if(parseInt(num)==1){
- 			document.nForm.elements['pokename'].value="ƒoƒPƒbƒ`ƒƒ(‘å‚«‚¢)";
+ 			document.nForm.elements['pokename'].value="ãƒã‚±ãƒƒãƒãƒ£(å¤§ãã„)";
  		}else if(parseInt(num)==2){
- 			document.nForm.elements['pokename'].value="ƒoƒPƒbƒ`ƒƒ(•’Ê)";
+ 			document.nForm.elements['pokename'].value="ãƒã‚±ãƒƒãƒãƒ£(æ™®é€š)";
  		}else if(parseInt(num)==3){
- 			document.nForm.elements['pokename'].value="ƒoƒPƒbƒ`ƒƒ(¬‚³‚¢)";
+ 			document.nForm.elements['pokename'].value="ãƒã‚±ãƒƒãƒãƒ£(å°ã•ã„)";
  		}
- 	}else if((document.nForm.elements['pokename'].value=="ƒpƒ“ƒvƒWƒ“")||
-		(document.nForm.elements['pokename'].value=="ƒpƒ“ƒvƒWƒ“(“Á‘å)")||
-		(document.nForm.elements['pokename'].value=="ƒpƒ“ƒvƒWƒ“(‘å‚«‚¢)")||
-		(document.nForm.elements['pokename'].value=="ƒpƒ“ƒvƒWƒ“(•’Ê)")||
-		(document.nForm.elements['pokename'].value=="ƒpƒ“ƒvƒWƒ“(¬‚³‚¢)")){
+ 	}else if((document.nForm.elements['pokename'].value=="ãƒ‘ãƒ³ãƒ—ã‚¸ãƒ³")||
+		(document.nForm.elements['pokename'].value=="ãƒ‘ãƒ³ãƒ—ã‚¸ãƒ³(è½î”€)")||
+		(document.nForm.elements['pokename'].value=="ãƒ‘ãƒ³ãƒ—ã‚¸ãƒ³(å¤§ãã„)")||
+		(document.nForm.elements['pokename'].value=="ãƒ‘ãƒ³ãƒ—ã‚¸ãƒ³(æ™®é€š)")||
+		(document.nForm.elements['pokename'].value=="ãƒ‘ãƒ³ãƒ—ã‚¸ãƒ³(å°ã•ã„)")){
 		if(parseInt(num)==0){
- 			document.nForm.elements['pokename'].value="ƒpƒ“ƒvƒWƒ“(“Á‘å)";
+ 			document.nForm.elements['pokename'].value="ãƒ‘ãƒ³ãƒ—ã‚¸ãƒ³(è½î”€)";
  		}else if(parseInt(num)==1){
- 			document.nForm.elements['pokename'].value="ƒpƒ“ƒvƒWƒ“(‘å‚«‚¢)";
+ 			document.nForm.elements['pokename'].value="ãƒ‘ãƒ³ãƒ—ã‚¸ãƒ³(å¤§ãã„)";
  		}else if(parseInt(num)==2){
- 			document.nForm.elements['pokename'].value="ƒpƒ“ƒvƒWƒ“(•’Ê)";
+ 			document.nForm.elements['pokename'].value="ãƒ‘ãƒ³ãƒ—ã‚¸ãƒ³(æ™®é€š)";
  		}else if(parseInt(num)==3){
- 			document.nForm.elements['pokename'].value="ƒpƒ“ƒvƒWƒ“(¬‚³‚¢)";
+ 			document.nForm.elements['pokename'].value="ãƒ‘ãƒ³ãƒ—ã‚¸ãƒ³(å°ã•ã„)";
  		}
-	}else if((document.nForm.elements['pokename'].value=="ƒƒgƒ€")||
-		(document.nForm.elements['pokename'].value=="ƒƒgƒ€(ƒm[ƒ}ƒ‹)")||
-		(document.nForm.elements['pokename'].value=="ƒƒgƒ€(ƒq[ƒg")||
-		(document.nForm.elements['pokename'].value=="ƒƒgƒ€(ƒJƒbƒg)")||
-		(document.nForm.elements['pokename'].value=="ƒƒgƒ€(ƒXƒsƒ“)")||
-		(document.nForm.elements['pokename'].value=="ƒƒgƒ€(ƒtƒƒXƒg)")||
-		(document.nForm.elements['pokename'].value=="ƒƒgƒ€(ƒEƒHƒbƒVƒ…)")||
-		(document.nForm.elements['pokename'].value=="ƒƒgƒ€(FC)")){
+	}else if((document.nForm.elements['pokename'].value=="ãƒ­ãƒˆãƒ ")||
+		(document.nForm.elements['pokename'].value=="ãƒ­ãƒˆãƒ (ãƒãƒ¼ãƒãƒ«)")||
+		(document.nForm.elements['pokename'].value=="ãƒ­ãƒˆãƒ (ãƒ’ãƒ¼ãƒˆ")||
+		(document.nForm.elements['pokename'].value=="ãƒ­ãƒˆãƒ (ã‚«ãƒƒãƒˆ)")||
+		(document.nForm.elements['pokename'].value=="ãƒ­ãƒˆãƒ (ã‚¹ãƒ”ãƒ³)")||
+		(document.nForm.elements['pokename'].value=="ãƒ­ãƒˆãƒ (ãƒ•ãƒ­ã‚¹ãƒˆ)")||
+		(document.nForm.elements['pokename'].value=="ãƒ­ãƒˆãƒ (ã‚¦ã‚©ãƒƒã‚·ãƒ¥)")||
+		(document.nForm.elements['pokename'].value=="ãƒ­ãƒˆãƒ (FC)")){
 		if(parseInt(num)==0){
- 			document.nForm.elements['pokename'].value="ƒƒgƒ€(ƒm[ƒ}ƒ‹)";
+ 			document.nForm.elements['pokename'].value="ãƒ­ãƒˆãƒ (ãƒãƒ¼ãƒãƒ«)";
  		}else if(parseInt(num)==1){
- 			document.nForm.elements['pokename'].value="ƒƒgƒ€(FC)";
+ 			document.nForm.elements['pokename'].value="ãƒ­ãƒˆãƒ (FC)";
  		}
- 	}else if((document.nForm.elements['pokename'].value=="ƒŠƒU[ƒhƒ“")||
-		(document.nForm.elements['pokename'].value=="ƒƒKƒŠƒU[ƒhƒ“X")||
-		(document.nForm.elements['pokename'].value=="ƒƒKƒŠƒU[ƒhƒ“Y")){
+ 	}else if((document.nForm.elements['pokename'].value=="ãƒªã‚¶ãƒ¼ãƒ‰ãƒ³")||
+		(document.nForm.elements['pokename'].value=="ãƒ¡ã‚¬ãƒªã‚¶ãƒ¼ãƒ‰ãƒ³X")||
+		(document.nForm.elements['pokename'].value=="ãƒ¡ã‚¬ãƒªã‚¶ãƒ¼ãƒ‰ãƒ³Y")){
 		if(parseInt(num)==0){
- 			document.nForm.elements['pokename'].value="ƒŠƒU[ƒhƒ“";
+ 			document.nForm.elements['pokename'].value="ãƒªã‚¶ãƒ¼ãƒ‰ãƒ³";
  		}else if(parseInt(num)==1){
- 			document.nForm.elements['pokename'].value="ƒƒKƒŠƒU[ƒhƒ“X";
+ 			document.nForm.elements['pokename'].value="ãƒ¡ã‚¬ãƒªã‚¶ãƒ¼ãƒ‰ãƒ³X";
  		}else if(parseInt(num)==2){
- 			document.nForm.elements['pokename'].value="ƒƒKƒŠƒU[ƒhƒ“Y";
+ 			document.nForm.elements['pokename'].value="ãƒ¡ã‚¬ãƒªã‚¶ãƒ¼ãƒ‰ãƒ³Y";
  		}
-	}else if((document.nForm.elements['pokename'].value=="ƒ~ƒ…ƒEƒc[")||
-		(document.nForm.elements['pokename'].value=="ƒƒKƒ~ƒ…ƒEƒc[X")||
-		(document.nForm.elements['pokename'].value=="ƒƒKƒ~ƒ…ƒEƒc[Y")){
+	}else if((document.nForm.elements['pokename'].value=="ãƒŸãƒ¥ã‚¦ãƒ„ãƒ¼")||
+		(document.nForm.elements['pokename'].value=="ãƒ¡ã‚¬ãƒŸãƒ¥ã‚¦ãƒ„ãƒ¼X")||
+		(document.nForm.elements['pokename'].value=="ãƒ¡ã‚¬ãƒŸãƒ¥ã‚¦ãƒ„ãƒ¼Y")){
 		if(parseInt(num)==0){
- 			document.nForm.elements['pokename'].value="ƒ~ƒ…ƒEƒc[";
+ 			document.nForm.elements['pokename'].value="ãƒŸãƒ¥ã‚¦ãƒ„ãƒ¼";
  		}else if(parseInt(num)==1){
- 			document.nForm.elements['pokename'].value="ƒƒKƒ~ƒ…ƒEƒc[X";
+ 			document.nForm.elements['pokename'].value="ãƒ¡ã‚¬ãƒŸãƒ¥ã‚¦ãƒ„ãƒ¼X";
  		}else if(parseInt(num)==2){
- 			document.nForm.elements['pokename'].value="ƒƒKƒ~ƒ…ƒEƒc[Y";
+ 			document.nForm.elements['pokename'].value="ãƒ¡ã‚¬ãƒŸãƒ¥ã‚¦ãƒ„ãƒ¼Y";
  		}
 	}else if(
-	(document.nForm.elements['pokename'].value=="ƒtƒVƒMƒoƒi")||(document.nForm.elements['pokename'].value=="ƒƒKƒtƒVƒMƒoƒi")||
-	(document.nForm.elements['pokename'].value=="ƒŠƒU[ƒhƒ“")||(document.nForm.elements['pokename'].value=="ƒƒKƒŠƒU[ƒhƒ“‚w")||(document.nForm.elements['pokename'].value=="ƒƒKƒŠƒU[ƒhƒ“‚x")||
-	(document.nForm.elements['pokename'].value=="ƒJƒƒbƒNƒX")||(document.nForm.elements['pokename'].value=="ƒƒKƒJƒƒbƒNƒX")||
-	(document.nForm.elements['pokename'].value=="ƒt[ƒfƒBƒ“")||(document.nForm.elements['pokename'].value=="ƒƒKƒt[ƒfƒBƒ“")||
-	(document.nForm.elements['pokename'].value=="ƒQƒ“ƒK[")||(document.nForm.elements['pokename'].value=="ƒƒKƒQƒ“ƒK[")||
-	(document.nForm.elements['pokename'].value=="ƒKƒ‹[ƒ‰")||(document.nForm.elements['pokename'].value=="ƒƒKƒKƒ‹[ƒ‰")||
-	(document.nForm.elements['pokename'].value=="ƒJƒCƒƒX")||(document.nForm.elements['pokename'].value=="ƒƒKƒJƒCƒƒX")||
-	(document.nForm.elements['pokename'].value=="ƒMƒƒƒ‰ƒhƒX")||(document.nForm.elements['pokename'].value=="ƒƒKƒMƒƒƒ‰ƒhƒX")||
-	(document.nForm.elements['pokename'].value=="ƒvƒeƒ‰")||(document.nForm.elements['pokename'].value=="ƒƒKƒvƒeƒ‰")||
-	(document.nForm.elements['pokename'].value=="ƒ~ƒ…ƒEƒc[")||(document.nForm.elements['pokename'].value=="ƒƒKƒ~ƒ…ƒEƒc[‚w")||(document.nForm.elements['pokename'].value=="ƒƒKƒ~ƒ…ƒEƒc[‚x")||
-	(document.nForm.elements['pokename'].value=="ƒfƒ“ƒŠƒ…ƒE")||(document.nForm.elements['pokename'].value=="ƒƒKƒfƒ“ƒŠƒ…ƒE")||
-	(document.nForm.elements['pokename'].value=="ƒnƒbƒTƒ€")||(document.nForm.elements['pokename'].value=="ƒƒKƒnƒbƒTƒ€")||
-	(document.nForm.elements['pokename'].value=="ƒwƒ‰ƒNƒƒX")||(document.nForm.elements['pokename'].value=="ƒƒKƒwƒ‰ƒNƒƒX")||
-	(document.nForm.elements['pokename'].value=="ƒwƒ‹ƒK[")||(document.nForm.elements['pokename'].value=="ƒƒKƒwƒ‹ƒK[")||
-	(document.nForm.elements['pokename'].value=="ƒoƒ“ƒMƒ‰ƒX")||(document.nForm.elements['pokename'].value=="ƒoƒ“ƒMƒ‰ƒX")||
-	(document.nForm.elements['pokename'].value=="ƒoƒVƒƒ[ƒ‚")||(document.nForm.elements['pokename'].value=="ƒƒKƒoƒVƒƒ[ƒ‚")||
-	(document.nForm.elements['pokename'].value=="ƒT[ƒiƒCƒg")||(document.nForm.elements['pokename'].value=="ƒƒKƒT[ƒiƒCƒg")||
-	(document.nForm.elements['pokename'].value=="ƒNƒ`[ƒg")||(document.nForm.elements['pokename'].value=="ƒƒKƒNƒ`[ƒg")||
-	(document.nForm.elements['pokename'].value=="ƒ{ƒXƒSƒhƒ‰")||(document.nForm.elements['pokename'].value=="ƒƒKƒ{ƒXƒSƒhƒ‰")||
-	(document.nForm.elements['pokename'].value=="ƒ`ƒƒ[ƒŒƒ€")||(document.nForm.elements['pokename'].value=="ƒƒKƒ`ƒƒ[ƒŒƒ€")||
-	(document.nForm.elements['pokename'].value=="ƒWƒ…ƒyƒbƒ^")||(document.nForm.elements['pokename'].value=="ƒƒKƒWƒ…ƒyƒbƒ^")||
-	(document.nForm.elements['pokename'].value=="ƒAƒuƒ\ƒ‹")||(document.nForm.elements['pokename'].value=="ƒƒKƒAƒuƒ\ƒ‹")||
-	(document.nForm.elements['pokename'].value=="ƒKƒuƒŠƒAƒX")||(document.nForm.elements['pokename'].value=="ƒƒKƒKƒuƒŠƒAƒX")||
-	(document.nForm.elements['pokename'].value=="ƒ‹ƒJƒŠƒI")||(document.nForm.elements['pokename'].value=="ƒƒKƒ‹ƒJƒŠƒI")||
-	(document.nForm.elements['pokename'].value=="ƒ†ƒLƒmƒI[")||(document.nForm.elements['pokename'].value=="ƒƒKƒ†ƒLƒmƒI[")||
-	(document.nForm.elements['pokename'].value=="ƒXƒsƒA[")||(document.nForm.elements['pokename'].value=="ƒƒKƒXƒsƒA[")||
-	(document.nForm.elements['pokename'].value=="ƒsƒWƒ‡ƒbƒg")||(document.nForm.elements['pokename'].value=="ƒƒKƒsƒWƒ‡ƒbƒg")||
-	(document.nForm.elements['pokename'].value=="ƒ„ƒhƒ‰ƒ“")||(document.nForm.elements['pokename'].value=="ƒƒKƒ„ƒhƒ‰ƒ“")||
-	(document.nForm.elements['pokename'].value=="ƒnƒKƒl[ƒ‹")||(document.nForm.elements['pokename'].value=="ƒƒKƒnƒKƒl[ƒ‹")||
-	(document.nForm.elements['pokename'].value=="ƒWƒ…ƒJƒCƒ“")||(document.nForm.elements['pokename'].value=="ƒƒKƒWƒ…ƒJƒCƒ“")||
-	(document.nForm.elements['pokename'].value=="ƒ‰ƒOƒ‰[ƒW")||(document.nForm.elements['pokename'].value=="ƒƒKƒ‰ƒOƒ‰[ƒW")||
-	(document.nForm.elements['pokename'].value=="ƒ„ƒ~ƒ‰ƒ~")||(document.nForm.elements['pokename'].value=="ƒƒKƒ„ƒ~ƒ‰ƒ~")||
-	(document.nForm.elements['pokename'].value=="ƒTƒƒnƒ_[")||(document.nForm.elements['pokename'].value=="ƒƒKƒTƒƒnƒ_[")||
-	(document.nForm.elements['pokename'].value=="ƒoƒN[ƒ_")||(document.nForm.elements['pokename'].value=="ƒƒKƒoƒN[ƒ_")||
-	(document.nForm.elements['pokename'].value=="ƒ`ƒ‹ƒ^ƒŠƒX")||(document.nForm.elements['pokename'].value=="ƒƒKƒ`ƒ‹ƒ^ƒŠƒX")||
-	(document.nForm.elements['pokename'].value=="ƒIƒjƒS[ƒŠ")||(document.nForm.elements['pokename'].value=="ƒƒKƒIƒjƒS[ƒŠ")||
-	(document.nForm.elements['pokename'].value=="ƒ{[ƒ}ƒ“ƒ_")||(document.nForm.elements['pokename'].value=="ƒƒKƒ{[ƒ}ƒ“ƒ_")||
-	(document.nForm.elements['pokename'].value=="ƒƒ^ƒOƒƒX")||(document.nForm.elements['pokename'].value=="ƒƒKƒƒ^ƒOƒƒX")||
-	(document.nForm.elements['pokename'].value=="ƒ‰ƒeƒBƒAƒX")||(document.nForm.elements['pokename'].value=="ƒƒKƒ‰ƒeƒBƒAƒX")||
-	(document.nForm.elements['pokename'].value=="ƒ‰ƒeƒBƒIƒX")||(document.nForm.elements['pokename'].value=="ƒƒKƒ‰ƒeƒBƒIƒX")||
-	(document.nForm.elements['pokename'].value=="ƒŒƒbƒNƒEƒU")||(document.nForm.elements['pokename'].value=="ƒƒKƒŒƒbƒNƒEƒU")||
-	(document.nForm.elements['pokename'].value=="ƒ~ƒ~ƒƒbƒv")||(document.nForm.elements['pokename'].value=="ƒƒKƒ~ƒ~ƒƒbƒv")||
-	(document.nForm.elements['pokename'].value=="ƒGƒ‹ƒŒƒCƒh")||(document.nForm.elements['pokename'].value=="ƒƒKƒGƒ‹ƒŒƒCƒh")||
-	(document.nForm.elements['pokename'].value=="ƒ^ƒuƒ“ƒl")||(document.nForm.elements['pokename'].value=="ƒƒKƒ^ƒuƒ“ƒl")||
-	(document.nForm.elements['pokename'].value=="ƒfƒBƒAƒ“ƒV[")||(document.nForm.elements['pokename'].value=="ƒfƒBƒAƒ“ƒV[")){
+	(document.nForm.elements['pokename'].value=="ãƒ•ã‚·ã‚®ãƒãƒŠ")||(document.nForm.elements['pokename'].value=="ãƒ¡ã‚¬ãƒ•ã‚·ã‚®ãƒãƒŠ")||
+	(document.nForm.elements['pokename'].value=="ãƒªã‚¶ãƒ¼ãƒ‰ãƒ³")||(document.nForm.elements['pokename'].value=="ãƒ¡ã‚¬ãƒªã‚¶ãƒ¼ãƒ‰ãƒ³ï¼¸")||(document.nForm.elements['pokename'].value=="ãƒ¡ã‚¬ãƒªã‚¶ãƒ¼ãƒ‰ãƒ³ï¼¹")||
+	(document.nForm.elements['pokename'].value=="ã‚«ãƒ¡ãƒƒã‚¯ã‚¹")||(document.nForm.elements['pokename'].value=="ãƒ¡ã‚¬ã‚«ãƒ¡ãƒƒã‚¯ã‚¹")||
+	(document.nForm.elements['pokename'].value=="ãƒ•ãƒ¼ãƒ‡ã‚£ãƒ³")||(document.nForm.elements['pokename'].value=="ãƒ¡ã‚¬ãƒ•ãƒ¼ãƒ‡ã‚£ãƒ³")||
+	(document.nForm.elements['pokename'].value=="ã‚²ãƒ³ã‚¬ãƒ¼")||(document.nForm.elements['pokename'].value=="ãƒ¡ã‚¬ã‚²ãƒ³ã‚¬ãƒ¼")||
+	(document.nForm.elements['pokename'].value=="ã‚¬ãƒ«ãƒ¼ãƒ©")||(document.nForm.elements['pokename'].value=="ãƒ¡ã‚¬ã‚¬ãƒ«ãƒ¼ãƒ©")||
+	(document.nForm.elements['pokename'].value=="ã‚«ã‚¤ãƒ­ã‚¹")||(document.nForm.elements['pokename'].value=="ãƒ¡ã‚¬ã‚«ã‚¤ãƒ­ã‚¹")||
+	(document.nForm.elements['pokename'].value=="ã‚®ãƒ£ãƒ©ãƒ‰ã‚¹")||(document.nForm.elements['pokename'].value=="ãƒ¡ã‚¬ã‚®ãƒ£ãƒ©ãƒ‰ã‚¹")||
+	(document.nForm.elements['pokename'].value=="ãƒ—ãƒ†ãƒ©")||(document.nForm.elements['pokename'].value=="ãƒ¡ã‚¬ãƒ—ãƒ†ãƒ©")||
+	(document.nForm.elements['pokename'].value=="ãƒŸãƒ¥ã‚¦ãƒ„ãƒ¼")||(document.nForm.elements['pokename'].value=="ãƒ¡ã‚¬ãƒŸãƒ¥ã‚¦ãƒ„ãƒ¼ï¼¸")||(document.nForm.elements['pokename'].value=="ãƒ¡ã‚¬ãƒŸãƒ¥ã‚¦ãƒ„ãƒ¼ï¼¹")||
+	(document.nForm.elements['pokename'].value=="ãƒ‡ãƒ³ãƒªãƒ¥ã‚¦")||(document.nForm.elements['pokename'].value=="ãƒ¡ã‚¬ãƒ‡ãƒ³ãƒªãƒ¥ã‚¦")||
+	(document.nForm.elements['pokename'].value=="ãƒãƒƒã‚µãƒ ")||(document.nForm.elements['pokename'].value=="ãƒ¡ã‚¬ãƒãƒƒã‚µãƒ ")||
+	(document.nForm.elements['pokename'].value=="ãƒ˜ãƒ©ã‚¯ãƒ­ã‚¹")||(document.nForm.elements['pokename'].value=="ãƒ¡ã‚¬ãƒ˜ãƒ©ã‚¯ãƒ­ã‚¹")||
+	(document.nForm.elements['pokename'].value=="ãƒ˜ãƒ«ã‚¬ãƒ¼")||(document.nForm.elements['pokename'].value=="ãƒ¡ã‚¬ãƒ˜ãƒ«ã‚¬ãƒ¼")||
+	(document.nForm.elements['pokename'].value=="ãƒãƒ³ã‚®ãƒ©ã‚¹")||(document.nForm.elements['pokename'].value=="ãƒãƒ³ã‚®ãƒ©ã‚¹")||
+	(document.nForm.elements['pokename'].value=="ãƒã‚·ãƒ£ãƒ¼ãƒ¢")||(document.nForm.elements['pokename'].value=="ãƒ¡ã‚¬ãƒã‚·ãƒ£ãƒ¼ãƒ¢")||
+	(document.nForm.elements['pokename'].value=="ã‚µãƒ¼ãƒŠã‚¤ãƒˆ")||(document.nForm.elements['pokename'].value=="ãƒ¡ã‚¬ã‚µãƒ¼ãƒŠã‚¤ãƒˆ")||
+	(document.nForm.elements['pokename'].value=="ã‚¯ãƒãƒ¼ãƒˆ")||(document.nForm.elements['pokename'].value=="ãƒ¡ã‚¬ã‚¯ãƒãƒ¼ãƒˆ")||
+	(document.nForm.elements['pokename'].value=="ãƒœã‚¹ã‚´ãƒ‰ãƒ©")||(document.nForm.elements['pokename'].value=="ãƒ¡ã‚¬ãƒœã‚¹ã‚´ãƒ‰ãƒ©")||
+	(document.nForm.elements['pokename'].value=="ãƒãƒ£ãƒ¼ãƒ¬ãƒ ")||(document.nForm.elements['pokename'].value=="ãƒ¡ã‚¬ãƒãƒ£ãƒ¼ãƒ¬ãƒ ")||
+	(document.nForm.elements['pokename'].value=="ã‚¸ãƒ¥ãƒšãƒƒã‚¿")||(document.nForm.elements['pokename'].value=="ãƒ¡ã‚¬ã‚¸ãƒ¥ãƒšãƒƒã‚¿")||
+	(document.nForm.elements['pokename'].value=="ã‚¢ãƒ–ã‚½ãƒ«")||(document.nForm.elements['pokename'].value=="ãƒ¡ã‚¬ã‚¢ãƒ–ã‚½ãƒ«")||
+	(document.nForm.elements['pokename'].value=="ã‚¬ãƒ–ãƒªã‚¢ã‚¹")||(document.nForm.elements['pokename'].value=="ãƒ¡ã‚¬ã‚¬ãƒ–ãƒªã‚¢ã‚¹")||
+	(document.nForm.elements['pokename'].value=="ãƒ«ã‚«ãƒªã‚ª")||(document.nForm.elements['pokename'].value=="ãƒ¡ã‚¬ãƒ«ã‚«ãƒªã‚ª")||
+	(document.nForm.elements['pokename'].value=="ãƒ¦ã‚­ãƒã‚ªãƒ¼")||(document.nForm.elements['pokename'].value=="ãƒ¡ã‚¬ãƒ¦ã‚­ãƒã‚ªãƒ¼")||
+	(document.nForm.elements['pokename'].value=="ã‚¹ãƒ”ã‚¢ãƒ¼")||(document.nForm.elements['pokename'].value=="ãƒ¡ã‚¬ã‚¹ãƒ”ã‚¢ãƒ¼")||
+	(document.nForm.elements['pokename'].value=="ãƒ”ã‚¸ãƒ§ãƒƒãƒˆ")||(document.nForm.elements['pokename'].value=="ãƒ¡ã‚¬ãƒ”ã‚¸ãƒ§ãƒƒãƒˆ")||
+	(document.nForm.elements['pokename'].value=="ãƒ¤ãƒ‰ãƒ©ãƒ³")||(document.nForm.elements['pokename'].value=="ãƒ¡ã‚¬ãƒ¤ãƒ‰ãƒ©ãƒ³")||
+	(document.nForm.elements['pokename'].value=="ãƒã‚¬ãƒãƒ¼ãƒ«")||(document.nForm.elements['pokename'].value=="ãƒ¡ã‚¬ãƒã‚¬ãƒãƒ¼ãƒ«")||
+	(document.nForm.elements['pokename'].value=="ã‚¸ãƒ¥ã‚«ã‚¤ãƒ³")||(document.nForm.elements['pokename'].value=="ãƒ¡ã‚¬ã‚¸ãƒ¥ã‚«ã‚¤ãƒ³")||
+	(document.nForm.elements['pokename'].value=="ãƒ©ã‚°ãƒ©ãƒ¼ã‚¸")||(document.nForm.elements['pokename'].value=="ãƒ¡ã‚¬ãƒ©ã‚°ãƒ©ãƒ¼ã‚¸")||
+	(document.nForm.elements['pokename'].value=="ãƒ¤ãƒŸãƒ©ãƒŸ")||(document.nForm.elements['pokename'].value=="ãƒ¡ã‚¬ãƒ¤ãƒŸãƒ©ãƒŸ")||
+	(document.nForm.elements['pokename'].value=="ã‚µãƒ¡ãƒãƒ€ãƒ¼")||(document.nForm.elements['pokename'].value=="ãƒ¡ã‚¬ã‚µãƒ¡ãƒãƒ€ãƒ¼")||
+	(document.nForm.elements['pokename'].value=="ãƒã‚¯ãƒ¼ãƒ€")||(document.nForm.elements['pokename'].value=="ãƒ¡ã‚¬ãƒã‚¯ãƒ¼ãƒ€")||
+	(document.nForm.elements['pokename'].value=="ãƒãƒ«ã‚¿ãƒªã‚¹")||(document.nForm.elements['pokename'].value=="ãƒ¡ã‚¬ãƒãƒ«ã‚¿ãƒªã‚¹")||
+	(document.nForm.elements['pokename'].value=="ã‚ªãƒ‹ã‚´ãƒ¼ãƒª")||(document.nForm.elements['pokename'].value=="ãƒ¡ã‚¬ã‚ªãƒ‹ã‚´ãƒ¼ãƒª")||
+	(document.nForm.elements['pokename'].value=="ãƒœãƒ¼ãƒãƒ³ãƒ€")||(document.nForm.elements['pokename'].value=="ãƒ¡ã‚¬ãƒœãƒ¼ãƒãƒ³ãƒ€")||
+	(document.nForm.elements['pokename'].value=="ãƒ¡ã‚¿ã‚°ãƒ­ã‚¹")||(document.nForm.elements['pokename'].value=="ãƒ¡ã‚¬ãƒ¡ã‚¿ã‚°ãƒ­ã‚¹")||
+	(document.nForm.elements['pokename'].value=="ãƒ©ãƒ†ã‚£ã‚¢ã‚¹")||(document.nForm.elements['pokename'].value=="ãƒ¡ã‚¬ãƒ©ãƒ†ã‚£ã‚¢ã‚¹")||
+	(document.nForm.elements['pokename'].value=="ãƒ©ãƒ†ã‚£ã‚ªã‚¹")||(document.nForm.elements['pokename'].value=="ãƒ¡ã‚¬ãƒ©ãƒ†ã‚£ã‚ªã‚¹")||
+	(document.nForm.elements['pokename'].value=="ãƒ¬ãƒƒã‚¯ã‚¦ã‚¶")||(document.nForm.elements['pokename'].value=="ãƒ¡ã‚¬ãƒ¬ãƒƒã‚¯ã‚¦ã‚¶")||
+	(document.nForm.elements['pokename'].value=="ãƒŸãƒŸãƒ­ãƒƒãƒ—")||(document.nForm.elements['pokename'].value=="ãƒ¡ã‚¬ãƒŸãƒŸãƒ­ãƒƒãƒ—")||
+	(document.nForm.elements['pokename'].value=="ã‚¨ãƒ«ãƒ¬ã‚¤ãƒ‰")||(document.nForm.elements['pokename'].value=="ãƒ¡ã‚¬ã‚¨ãƒ«ãƒ¬ã‚¤ãƒ‰")||
+	(document.nForm.elements['pokename'].value=="ã‚¿ãƒ–ãƒ³ãƒ")||(document.nForm.elements['pokename'].value=="ãƒ¡ã‚¬ã‚¿ãƒ–ãƒ³ãƒ")||
+	(document.nForm.elements['pokename'].value=="ãƒ‡ã‚£ã‚¢ãƒ³ã‚·ãƒ¼")||(document.nForm.elements['pokename'].value=="ãƒ‡ã‚£ã‚¢ãƒ³ã‚·ãƒ¼")){
 		if(parseInt(num)==0){
-			var index = document.nForm.elements['pokename'].value.indexOf("ƒƒK");
+			var index = document.nForm.elements['pokename'].value.indexOf("ãƒ¡ã‚¬");
 			if(index != -1){
- 				document.nForm.elements['pokename'].value = document.nForm.elements['pokename'].value.replace(/ƒƒK/g,"");
+ 				document.nForm.elements['pokename'].value = document.nForm.elements['pokename'].value.replace(/ãƒ¡ã‚¬/g,"");
  			}
  		}else if(parseInt(num)==1){
- 			var index = document.nForm.elements['pokename'].value.indexOf("ƒƒK");
+ 			var index = document.nForm.elements['pokename'].value.indexOf("ãƒ¡ã‚¬");
  			if(index == -1){
- 				document.nForm.elements['pokename'].value="ƒƒK"+ document.nForm.elements['pokename'].value;
+ 				document.nForm.elements['pokename'].value="ãƒ¡ã‚¬"+ document.nForm.elements['pokename'].value;
  			}
  		}
 	}
