@@ -84,7 +84,7 @@ function ncalc(num){
 function dcalc(num){
 	n = document.nForm.elements[nn[num]].value;
 	
-	if(n%11==10){
+	if((n%11==10) && (num!=0)){
 		if(document.nForm.elements[chup[num]].checked == true){
 			if(parseInt(n) >= parseInt(nnn)){
 				n = parseInt(n)+1;
