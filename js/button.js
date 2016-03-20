@@ -199,9 +199,10 @@ function visi(num){
 		document.nForm.elements['mega1'].style.visibility="visible";
 		document.nForm.elements['mega2'].style.visibility="visible";
 		document.nForm.elements['mega3'].style.visibility="visible";
-		document.nForm.elements['mega0'].style.width = 70;
-		document.nForm.elements['mega1'].style.width = 70;
-		document.nForm.elements['mega2'].style.width = 70;
+		document.nForm.elements['mega0'].style.width = 60;
+		document.nForm.elements['mega1'].style.width = 60;
+		document.nForm.elements['mega2'].style.width = 60;
+		document.nForm.elements['mega3'].style.width = 60;
 	}else if(num == 5){
 		document.nForm.elements['mega0'].style.visibility="visible";
 		document.nForm.elements['mega1'].style.visibility="visible";
@@ -214,9 +215,10 @@ function visi(num){
 		document.nForm.elements['mega1'].style.visibility="visible";
 		document.nForm.elements['mega2'].style.visibility="visible";
 		document.nForm.elements['mega3'].style.visibility="visible";
-		document.nForm.elements['mega0'].style.width = 70;
-		document.nForm.elements['mega1'].style.width = 70;
+		document.nForm.elements['mega0'].style.width = 60;
+		document.nForm.elements['mega1'].style.width = 60;
 		document.nForm.elements['mega2'].style.width = 80;
+		document.nForm.elements['mega3'].style.width = 60;
 	}
 }
 

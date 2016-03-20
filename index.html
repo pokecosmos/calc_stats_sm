@@ -16,21 +16,18 @@ nn = new Array("n0","n1","n2","n3","n4","n5");
 sn = new Array("s0","s1","s2","s3","s4","s5","s6");
 dn = new Array("d0","d1","d2","d3","d4","d5","d6");
 kn = new Array("k0","k1","k2","k3","k4","k5");
-
 var nnn = 175;
-
  -->
 </script>
 
 </head>
 
 <body onclick="moji()">
-<font size="5" color="#87CEEB">ポケモンステータス計算機</font></br></br>
+<font size="5" color="#87CEEB" face="ＭＳ Ｐ明朝,ＭＳ 明朝">ポケモンステータス計算機</font></br></br>
 <form name="nForm">
 <table border="0">
-<tr><td></td><td colspan="2">ポケモン名</td></tr>
 <tr><td></td><td colspan="2"><input type="search" name = "pokename" class="name" value="" autocomplete="off" list="combolist" placeholder="ポケモン名" onKeyUp="pokeserach();setpokemon()" onblur="setpokemon()" onclick="setpokemon()">
-<td  colspan="6"><input type="button" class="mega" name="mega0" value="通常" onclick="megachange(0)" visibility="hidden">
+<td  colspan="7"><input type="button" class="mega" name="mega0" value="通常" onclick="megachange(0)" visibility="hidden">
 <input type="button" class="mega" name="mega1" value="メガ" onclick="megachange(1)"> 
 <input type="button" class="mega" name="mega2" value="通常" onclick="megachange(2)"> 
 <input type="button" class="mega" name="mega3" value="通常" onclick="megachange(3)">
@@ -60,12 +57,12 @@ for(i=0; i<6; i++){
 	document.write("<input type=\"number\" name = \"" + sn[i] + "\" value=\"100\" min=\"1\" max=\"999\" step=\"1\" onclick=\"ssum();ncalc("+ i +")\" onblur=\"ssum();ncalc("+ i +")\"></td><td>");
 	document.write("<input type=\"number\" name = \"" + kn[i] + "\" value=\"31\" min=\"0\" max=\"31\" step=\"1\"  onclick=\"ncalc("+ i +")\" onblur=\"ncalc("+ i +")\"></td><td>");
 	document.write("<input type=\"button\" class=\"button\" value =\"0\" onclick=\"setvalue('"+ kn[i] +"' ,0);ncalc("+ i +")\">");
-	document.write("<input type=\"button\" class=\"button\" value =\"31\" onclick=\"setvalue('"+ kn[i] +"' ,31);ncalc("+ i +")\"></td><td align=\"center\">");
+	document.write("<input type=\"button\" class=\"button\" value =\"31\" onclick=\"setvalue('"+ kn[i] +"' ,31);ncalc("+ i +")\"></td>");
 	if(i==0){
-		document.write("+</td><td align=\"center\">-");
+		document.write("<td bgcolor=\"#FF97C2\" align=\"center\">＋</td><td bgcolor=\"#8EB8FF\" align=\"center\">－");
 	}else{
-		document.write("<input type=\"checkbox\" name = \""+ chup[i] +"\" class=\"check\" onclick=\"unchk1("+ i +");dcalc("+ i +")\"></td><td>" );
-		document.write("<input type=\"checkbox\" name = \""+ chdw[i] +"\" class=\"check\" onclick=\"unchk2("+ i +");dcalc("+ i +")\">" );
+		document.write("<td bgcolor=\"#FFBEDA\" align=\"center\"><input type=\"checkbox\" name = \""+ chup[i] +"\" class=\"check\" onclick=\"unchk1("+ i +");dcalc("+ i +")\"></td>" );
+		document.write("<td bgcolor=\"#BAD3FF\"><input type=\"checkbox\" name = \""+ chdw[i] +"\" class=\"check\" onclick=\"unchk2("+ i +");dcalc("+ i +")\">" );
 	}
 	if(i<5){
 		document.write("</td></tr>");
@@ -80,17 +77,17 @@ document.close();
 </table>
 </form>
 <hr/>
-<input type="text" class="memo" placeholder="メモ欄"><br/>
+<textarea placeholder="メモ欄" rows="3" cols="100"></textarea><hr/>
 性格、努力値などからポケモンの能力値を求められます。<br/>
 能力値から必要な努力値を逆算することもできます。<br/>
-<br/>
 メガシンカ、フォルムチェンジはボタンで切り替えられます。<br/>
 例：ボルトロスと入力すると化身、霊獣ボタンが表示され、押すと切り替えられます。<br/>
 <br/>
 オメガルビー、アルファサファイアのポケモンに対応<br/>
 Chrome、FireFox推奨<br/>
-
-
+<br/>
+制作者 @poke_cosmos<br/>
+<br/><br/>
 <datalist id="combolist">
 <div id="list">
 <option value="アイアント"></option>
