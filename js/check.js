@@ -1,4 +1,4 @@
-//ƒ`ƒFƒbƒN‚ğŠO‚·
+//ãƒã‚§ãƒƒã‚¯ã‚’å¤–ã™
 function unchk1(num){
 	for(i=1; i<6; i++) {
 		if(i != parseInt(num)){
@@ -23,11 +23,11 @@ function unchk2(num){
     	}
   	}
 }
-//ƒ{ƒ^ƒ“‚Å”’l‘ã“ü
+//ãƒœã‚¿ãƒ³ã§æ•°å€¤ä»£å…¥
 function setvalue(elm,num){
 	document.nForm.elements[elm].value = parseInt(num);
 }
-//¥ƒ{ƒ^ƒ“‚Å”\—Í’l‚Ì‘Œ¸
+//â–¼ãƒœã‚¿ãƒ³ã§èƒ½åŠ›å€¤ã®å¢—æ¸›
 function nchange(num1, num2){
 	n = parseInt(document.nForm.elements[nn[num1]].value);
 	if(parseInt(num2)==0){
@@ -42,7 +42,7 @@ function nchange(num1, num2){
 	}
 	document.nForm.elements[nn[num1]].value = n;
 }
-//¥ƒ{ƒ^ƒ“‚Å’l‚Ì“w—Í’l‚Ì‘Œ¸
+//â–¼ãƒœã‚¿ãƒ³ã§å€¤ã®åŠªåŠ›å€¤ã®å¢—æ¸›
 function dchange(num1, num2){
 	n = parseInt(document.nForm.elements[dn[num1]].value);
 	if(parseInt(num2)==0){
@@ -57,7 +57,7 @@ function dchange(num1, num2){
 	}
 	document.nForm.elements[dn[num1]].value = n;
 }
-//”\—Í’l‚ğŒvZ‚·‚é
+//èƒ½åŠ›å€¤ã‚’è¨ˆç®—ã™ã‚‹
 function ncalc(num){
 	n = parseInt(document.nForm.elements[dn[num]].value);
 	if(n > 252){
@@ -68,9 +68,9 @@ function ncalc(num){
 	n = Math.floor(n / 4);
 	n += parseInt(document.nForm.elements[sn[num]].value) * 2 + parseInt(document.nForm.elements[kn[num]].value);
 	n = Math.floor(n * parseInt(document.nForm.elements['L0'].value) / 100);
-	if(num == 0){//H”\—Í’l‚ÌŒvZ
+	if(num == 0){//Hèƒ½åŠ›å€¤ã®è¨ˆç®—
 		n += 10 + parseInt(document.nForm.elements['L0'].value);
-	}else{//ABCDS”\—Í’l‚ÌŒvZ
+	}else{//ABCDSèƒ½åŠ›å€¤ã®è¨ˆç®—
 		n += 5;
 		if(document.nForm.elements[chup[parseInt(num)]].checked == true){
 			n = Math.floor(n*1.1);
@@ -80,7 +80,7 @@ function ncalc(num){
 	}
 	document.nForm.elements[nn[num]].value=n;
 }
-//“w—Í’l‚ğ‹tZ‚·‚é
+//åŠªåŠ›å€¤ã‚’é€†ç®—ã™ã‚‹
 function dcalc(num){
 	n = document.nForm.elements[nn[num]].value;
 	
@@ -121,7 +121,7 @@ function dcalc(num){
 	}
 	dsum();
 }
-//c‚è“w—Í’l‚Ì‡Œv‚ğŒvZ‚·‚é
+//æ®‹ã‚ŠåŠªåŠ›å€¤ã®åˆè¨ˆã‚’è¨ˆç®—ã™ã‚‹
 function dsum(){
 	n = 510;
 	for(i=0; i<6; i++){
@@ -136,7 +136,7 @@ function dsum(){
 	}
 	
 }
-//ƒXƒe[ƒ^ƒX‚ğƒeƒLƒXƒgƒ{ƒbƒNƒXŠO‚É•\¦‚·‚é
+//ã‚¹ãƒ†ãƒ¼ã‚¿ã‚¹ã‚’ãƒ†ã‚­ã‚¹ãƒˆãƒœãƒƒã‚¯ã‚¹å¤–ã«è¡¨ç¤ºã™ã‚‹
 function moji(){
 	document.getElementById('targetText').innerHTML =document.nForm.elements['pokename'].value;
 	for(i=1; i<6; i++){
@@ -152,72 +152,72 @@ function moji(){
 	switch(i){
 		case 1:
 			if(j == 2){
-				document.getElementById('targetText').innerHTML +=" ‚³‚İ‚µ‚ª‚è ";
+				document.getElementById('targetText').innerHTML +=" ã•ã¿ã—ãŒã‚Š ";
 			}else if(j == 3){
-				document.getElementById('targetText').innerHTML +=" ‚¢‚¶‚Á‚Ï‚è ";
+				document.getElementById('targetText').innerHTML +=" ã„ã˜ãƒ»ï¾ã‚Š ";
 			}else if(j == 4){
-				document.getElementById('targetText').innerHTML +=" ‚â‚ñ‚¿‚á ";
+				document.getElementById('targetText').innerHTML +=" ã‚„ã‚“ã¡ã‚ƒ ";
 			}else if(j == 5){
-				document.getElementById('targetText').innerHTML +=" ‚ä‚¤‚©‚ñ ";
+				document.getElementById('targetText').innerHTML +=" ã‚†ã†ã‹ã‚“ ";
 			}else{
 				document.getElementById('targetText').innerHTML +=" ??? ";
 			}
 			break
 		case 2:
 			if(j == 1){
-				document.getElementById('targetText').innerHTML +=" ‚¸‚Ô‚Æ‚¢ ";
+				document.getElementById('targetText').innerHTML +=" ãšã¶ã¨ã„ ";
 			}else if(j == 3){
-				document.getElementById('targetText').innerHTML +=" ‚í‚ñ‚Ï‚­ ";
+				document.getElementById('targetText').innerHTML +=" ã‚ã‚“ã±ã ";
 			}else if(j == 4){
-				document.getElementById('targetText').innerHTML +=" ‚Ì‚¤‚Ä‚ñ‚« ";
+				document.getElementById('targetText').innerHTML +=" ã®ã†ã¦ã‚“ã ";
 			}else if(j == 5){
-				document.getElementById('targetText').innerHTML +=" ‚Ì‚ñ‚« ";
+				document.getElementById('targetText').innerHTML +=" ã®ã‚“ã ";
 			}else{
 				document.getElementById('targetText').innerHTML +=" ??? ";
 			}
 			break
 		case 3:
 			if(j == 1){
-				document.getElementById('targetText').innerHTML +=" ‚Ğ‚©‚¦‚ß ";
+				document.getElementById('targetText').innerHTML +=" ã²ã‹ãˆã‚ ";
 			}else if(j == 2){
-				document.getElementById('targetText').innerHTML +=" ‚¨‚Á‚Æ‚è ";
+				document.getElementById('targetText').innerHTML +=" ãŠãƒ»ï¾†ã‚Š ";
 			}else if(j == 4){
-				document.getElementById('targetText').innerHTML +=" ‚¤‚Á‚©‚è‚â ";
+				document.getElementById('targetText').innerHTML +=" ã†ãƒ»ï½©ã‚Šã‚„ ";
 			}else if(j == 5){
-				document.getElementById('targetText').innerHTML +=" ‚ê‚¢‚¹‚¢ ";
+				document.getElementById('targetText').innerHTML +=" ã‚Œã„ã›ã„ ";
 			}else{
 				document.getElementById('targetText').innerHTML +=" ??? ";
 			}
 			break;
 		case 4:
 			if(j == 1){
-				document.getElementById('targetText').innerHTML +=" ‚¨‚¾‚â‚© ";
+				document.getElementById('targetText').innerHTML +=" ãŠã ã‚„ã‹ ";
 			}else if(j == 2){
-				document.getElementById('targetText').innerHTML +=" ‚¨‚Æ‚È‚µ‚¢ ";
+				document.getElementById('targetText').innerHTML +=" ãŠã¨ãªã—ã„ ";
 			}else if(j == 3){
-				document.getElementById('targetText').innerHTML +=" ‚µ‚ñ‚¿‚å‚¤ ";
+				document.getElementById('targetText').innerHTML +=" ã—ã‚“ã¡ã‚‡ã† ";
 			}else if(j == 5){
-				document.getElementById('targetText').innerHTML +=" ‚È‚Ü‚¢‚« ";
+				document.getElementById('targetText').innerHTML +=" ãªã¾ã„ã ";
 			}else{
 				document.getElementById('targetText').innerHTML +=" ??? ";
 			}
 			break;
 		case 5:
 			if(j == 1){
-				document.getElementById('targetText').innerHTML +=" ‚¨‚­‚Ñ‚å‚¤ ";
+				document.getElementById('targetText').innerHTML +=" ãŠãï½„ãƒ»ã† ";
 			}else if(j == 2){
-				document.getElementById('targetText').innerHTML +=" ‚¹‚Á‚©‚¿ ";
+				document.getElementById('targetText').innerHTML +=" ã›ãƒ»ï½©ã¡ ";
 			}else if(j == 3){
-				document.getElementById('targetText').innerHTML +=" ‚æ‚¤‚« ";
+				document.getElementById('targetText').innerHTML +=" ã‚ˆã†ã ";
 			}else if(j == 4){
-				document.getElementById('targetText').innerHTML +=" ‚Ş‚¶‚á‚« ";
+				document.getElementById('targetText').innerHTML +=" ã‚€ã˜ã‚ƒã ";
 			}else{
 				document.getElementById('targetText').innerHTML +=" ??? ";
 			}
 			break;
 		case 6:
 			if(j == 6){
-				document.getElementById('targetText').innerHTML +=" ‚Ü‚¶‚ß ";
+				document.getElementById('targetText').innerHTML +=" ã¾ã˜ã‚ ";
 			}else{
 				document.getElementById('targetText').innerHTML +=" ??? ";
 			}
@@ -235,7 +235,7 @@ function moji(){
 		}
 	}
 }
-//í‘°’l‚ğ‘ã“ü‚·‚é
+//ç¨®æ—å€¤ã‚’ä»£å…¥ã™ã‚‹
 function setpokemon(){
 	mega_button();
 	for(i=0; i<pokemon.length; i++){
@@ -253,7 +253,7 @@ function setpokemon(){
 	ncalc(0);ncalc(1);ncalc(2);ncalc(3);ncalc(4);ncalc(5);
 }
 
-//ƒ|ƒPƒ‚ƒ“–¼‚ğŒŸõ‚·‚é
+//ãƒã‚±ãƒ¢ãƒ³åã‚’æ¤œç´¢ã™ã‚‹
 function pokeserach(){
 	//var elm = document.nForm.elements['pokename'].value;
 	var elm = hiraganaToKatagana(document.nForm.elements['pokename'].value);
@@ -270,7 +270,7 @@ function pokeserach(){
 	}
 }
 
-//‚Ğ‚ç‚ª‚È¨ƒJƒ^ƒJƒi•ÏŠ·
+//ã²ã‚‰ãŒãªâ†’ã‚«ã‚¿ã‚«ãƒŠå¤‰æ›
 function hiraganaToKatagana(src) {
 	return src.replace(/[\u3041-\u3096]/g, function(match) {
 		var chr = match.charCodeAt(0) + 0x60;

@@ -1,14 +1,14 @@
 <html lang="ja">
 <head>
-<title>�|�P�����X�e�[�^�X�v�Z�@</title>
-
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>ポケモンステータス計算機</title>
 <link rel="stylesheet" type="text/css" href="css/contents.css">
 <script type="text/javascript" src="js/check.js"></script>
 <script type="text/javascript" src="js/button.js"></script>
 <script type="text/javascript" src="js/pokesyuzokuti.js"></script>
 <script type="text/javascript">
 <!--
-//�g�p���Ă��閼�O
+//使用していりяO
 ryaku = new Array("H","A","B","C","D","S");
 chup = new Array("","ch1","ch2","ch3","ch4","ch5");
 chdw = new Array("","ch7","ch8","ch9","ch10","ch11");
@@ -23,19 +23,19 @@ var nnn = 175;
 </head>
 
 <body onclick="moji()">
-<font size="5" color="#87CEEB" face="�l�r �o����,�l�r ����">�|�P�����X�e�[�^�X�v�Z�@</font></br></br>
+<font size="5" color="#87CEEB" face="ＭＳ Ｐ明朝,ＭＳ 明朝">ポケモンステータス計算機</font></br></br>
 <form name="nForm">
 <table border="0">
-<tr><td></td><td colspan="2"><input type="search" name = "pokename" class="name" value="" autocomplete="off" list="combolist" placeholder="�|�P������" onKeyUp="pokeserach();setpokemon()" onblur="setpokemon()" onclick="setpokemon()">
-<td  colspan="7"><input type="button" class="mega" name="mega0" value="�ʏ�" onclick="megachange(0)" visibility="hidden">
-<input type="button" class="mega" name="mega1" value="���K" onclick="megachange(1)"> 
-<input type="button" class="mega" name="mega2" value="�ʏ�" onclick="megachange(2)"> 
-<input type="button" class="mega" name="mega3" value="�ʏ�" onclick="megachange(3)">
+<tr><td></td><td colspan="2"><input type="search" name = "pokename" class="name" value="" autocomplete="off" list="combolist" placeholder="ポケモン名" onKeyUp="pokeserach();setpokemon()" onblur="setpokemon()" onclick="setpokemon()">
+<td  colspan="7"><input type="button" class="mega" name="mega0" value="通常" onclick="megachange(0)" visibility="hidden">
+<input type="button" class="mega" name="mega1" value="メガ" onclick="megachange(1)"> 
+<input type="button" class="mega" name="mega2" value="通常" onclick="megachange(2)"> 
+<input type="button" class="mega" name="mega3" value="通常" onclick="megachange(3)">
 </td></tr>
 <tr><td></td><td colspan="3"> Lv. <input type="number" name="L0" value="50" min="1" max="100" step="1"  onclick="ncalc(0);ncalc(1);ncalc(2);ncalc(3);ncalc(4);ncalc(5)" onblur="ncalc(0);ncalc(1);ncalc(2);ncalc(3);ncalc(4);ncalc(5)">
 <input type="button" class="button" value ="50" onclick="setvalue('L0', 50);ncalc(0);ncalc(1);ncalc(2);ncalc(3);ncalc(4);ncalc(5)">
 <input type="button" class="button" value ="100" onclick="setvalue('L0', 100);ncalc(0);ncalc(1);ncalc(2);ncalc(3);ncalc(4);ncalc(5)"></td></tr>
-<tr><td></td><td>�\�͒l</td><td colspan="2">�w�͒l</td><td>�푰�l</td><td colspan="2">�̒l</td><td colspan="2"  align="center">���i</td></tr>
+<tr><td></td><td>能力値</td><td colspan="2">努力値</td><td>種族値</td><td colspan="2">個体値</td><td colspan="2"  align="center">性格</td></tr>
 <script type="text/javascript">
 <!--
 for(i=0; i<6; i++){
@@ -47,11 +47,11 @@ for(i=0; i<6; i++){
 		document.write("120");
 	}
 	document.write("\" min=\"1\" max=\"999\" step=\"1\" onclick=\"dcalc("+ i +")\" onblur=\"dcalc("+ i +")\">");
-	document.write("<input type=\"button\" class=\"updown\" value =\"��\" onclick=\"nchange("+ i +",0);dcalc("+ i +")\" >");
-	document.write("<input type=\"button\" class=\"updown\" value =\"��\" onclick=\"nchange("+ i +",1);dcalc("+ i +")\"></td><td>");
+	document.write("<input type=\"button\" class=\"updown\" value =\"▲\" onclick=\"nchange("+ i +",0);dcalc("+ i +")\" >");
+	document.write("<input type=\"button\" class=\"updown\" value =\"▼\" onclick=\"nchange("+ i +",1);dcalc("+ i +")\"></td><td>");
 	document.write("<input type=\"number\" name = \"" + dn[i] + "\" value=\"0\" min=\"0\" max=\"252\" step=\"4\" onclick=\"ncalc("+ i +");dsum()\" onblur=\"ncalc("+ i +");dsum()\">");
-	document.write("<input type=\"button\" class=\"updown\" value =\"��\" onclick=\"dchange("+ i +",0);ncalc("+ i +");dsum()\">");
-	document.write("<input type=\"button\" class=\"updown\" value =\"��\" onclick=\"dchange("+ i +",1);ncalc("+ i +");dsum()\"></td><td>");
+	document.write("<input type=\"button\" class=\"updown\" value =\"▲\" onclick=\"dchange("+ i +",0);ncalc("+ i +");dsum()\">");
+	document.write("<input type=\"button\" class=\"updown\" value =\"▼\" onclick=\"dchange("+ i +",1);ncalc("+ i +");dsum()\"></td><td>");
 	document.write("<input type=\"button\" class=\"button\" value =\"0\" onclick=\"setvalue('"+ dn[i] +"',0);ncalc("+ i +");dsum()\">" );
 	document.write("<input type=\"button\" class=\"button\" value =\"252\" onclick=\"setvalue('"+ dn[i] +"',252);ncalc("+ i +");dsum()\"></td><td>");
 	document.write("<input type=\"number\" name = \"" + sn[i] + "\" value=\"100\" min=\"1\" max=\"999\" step=\"1\" onclick=\"ssum();ncalc("+ i +")\" onblur=\"ssum();ncalc("+ i +")\"></td><td>");
@@ -59,7 +59,7 @@ for(i=0; i<6; i++){
 	document.write("<input type=\"button\" class=\"button\" value =\"0\" onclick=\"setvalue('"+ kn[i] +"' ,0);ncalc("+ i +")\">");
 	document.write("<input type=\"button\" class=\"button\" value =\"31\" onclick=\"setvalue('"+ kn[i] +"' ,31);ncalc("+ i +")\"></td>");
 	if(i==0){
-		document.write("<td bgcolor=\"#FF97C2\" align=\"center\">�{</td><td bgcolor=\"#8EB8FF\" align=\"center\">�|");
+		document.write("<td bgcolor=\"#FF97C2\" align=\"center\">＋</td><td bgcolor=\"#8EB8FF\" align=\"center\">－");
 	}else{
 		document.write("<td bgcolor=\"#FFBEDA\" align=\"center\"><input type=\"checkbox\" name = \""+ chup[i] +"\" class=\"check\" onclick=\"unchk1("+ i +");dcalc("+ i +")\"></td>" );
 		document.write("<td bgcolor=\"#BAD3FF\"><input type=\"checkbox\" name = \""+ chdw[i] +"\" class=\"check\" onclick=\"unchk2("+ i +");dcalc("+ i +")\">" );
@@ -71,30 +71,30 @@ for(i=0; i<6; i++){
 }
 document.close();
 // --></script>
-<tr><td></td><td align="right">�c��</td><td><input type="number" name = "d6" value="510" readonly></td><td  align="right">���v</td><td><input type="number" name = "s6" value="600" readonly></td></tr>
-<tr><td>�@</td></tr>
-<tr><td></td><td colspan="8"><div id="targetText"> �܂��� 175-120-120-120-120-120</div></td></tr>
+<tr><td></td><td align="right">残り</td><td><input type="number" name = "d6" value="510" readonly></td><td  align="right">合計</td><td><input type="number" name = "s6" value="600" readonly></td></tr>
+<tr><td>　</td></tr>
+<tr><td></td><td colspan="8"><div id="targetText"> まじめ 175-120-120-120-120-120</div></td></tr>
 </table>
 </form>
 <hr/>
-<textarea placeholder="������" rows="3" cols="80"></textarea><hr/>
-���i�A�w�͒l�Ȃǂ���|�P�����̔\�͒l�����߂��܂��B<br/>
-�\�͒l����K�v�ȓw�͒l���t�Z���邱�Ƃ��ł��܂��B<br/>
-���K�V���J�A�t�H�����`�F���W�̓{�^���Ő؂�ւ����܂��B<br/>
-��F�{���g���X�Ɠ��͂���Ɖ��g�A��b�{�^�����\������A�����Ɛ؂�ւ����܂��B<br/>
+<textarea placeholder="メモ欄" rows="3" cols="80"></textarea><hr/>
+性格、努力値などからポケモンの能力値を求められます。<br/>
+能力値から必要な努力値を逆算することもできます。<br/>
+メガシンカ、フォルムチェンジはボタンで切り替えられます。<br/>
+例：ボルトロスと入力すると化身、霊獣ボタンが表示され、押すと切り替えられます。<br/>
 <br/>
-�I���K���r�[�A�A���t�@�T�t�@�C�A�̃|�P�����ɑΉ�<br/>
-Chrome�AFireFox����<br/>
+オメガルビー、アルファサファイアのポケモンに対応<br/>
+Chrome、FireFox推奨<br/>
 <br/>
-����� @poke_cosmos<br/>
+制作者 @poke_cosmos<br/>
 <br/><br/>
 <datalist id="combolist">
 <div id="list">
-<option value="�A�C�A���g"></option>
-<option value="�A�M���_�["></option>
-<option value="�A�O�m��"></option>
-<option value="�A�Q�n���g"></option>
-<option value="�A�T�i��"></option>
+<option value="アイアント"></option>
+<option value="アギルダー"></option>
+<option value="アグノム"></option>
+<option value="アゲハント"></option>
+<option value="アサナン"></option>
 </div>
 
 </body>
