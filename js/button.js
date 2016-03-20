@@ -6,13 +6,13 @@ function mega_button(){
 		document.nForm.elements['mega0'].value="ブレード";
 		document.nForm.elements['mega1'].value="シールド";
 		visi(2);
-	if((document.nForm.elements['pokename'].value=="グラードン")||
+	}else if((document.nForm.elements['pokename'].value=="グラードン")||
 		(document.nForm.elements['pokename'].value=="グラードン(通常)")||
 		(document.nForm.elements['pokename'].value=="ゲンシグラードン")){
 		document.nForm.elements['mega0'].value="通常";
 		document.nForm.elements['mega1'].value="ゲンシ";
 		visi(2);
-	if((document.nForm.elements['pokename'].value=="カイオーガ")||
+	}else if((document.nForm.elements['pokename'].value=="カイオーガ")||
 		(document.nForm.elements['pokename'].value=="カイオーガ(通常)")||
 		(document.nForm.elements['pokename'].value=="ゲンシカイオーガ")){
 		document.nForm.elements['mega0'].value="通常";
@@ -246,7 +246,7 @@ function megachange(num){
  		}else if(parseInt(num)==1){
  			document.nForm.elements['pokename'].value="ギルガルド(シールド)";
  		}
- 	if((document.nForm.elements['pokename'].value=="グラードン")||
+ 	}else if((document.nForm.elements['pokename'].value=="グラードン")||
 		(document.nForm.elements['pokename'].value=="グラードン(通常)")||
 		(document.nForm.elements['pokename'].value=="ゲンシグラードン")){
 		if(parseInt(num)==0){
@@ -254,7 +254,7 @@ function megachange(num){
  		}else if(parseInt(num)==1){
  			document.nForm.elements['pokename'].value="ゲンシグラードン";
  		}
- 	if((document.nForm.elements['pokename'].value=="カイオーガ")||
+ 	}else if((document.nForm.elements['pokename'].value=="カイオーガ")||
 		(document.nForm.elements['pokename'].value=="カイオーガ(通常)")||
 		(document.nForm.elements['pokename'].value=="ゲンシカイオーガ")){
 		if(parseInt(num)==0){
