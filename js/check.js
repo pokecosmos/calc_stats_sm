@@ -154,7 +154,7 @@ function moji(){
 			if(j == 2){
 				document.getElementById('targetText').innerHTML +=" さみしがり ";
 			}else if(j == 3){
-				document.getElementById('targetText').innerHTML +=" いじ・ﾏり ";
+				document.getElementById('targetText').innerHTML +=" いじっぱり ";
 			}else if(j == 4){
 				document.getElementById('targetText').innerHTML +=" やんちゃ ";
 			}else if(j == 5){
@@ -180,9 +180,9 @@ function moji(){
 			if(j == 1){
 				document.getElementById('targetText').innerHTML +=" ひかえめ ";
 			}else if(j == 2){
-				document.getElementById('targetText').innerHTML +=" お・ﾆり ";
+				document.getElementById('targetText').innerHTML +=" おっとり ";
 			}else if(j == 4){
-				document.getElementById('targetText').innerHTML +=" う・ｩりや ";
+				document.getElementById('targetText').innerHTML +=" うっかりや ";
 			}else if(j == 5){
 				document.getElementById('targetText').innerHTML +=" れいせい ";
 			}else{
@@ -204,9 +204,9 @@ function moji(){
 			break;
 		case 5:
 			if(j == 1){
-				document.getElementById('targetText').innerHTML +=" おくｄ・う ";
+				document.getElementById('targetText').innerHTML +=" おくびょう ";
 			}else if(j == 2){
-				document.getElementById('targetText').innerHTML +=" せ・ｩち ";
+				document.getElementById('targetText').innerHTML +=" せっかち ";
 			}else if(j == 3){
 				document.getElementById('targetText').innerHTML +=" ようき ";
 			}else if(j == 4){
