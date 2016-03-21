@@ -79,6 +79,7 @@ function ncalc(num){
 		}
 	}
 	document.nForm.elements[nn[num]].value=n;
+	moji();
 }
 //努力値を逆算する
 function dcalc(num){
@@ -119,7 +120,7 @@ function dcalc(num){
 	}else{
 		document.nForm.elements[dn[num]].style.color = "black";
 	}
-	dsum();
+	dsum();moji();
 }
 //残り努力値の合計を計算する
 function dsum(){
@@ -250,7 +251,7 @@ function setpokemon(){
 			break;
 		}
 	}
-	ncalc(0);ncalc(1);ncalc(2);ncalc(3);ncalc(4);ncalc(5);
+	ncalc(0);ncalc(1);ncalc(2);ncalc(3);ncalc(4);ncalc(5);moji();
 }
 
 //ポケモン名を検索する
