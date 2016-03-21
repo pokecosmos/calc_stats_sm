@@ -10,6 +10,11 @@ function unchk1(num){
     		document.nForm.elements[chdw[i]].checked = false;
     	}
   	}
+  	if((document.nForm.elements[dn[num]].value)==0){
+  		ncalc(num);
+  	}else{
+  		dcalc(num);
+  	}
 }
 function unchk2(num){
 	for(i=1; i<6; i++) {
@@ -21,6 +26,11 @@ function unchk2(num){
     	}else{
     		document.nForm.elements[chup[i]].checked = false;
     	}
+  	}
+  	if((document.nForm.elements[dn[num]].value)==0){
+  		ncalc(num);
+  	}else{
+  		dcalc(num);
   	}
 }
 //ボタンで数値代入
