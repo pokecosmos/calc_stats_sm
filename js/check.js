@@ -149,7 +149,9 @@ function dsum(){
 }
 //ステータスをテキストボックス外に表示する
 function moji(){
-	document.getElementById('targetText').innerHTML =document.nForm.elements['pokename'].value;
+	var obj = document.getElementById("targetText");
+	
+	obj.innerHTML =document.nForm.elements['pokename'].value;
 	for(i=1; i<6; i++){
 		if(document.nForm.elements[chup[i]].checked == true){
 			break;
@@ -163,86 +165,86 @@ function moji(){
 	switch(i){
 		case 1:
 			if(j == 2){
-				document.getElementById('targetText').innerHTML +=" さみしがり ";
+				obj.innerHTML +=" さみしがり ";
 			}else if(j == 3){
-				document.getElementById('targetText').innerHTML +=" いじっぱり ";
+				obj.innerHTML +=" いじっぱり ";
 			}else if(j == 4){
-				document.getElementById('targetText').innerHTML +=" やんちゃ ";
+				obj.innerHTML +=" やんちゃ ";
 			}else if(j == 5){
-				document.getElementById('targetText').innerHTML +=" ゆうかん ";
+				obj.innerHTML +=" ゆうかん ";
 			}else{
-				document.getElementById('targetText').innerHTML +=" ??? ";
+				obj.innerHTML +=" ??? ";
 			}
 			break
 		case 2:
 			if(j == 1){
-				document.getElementById('targetText').innerHTML +=" ずぶとい ";
+				obj.innerHTML +=" ずぶとい ";
 			}else if(j == 3){
-				document.getElementById('targetText').innerHTML +=" わんぱく ";
+				obj.innerHTML +=" わんぱく ";
 			}else if(j == 4){
-				document.getElementById('targetText').innerHTML +=" のうてんき ";
+				obj.innerHTML +=" のうてんき ";
 			}else if(j == 5){
-				document.getElementById('targetText').innerHTML +=" のんき ";
+				obj.innerHTML +=" のんき ";
 			}else{
-				document.getElementById('targetText').innerHTML +=" ??? ";
+				obj.innerHTML +=" ??? ";
 			}
 			break
 		case 3:
 			if(j == 1){
-				document.getElementById('targetText').innerHTML +=" ひかえめ ";
+				obj.innerHTML +=" ひかえめ ";
 			}else if(j == 2){
-				document.getElementById('targetText').innerHTML +=" おっとり ";
+				obj.innerHTML +=" おっとり ";
 			}else if(j == 4){
-				document.getElementById('targetText').innerHTML +=" うっかりや ";
+				obj.innerHTML +=" うっかりや ";
 			}else if(j == 5){
-				document.getElementById('targetText').innerHTML +=" れいせい ";
+				obj.innerHTML +=" れいせい ";
 			}else{
-				document.getElementById('targetText').innerHTML +=" ??? ";
+				obj.innerHTML +=" ??? ";
 			}
 			break;
 		case 4:
 			if(j == 1){
-				document.getElementById('targetText').innerHTML +=" おだやか ";
+				obj.innerHTML +=" おだやか ";
 			}else if(j == 2){
-				document.getElementById('targetText').innerHTML +=" おとなしい ";
+				obj.innerHTML +=" おとなしい ";
 			}else if(j == 3){
-				document.getElementById('targetText').innerHTML +=" しんちょう ";
+				obj.innerHTML +=" しんちょう ";
 			}else if(j == 5){
-				document.getElementById('targetText').innerHTML +=" なまいき ";
+				obj.innerHTML +=" なまいき ";
 			}else{
-				document.getElementById('targetText').innerHTML +=" ??? ";
+				obj.innerHTML +=" ??? ";
 			}
 			break;
 		case 5:
 			if(j == 1){
-				document.getElementById('targetText').innerHTML +=" おくびょう ";
+				obj.innerHTML +=" おくびょう ";
 			}else if(j == 2){
-				document.getElementById('targetText').innerHTML +=" せっかち ";
+				obj.innerHTML +=" せっかち ";
 			}else if(j == 3){
-				document.getElementById('targetText').innerHTML +=" ようき ";
+				obj.innerHTML +=" ようき ";
 			}else if(j == 4){
-				document.getElementById('targetText').innerHTML +=" むじゃき ";
+				obj.innerHTML +=" むじゃき ";
 			}else{
-				document.getElementById('targetText').innerHTML +=" ??? ";
+				obj.innerHTML +=" ??? ";
 			}
 			break;
 		case 6:
 			if(j == 6){
-				document.getElementById('targetText').innerHTML +=" まじめ ";
+				obj.innerHTML +=" まじめ ";
 			}else{
-				document.getElementById('targetText').innerHTML +=" ??? ";
+				obj.innerHTML +=" ??? ";
 			}
 			break;
 	}
 	for(i=0; i<6; i++){
 		document.getElementById('targetText').innerHTML += document.nForm.elements[nn[i]].value;
 		if(document.nForm.elements[dn[i]].value > 0){
-			document.getElementById('targetText').innerHTML +="(";
-			document.getElementById('targetText').innerHTML +=document.nForm.elements[dn[i]].value;
-			document.getElementById('targetText').innerHTML +=")";
+			obj.innerHTML +="(";
+			obj.innerHTML +=document.nForm.elements[dn[i]].value;
+			obj.innerHTML +=")";
 		}
 		if(i <5){
-			document.getElementById('targetText').innerHTML += "-";
+			obj.innerHTML += "-";
 		}
 	}
 }
@@ -266,23 +268,23 @@ function setpokemon(){
 
 //ポケモン名を検索する
 function pokeserach(){
-	//var elm = document.nForm.elements['pokename'].value;
 	var elm = hiraganaToKatagana(document.nForm.elements['pokename'].value);
 	document.nForm.elements['pokename'].value = elm;
-	document.getElementById('list').innerHTML ="";
+	var obj = document.getElementById("list");
+	obj.innerHTML = "";
 	if(elm != ""){
 		for(i=0; i<pokemon.length; i++){
 			var index = pokemon[i][0].indexOf(elm);
 			if(index != -1){
-				document.getElementById('list').innerHTML +="<option value=\""+ pokemon[i][0]  +"\"></option>";
+				obj.innerHTML +="<option value=\""+ pokemon[i][0]  +"\"></option>";
  			}
 		}
 	}else{
-		document.getElementById('list').innerHTML +="<option value=\"アイアント\"></option>";
-		document.getElementById('list').innerHTML +="<option value=\"アギルダー\"></option>";
-		document.getElementById('list').innerHTML +="<option value=\"アグノム\"></option>";
-		document.getElementById('list').innerHTML +="<option value=\"アゲハント\"></option>";
-		document.getElementById('list').innerHTML +="<option value=\"アサナン\"></option>";
+		obj.innerHTML +="<option value=\"アイアント\"></option>";
+		obj.innerHTML +="<option value=\"アギルダー\"></option>";
+		obj.innerHTML +="<option value=\"アグノム\"></option>";
+		obj.innerHTML +="<option value=\"アゲハント\"></option>";
+		obj.innerHTML +="<option value=\"アサナン\"></option>";
 	}
 }
 
