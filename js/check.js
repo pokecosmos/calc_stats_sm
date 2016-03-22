@@ -269,15 +269,20 @@ function pokeserach(){
 	//var elm = document.nForm.elements['pokename'].value;
 	var elm = hiraganaToKatagana(document.nForm.elements['pokename'].value);
 	document.nForm.elements['pokename'].value = elm;
+	document.getElementById('list').innerHTML ="";
 	if(elm != ""){
-		document.getElementById('list').innerHTML ="";
 		for(i=0; i<pokemon.length; i++){
-			
 			var index = pokemon[i][0].indexOf(elm);
 			if(index != -1){
 				document.getElementById('list').innerHTML +="<option value=\""+ pokemon[i][0]  +"\"></option>";
  			}
 		}
+	}else{
+		document.getElementById('list').innerHTML +="<option value=\"アイアント\"></option>";
+		document.getElementById('list').innerHTML +="<option value=\"アギルダー\"></option>";
+		document.getElementById('list').innerHTML +="<option value=\"アグノム\"></option>";
+		document.getElementById('list').innerHTML +="<option value=\"アゲハント\"></option>";
+		document.getElementById('list').innerHTML +="<option value=\"アサナン\"></option>";
 	}
 }
 
