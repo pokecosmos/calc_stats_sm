@@ -10,10 +10,9 @@ function unchk1(num){
   					dcalc(i);
   				}
     		}
-    	}else{
-    		document.nForm.elements[chdw[i]].checked = false;
     	}
   	}
+  	document.nForm.elements[chdw[num]].checked = false;
   	dcalc(num);
 }
 function unchk2(num){
@@ -23,10 +22,9 @@ function unchk2(num){
     			document.nForm.elements[chdw[i]].checked = false;
     			dcalc(i);
     		}
-    	}else{
-    		document.nForm.elements[chup[i]].checked = false;
     	}
   	}
+  	document.nForm.elements[chup[num]].checked = false;
   	if((document.nForm.elements[dn[num]].value)==0){
   		ncalc(num);
   	}else{
