@@ -4,24 +4,24 @@ function unchk1(num){
 		if(i != parseInt(num)){
 			if(document.nForm.elements[chup[i]].checked == true){
     			document.nForm.elements[chup[i]].checked = false;
-    			ncalc(i);
+    			if((document.nForm.elements[dn[i]].value)==0){
+  					ncalc(i);
+  				}else{
+  					dcalc(i);
+  				}
     		}
     	}else{
     		document.nForm.elements[chdw[i]].checked = false;
     	}
   	}
-  	if((document.nForm.elements[dn[num]].value)==0){
-  		ncalc(num);
-  	}else{
-  		dcalc(num);
-  	}
+  	dcalc(num);
 }
 function unchk2(num){
 	for(i=1; i<6; i++) {
 		if(i != parseInt(num)){
 			if(document.nForm.elements[chdw[i]].checked == true){
     			document.nForm.elements[chdw[i]].checked = false;
-    			ncalc(i);
+    			dcalc(i);
     		}
     	}else{
     		document.nForm.elements[chup[i]].checked = false;
