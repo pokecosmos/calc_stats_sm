@@ -24,6 +24,10 @@ input.updown{
 	width: 19px;
 	padding: 1px;
 }
+input.ALL0{
+	width: 38px;
+	padding: 1px;
+}
 input.check{
 	width: 20px;
 }

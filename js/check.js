@@ -263,6 +263,22 @@ function setpokemon(){
 	}
 	ncalc(0);ncalc(1);ncalc(2);ncalc(3);ncalc(4);ncalc(5);moji();
 }
+//努力値をすべて0にする
+function dreset(){
+	for(i=0; i<6; i++){
+		document.nForm.elements[dn[i]].value = 0;
+		document.nForm.elements[dn[i]].style.color = "black";
+	}
+	dsum();
+}
+//種族値合計を計算する
+function ssum(){
+	n=0;
+	for(i=0; i<6; i++){
+		n += parseInt(document.nForm.elements[sn[i]].value);
+	}
+	document.nForm.elements[sn[6]].value = n;
+}
 
 //ポケモン名を検索する
 function pokeserach(){
