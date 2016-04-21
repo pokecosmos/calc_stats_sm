@@ -116,7 +116,7 @@ function dcalc(num){
 		n -= 5;
 	}
 	n = Math.ceil(n * 100 / document.nForm.elements['L0'].value);
-	n = (n - parseInt(document.nForm.elements[sn[num]].value) *2 - parseInt(document.nForm.elements['k0'].value))*4;
+	n = (n - parseInt(document.nForm.elements[sn[num]].value) *2 - parseInt(document.nForm.elements[kn[num]].value))*4;
 	if(n < 0){
 		document.nForm.elements[dn[num]].value = 0;
 		ncalc(num);
