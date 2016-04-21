@@ -35,3 +35,6 @@ input.mega{
 	width: 60px;
 	visibility: hidden;
 }
+input.hyoji{
+	width: 450px;
+}

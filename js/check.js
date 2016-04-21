@@ -147,9 +147,9 @@ function dsum(){
 }
 //ステータスをテキストボックス外に表示する
 function moji(){
-	var obj = document.getElementById("targetText");
+	var text = document.nForm.elements['target'];
 	
-	obj.innerHTML =document.nForm.elements['pokename'].value;
+	text.value =document.nForm.elements['pokename'].value;
 	for(i=1; i<6; i++){
 		if(document.nForm.elements[chup[i]].checked == true){
 			break;
@@ -163,86 +163,86 @@ function moji(){
 	switch(i){
 		case 1:
 			if(j == 2){
-				obj.innerHTML +=" さみしがり ";
+				text.value +=" さみしがり ";
 			}else if(j == 3){
-				obj.innerHTML +=" いじっぱり ";
+				text.value +=" いじっぱり ";
 			}else if(j == 4){
-				obj.innerHTML +=" やんちゃ ";
+				text.value +=" やんちゃ ";
 			}else if(j == 5){
-				obj.innerHTML +=" ゆうかん ";
+				text.value +=" ゆうかん ";
 			}else{
-				obj.innerHTML +=" ??? ";
+				text.value +=" ??? ";
 			}
 			break
 		case 2:
 			if(j == 1){
-				obj.innerHTML +=" ずぶとい ";
+				text.value +=" ずぶとい ";
 			}else if(j == 3){
-				obj.innerHTML +=" わんぱく ";
+				text.value +=" わんぱく ";
 			}else if(j == 4){
-				obj.innerHTML +=" のうてんき ";
+				text.value +=" のうてんき ";
 			}else if(j == 5){
-				obj.innerHTML +=" のんき ";
+				text.value +=" のんき ";
 			}else{
-				obj.innerHTML +=" ??? ";
+				text.value +=" ??? ";
 			}
 			break
 		case 3:
 			if(j == 1){
-				obj.innerHTML +=" ひかえめ ";
+				text.value +=" ひかえめ ";
 			}else if(j == 2){
-				obj.innerHTML +=" おっとり ";
+				text.value +=" おっとり ";
 			}else if(j == 4){
-				obj.innerHTML +=" うっかりや ";
+				text.value +=" うっかりや ";
 			}else if(j == 5){
-				obj.innerHTML +=" れいせい ";
+				text.value +=" れいせい ";
 			}else{
-				obj.innerHTML +=" ??? ";
+				text.value +=" ??? ";
 			}
 			break;
 		case 4:
 			if(j == 1){
-				obj.innerHTML +=" おだやか ";
+				text.value +=" おだやか ";
 			}else if(j == 2){
-				obj.innerHTML +=" おとなしい ";
+				text.value +=" おとなしい ";
 			}else if(j == 3){
-				obj.innerHTML +=" しんちょう ";
+				text.value +=" しんちょう ";
 			}else if(j == 5){
-				obj.innerHTML +=" なまいき ";
+				text.value +=" なまいき ";
 			}else{
-				obj.innerHTML +=" ??? ";
+				text.value +=" ??? ";
 			}
 			break;
 		case 5:
 			if(j == 1){
-				obj.innerHTML +=" おくびょう ";
+				text.value +=" おくびょう ";
 			}else if(j == 2){
-				obj.innerHTML +=" せっかち ";
+				text.value +=" せっかち ";
 			}else if(j == 3){
-				obj.innerHTML +=" ようき ";
+				text.value +=" ようき ";
 			}else if(j == 4){
-				obj.innerHTML +=" むじゃき ";
+				text.value +=" むじゃき ";
 			}else{
-				obj.innerHTML +=" ??? ";
+				text.value +=" ??? ";
 			}
 			break;
 		case 6:
 			if(j == 6){
-				obj.innerHTML +=" まじめ ";
+				text.value +=" まじめ ";
 			}else{
-				obj.innerHTML +=" ??? ";
+				text.value +=" ??? ";
 			}
 			break;
 	}
 	for(i=0; i<6; i++){
-		document.getElementById('targetText').innerHTML += document.nForm.elements[nn[i]].value;
+		text.value += document.nForm.elements[nn[i]].value;
 		if(document.nForm.elements[dn[i]].value > 0){
-			obj.innerHTML +="(";
-			obj.innerHTML +=document.nForm.elements[dn[i]].value;
-			obj.innerHTML +=")";
+			text.value +="(";
+			text.value +=document.nForm.elements[dn[i]].value;
+			text.value +=")";
 		}
 		if(i <5){
-			obj.innerHTML += "-";
+			text.value += "-";
 		}
 	}
 }
@@ -285,20 +285,20 @@ function pokeserach(){
 	var elm = hiraganaToKatagana(document.nForm.elements['pokename'].value);
 	document.nForm.elements['pokename'].value = elm;
 	var obj = document.getElementById("list");
-	obj.innerHTML = "";
+	text.value = "";
 	if(elm != ""){
 		for(i=0; i<pokemon.length; i++){
 			var index = pokemon[i][0].indexOf(elm);
 			if(index != -1){
-				obj.innerHTML +="<option value=\""+ pokemon[i][0]  +"\"></option>";
+				text.value +="<option value=\""+ pokemon[i][0]  +"\"></option>";
  			}
 		}
 	}else{
-		obj.innerHTML +="<option value=\"アイアント\"></option>";
-		obj.innerHTML +="<option value=\"アギルダー\"></option>";
-		obj.innerHTML +="<option value=\"アグノム\"></option>";
-		obj.innerHTML +="<option value=\"アゲハント\"></option>";
-		obj.innerHTML +="<option value=\"アサナン\"></option>";
+		text.value +="<option value=\"アイアント\"></option>";
+		text.value +="<option value=\"アギルダー\"></option>";
+		text.value +="<option value=\"アグノム\"></option>";
+		text.value +="<option value=\"アゲハント\"></option>";
+		text.value +="<option value=\"アサナン\"></option>";
 	}
 }
 
