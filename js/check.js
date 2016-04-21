@@ -269,7 +269,7 @@ function dreset(){
 		document.nForm.elements[dn[i]].value = 0;
 		document.nForm.elements[dn[i]].style.color = "black";
 	}
-	dsum();
+	dsum();moji();
 }
 //種族値合計を計算する
 function ssum(){
