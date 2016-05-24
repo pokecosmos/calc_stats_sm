@@ -33,8 +33,14 @@ function unchk2(num){
 }
 //ボタンで数値代入
 function setvalue(elm,num){
-	document.nForm.elements[elm].value = parseInt(num);
+	//document.nForm.elements[elm].value = parseInt(num);
+	if(num =="-1"){
+		document.nForm.elements[elm].value ="";
+	}else{
+		document.nForm.elements[elm].value = parseInt(num);
+	}
 }
+
 //▼ボタンで能力値の増減
 function nchange(num1, num2){
 	n = parseInt(document.nForm.elements[nn[num1]].value);
@@ -235,11 +241,15 @@ function moji(){
 			break;
 	}
 	for(i=0; i<6; i++){
-		text.value += document.nForm.elements[nn[i]].value;
-		if(document.nForm.elements[dn[i]].value > 0){
-			text.value +="(";
-			text.value +=document.nForm.elements[dn[i]].value;
-			text.value +=")";
+		if(document.nForm.elements[nn[i]].value >= 1){
+			text.value += document.nForm.elements[nn[i]].value;
+			if(document.nForm.elements[dn[i]].value > 0){
+				text.value +="(";
+				text.value +=document.nForm.elements[dn[i]].value;
+				text.value +=")";
+			}
+		}else{
+			text.value += "×";
 		}
 		if(i <5){
 			text.value += "-";
@@ -282,25 +292,32 @@ function ssum(){
 
 //ポケモン名を検索する
 function pokeserach(){
-	var elm = hiraganaToKatagana(document.nForm.elements['pokename'].value);
-	document.nForm.elements['pokename'].value = elm;
-	var obj = document.getElementById("list");
-	text.value = "";
-	if(elm != ""){
+	var elm = hiraganaToKatagana(document.getElementById('pokename').value);
+	var elm2 = "a" + elm
+	var j = 0;
+	var e = document.getElementById('combolist');
+	var e2 = '';
+	while (e.firstChild){
+		e.removeChild(e.firstChild);
+	}
+	if(elm.length >= 1){
 		for(i=0; i<pokemon.length; i++){
-			var index = pokemon[i][0].indexOf(elm);
+			var elm3 = "a" + pokemon[i][0];
+			var index = elm3.indexOf(elm2);
 			if(index != -1){
-				text.value +="<option value=\""+ pokemon[i][0]  +"\"></option>";
+				e2 += '<option value = "'+ pokemon[i][0] +'"></option>';
+				j++;
+ 			}
+ 			if(j >= 20){
+ 				break;
  			}
 		}
-	}else{
-		text.value +="<option value=\"アイアント\"></option>";
-		text.value +="<option value=\"アギルダー\"></option>";
-		text.value +="<option value=\"アグノム\"></option>";
-		text.value +="<option value=\"アゲハント\"></option>";
-		text.value +="<option value=\"アサナン\"></option>";
+		
 	}
+	document.getElementById('pokename').value = elm;
+	e.innerHTML += e2;
 }
+//--------------------------------------部分一致では表示できなかった。前方一致で追加するようにしたい。
 
 //ひらがな→カタカナ変換
 function hiraganaToKatagana(src) {
