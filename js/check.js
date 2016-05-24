@@ -297,9 +297,6 @@ function pokeserach(){
 	var j = 0;
 	var e = document.getElementById('combolist');
 	var e2 = '';
-	while (e.firstChild){
-		e.removeChild(e.firstChild);
-	}
 	if(elm.length >= 1){
 		for(i=0; i<pokemon.length; i++){
 			var elm3 = "a" + pokemon[i][0];
@@ -312,10 +309,13 @@ function pokeserach(){
  				break;
  			}
 		}
-		
+		document.getElementById('pokename').value = elm;
+		while (e.firstChild){
+			e.removeChild(e.firstChild);
+		}
+		e.innerHTML += e2;
 	}
-	document.getElementById('pokename').value = elm;
-	e.innerHTML += e2;
+	
 }
 //--------------------------------------部分一致では表示できなかった。前方一致で追加するようにしたい。
 
