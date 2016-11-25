@@ -24,6 +24,24 @@ function mega_button(){
 		document.nForm.elements['mega0'].value="ノーマル";
 		document.nForm.elements['mega1'].value="ダルマ";
 		visi(2);
+	}else if((document.nForm.elements['pokename'].value=="ルガルガン")||
+		(document.nForm.elements['pokename'].value=="ルガルガン(まひる)")||
+		(document.nForm.elements['pokename'].value=="ルガルガン(まよなか)")){
+		document.nForm.elements['mega0'].value="まひる";
+		document.nForm.elements['mega1'].value="まよなか";
+		visi(2);
+	}else if((document.nForm.elements['pokename'].value=="ヨワシ")||
+		(document.nForm.elements['pokename'].value=="ヨワシ(たんどく)")||
+		(document.nForm.elements['pokename'].value=="ヨワシ(むれ)")){
+		document.nForm.elements['mega0'].value="たんどく";
+		document.nForm.elements['mega1'].value="むれ";
+		visi(2);
+	}else if((document.nForm.elements['pokename'].value=="メテノ")||
+		(document.nForm.elements['pokename'].value=="メテノ(シールド)")||
+		(document.nForm.elements['pokename'].value=="メテノ(コア)")){
+		document.nForm.elements['mega0'].value="シールド";
+		document.nForm.elements['mega1'].value="コア";
+		visi(2);
 	}else if((document.nForm.elements['pokename'].value=="シェイミ")||
 		(document.nForm.elements['pokename'].value=="シェイミ(ランド)")||
 		(document.nForm.elements['pokename'].value=="シェイミ(スカイ)")){
@@ -67,6 +85,14 @@ function mega_button(){
 		document.nForm.elements['mega0'].value="通常";
 		document.nForm.elements['mega1'].value="ブラック";
 		document.nForm.elements['mega2'].value="ホワイト";
+		visi(3);
+	}else if((document.nForm.elements['pokename'].value=="ジガルデ")||
+		(document.nForm.elements['pokename'].value=="ジガルデ(10％)")||
+		(document.nForm.elements['pokename'].value=="ジガルデ(50％)")||
+		(document.nForm.elements['pokename'].value=="ジガルデ(パーフェクト)")){
+		document.nForm.elements['mega0'].value="10％";
+		document.nForm.elements['mega1'].value="50％";
+		document.nForm.elements['mega2'].value="パーフェクト";
 		visi(3);
 	}else if((document.nForm.elements['pokename'].value=="ミノマダム")||
 		(document.nForm.elements['pokename'].value=="ミノマダム(草木)")||
@@ -270,6 +296,30 @@ function megachange(num){
  		}else if(parseInt(num)==1){
  			document.nForm.elements['pokename'].value="ヒヒダルマ(ダルマ)";
  		}
+ 	}else if((document.nForm.elements['pokename'].value=="ルガルガン")||
+		(document.nForm.elements['pokename'].value=="ルガルガン(まひる)")||
+		(document.nForm.elements['pokename'].value=="ルガルガン(まよなか)")){
+		if(parseInt(num)==0){
+ 			document.nForm.elements['pokename'].value="ルガルガン(まひる)";
+ 		}else if(parseInt(num)==1){
+ 			document.nForm.elements['pokename'].value="ルガルガン(まよなか)";
+ 		}
+ 	}else if((document.nForm.elements['pokename'].value=="ヨワシ")||
+		(document.nForm.elements['pokename'].value=="ヨワシ(たんどく)")||
+		(document.nForm.elements['pokename'].value=="ヨワシ(むれ)")){
+		if(parseInt(num)==0){
+ 			document.nForm.elements['pokename'].value="ヨワシ(たんどく)";
+ 		}else if(parseInt(num)==1){
+ 			document.nForm.elements['pokename'].value="ヨワシ(むれ)";
+ 		}
+ 	}else if((document.nForm.elements['pokename'].value=="メテノ")||
+		(document.nForm.elements['pokename'].value=="メテノ(シールド)")||
+		(document.nForm.elements['pokename'].value=="メテノ(コア)")){
+		if(parseInt(num)==0){
+ 			document.nForm.elements['pokename'].value="メテノ(シールド)";
+ 		}else if(parseInt(num)==1){
+ 			document.nForm.elements['pokename'].value="メテノ(コア)";
+ 		}
 	}else if((document.nForm.elements['pokename'].value=="シェイミ")||
 		(document.nForm.elements['pokename'].value=="シェイミ(ランド)")||
 		(document.nForm.elements['pokename'].value=="シェイミ(スカイ)")){
@@ -336,6 +386,17 @@ function megachange(num){
  			document.nForm.elements['pokename'].value="ブラックキュレム";
  		}else if(parseInt(num)==2){
  			document.nForm.elements['pokename'].value="ホワイトキュレム";
+ 		}
+ 	}else if((document.nForm.elements['pokename'].value=="ジガルデ")||
+		(document.nForm.elements['pokename'].value=="ジガルデ(10％)")||
+		(document.nForm.elements['pokename'].value=="ジガルデ(50％)")||
+		(document.nForm.elements['pokename'].value=="ジガルデ(パーフェクト)")){
+		if(parseInt(num)==0){
+ 			document.nForm.elements['pokename'].value="ジガルデ(10％)";
+ 		}else if(parseInt(num)==1){
+ 			document.nForm.elements['pokename'].value="ジガルデ(50％)";
+ 		}else if(parseInt(num)==2){
+ 			document.nForm.elements['pokename'].value="ジガルデ(パーフェクト)";
  		}
  	}else if((document.nForm.elements['pokename'].value=="ミノマダム")||
  		(document.nForm.elements['pokename'].value=="ミノマダム(草木)")||
