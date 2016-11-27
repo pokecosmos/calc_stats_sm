@@ -157,6 +157,51 @@ function mega_button(){
 		document.nForm.elements['mega1'].value="メガＸ";
 		document.nForm.elements['mega2'].value="メガＹ";
 		visi(3);
+	}else if((document.nForm.elements['pokename'].value=="ゲッコウガ")||
+		(document.nForm.elements['pokename'].value=="ゲッコウガ(通常)")||
+		(document.nForm.elements['pokename'].value=="ゲッコウガ(キズナ)")){
+		document.nForm.elements['mega0'].value="通常";
+		document.nForm.elements['mega1'].value="キズナ";
+		visi(2);
+	}else if((document.nForm.elements['pokename'].value=="コラッタ")||
+		(document.nForm.elements['pokename'].value=="コラッタ(通常)")||(document.nForm.elements['pokename'].value=="コラッタ(アローラ)")||
+		(document.nForm.elements['pokename'].value=="ラッタ")||
+		(document.nForm.elements['pokename'].value=="ラッタ(通常)")||(document.nForm.elements['pokename'].value=="ラッタ(アローラ)")||
+		(document.nForm.elements['pokename'].value=="ライチュウ")||
+		(document.nForm.elements['pokename'].value=="ライチュウ(通常)")||(document.nForm.elements['pokename'].value=="ライチュウ(アローラ)")||
+		(document.nForm.elements['pokename'].value=="サンド")||
+		(document.nForm.elements['pokename'].value=="サンド(通常)")||(document.nForm.elements['pokename'].value=="サンド(アローラ)")||
+		(document.nForm.elements['pokename'].value=="サンドパン")||
+		(document.nForm.elements['pokename'].value=="サンドパン(通常)")||(document.nForm.elements['pokename'].value=="サンドパン(アローラ)")||
+		(document.nForm.elements['pokename'].value=="ロコン")||
+		(document.nForm.elements['pokename'].value=="ロコン(通常)")||(document.nForm.elements['pokename'].value=="ロコン(アローラ)")||
+		(document.nForm.elements['pokename'].value=="キュウコン")||
+		(document.nForm.elements['pokename'].value=="キュウコン(通常)")||(document.nForm.elements['pokename'].value=="キュウコン(アローラ)")||
+		(document.nForm.elements['pokename'].value=="ディグダ")||
+		(document.nForm.elements['pokename'].value=="ディグダ(通常)")||(document.nForm.elements['pokename'].value=="ディグダ(アローラ)")||
+		(document.nForm.elements['pokename'].value=="ダグトリオ")||
+		(document.nForm.elements['pokename'].value=="ダグトリオ(通常)")||(document.nForm.elements['pokename'].value=="ダグトリオ(アローラ)")||
+		(document.nForm.elements['pokename'].value=="ニャース")||
+		(document.nForm.elements['pokename'].value=="ニャース(通常)")||(document.nForm.elements['pokename'].value=="ニャース(アローラ)")||
+		(document.nForm.elements['pokename'].value=="ペルシアン")||
+		(document.nForm.elements['pokename'].value=="ペルシアン(通常)")||(document.nForm.elements['pokename'].value=="ペルシアン(アローラ)")||
+		(document.nForm.elements['pokename'].value=="イシツブテ")||
+		(document.nForm.elements['pokename'].value=="イシツブテ(通常)")||(document.nForm.elements['pokename'].value=="イシツブテ(アローラ)")||
+		(document.nForm.elements['pokename'].value=="ゴローン")||
+		(document.nForm.elements['pokename'].value=="ゴローン(通常)")||(document.nForm.elements['pokename'].value=="ゴローン(アローラ)")||
+		(document.nForm.elements['pokename'].value=="ゴローニャ")||
+		(document.nForm.elements['pokename'].value=="ゴローニャ(通常)")||(document.nForm.elements['pokename'].value=="ゴローニャ(アローラ)")||
+		(document.nForm.elements['pokename'].value=="ベトベター")||
+		(document.nForm.elements['pokename'].value=="ベトベター(通常)")||(document.nForm.elements['pokename'].value=="ベトベター(アローラ)")||
+		(document.nForm.elements['pokename'].value=="ベトベトン")||
+		(document.nForm.elements['pokename'].value=="ベトベトン(通常)")||(document.nForm.elements['pokename'].value=="ベトベトン(アローラ)")||
+		(document.nForm.elements['pokename'].value=="ナッシー")||
+		(document.nForm.elements['pokename'].value=="ナッシー(通常)")||(document.nForm.elements['pokename'].value=="ナッシー(アローラ)")||
+		(document.nForm.elements['pokename'].value=="ガラガラ")||
+		(document.nForm.elements['pokename'].value=="ガラガラ(通常)")||(document.nForm.elements['pokename'].value=="ガラガラ(アローラ)")){
+		document.nForm.elements['mega0'].value="通常";
+		document.nForm.elements['mega1'].value="アローラ";
+		visi(2);
 	}else if(
 	(document.nForm.elements['pokename'].value=="フシギバナ")||(document.nForm.elements['pokename'].value=="メガフシギバナ")||
 	(document.nForm.elements['pokename'].value=="カメックス")||(document.nForm.elements['pokename'].value=="メガカメックス")||
@@ -484,6 +529,59 @@ function megachange(num){
  		}else if(parseInt(num)==2){
  			document.nForm.elements['pokename'].value="メガミュウツーY";
  		}
+ 	}else if((document.nForm.elements['pokename'].value=="ゲッコウガ")||
+		(document.nForm.elements['pokename'].value=="ゲッコウガ(通常)")||
+		(document.nForm.elements['pokename'].value=="ゲッコウガ(キズナ)")){
+		if(parseInt(num)==0){
+ 			document.nForm.elements['pokename'].value="ゲッコウガ(通常)";
+ 		}else if(parseInt(num)==1){
+ 			document.nForm.elements['pokename'].value="ゲッコウガ(キズナ)";
+ 		}
+ 	}else if((document.nForm.elements['pokename'].value=="コラッタ")||
+		(document.nForm.elements['pokename'].value=="コラッタ(通常)")||(document.nForm.elements['pokename'].value=="コラッタ(アローラ)")||
+		(document.nForm.elements['pokename'].value=="ラッタ")||
+		(document.nForm.elements['pokename'].value=="ラッタ(通常)")||(document.nForm.elements['pokename'].value=="ラッタ(アローラ)")||
+		(document.nForm.elements['pokename'].value=="ライチュウ")||
+		(document.nForm.elements['pokename'].value=="ライチュウ(通常)")||(document.nForm.elements['pokename'].value=="ライチュウ(アローラ)")||
+		(document.nForm.elements['pokename'].value=="サンド")||
+		(document.nForm.elements['pokename'].value=="サンド(通常)")||(document.nForm.elements['pokename'].value=="サンド(アローラ)")||
+		(document.nForm.elements['pokename'].value=="サンドパン")||
+		(document.nForm.elements['pokename'].value=="サンドパン(通常)")||(document.nForm.elements['pokename'].value=="サンドパン(アローラ)")||
+		(document.nForm.elements['pokename'].value=="ロコン")||
+		(document.nForm.elements['pokename'].value=="ロコン(通常)")||(document.nForm.elements['pokename'].value=="ロコン(アローラ)")||
+		(document.nForm.elements['pokename'].value=="キュウコン")||
+		(document.nForm.elements['pokename'].value=="キュウコン(通常)")||(document.nForm.elements['pokename'].value=="キュウコン(アローラ)")||
+		(document.nForm.elements['pokename'].value=="ディグダ")||
+		(document.nForm.elements['pokename'].value=="ディグダ(通常)")||(document.nForm.elements['pokename'].value=="ディグダ(アローラ)")||
+		(document.nForm.elements['pokename'].value=="ダグトリオ")||
+		(document.nForm.elements['pokename'].value=="ダグトリオ(通常)")||(document.nForm.elements['pokename'].value=="ダグトリオ(アローラ)")||
+		(document.nForm.elements['pokename'].value=="ニャース")||
+		(document.nForm.elements['pokename'].value=="ニャース(通常)")||(document.nForm.elements['pokename'].value=="ニャース(アローラ)")||
+		(document.nForm.elements['pokename'].value=="ペルシアン")||
+		(document.nForm.elements['pokename'].value=="ペルシアン(通常)")||(document.nForm.elements['pokename'].value=="ペルシアン(アローラ)")||
+		(document.nForm.elements['pokename'].value=="イシツブテ")||
+		(document.nForm.elements['pokename'].value=="イシツブテ(通常)")||(document.nForm.elements['pokename'].value=="イシツブテ(アローラ)")||
+		(document.nForm.elements['pokename'].value=="ゴローン")||
+		(document.nForm.elements['pokename'].value=="ゴローン(通常)")||(document.nForm.elements['pokename'].value=="ゴローン(アローラ)")||
+		(document.nForm.elements['pokename'].value=="ゴローニャ")||
+		(document.nForm.elements['pokename'].value=="ゴローニャ(通常)")||(document.nForm.elements['pokename'].value=="ゴローニャ(アローラ)")||
+		(document.nForm.elements['pokename'].value=="ベトベター")||
+		(document.nForm.elements['pokename'].value=="ベトベター(通常)")||(document.nForm.elements['pokename'].value=="ベトベター(アローラ)")||
+		(document.nForm.elements['pokename'].value=="ベトベトン")||
+		(document.nForm.elements['pokename'].value=="ベトベトン(通常)")||(document.nForm.elements['pokename'].value=="ベトベトン(アローラ)")||
+		(document.nForm.elements['pokename'].value=="ナッシー")||
+		(document.nForm.elements['pokename'].value=="ナッシー(通常)")||(document.nForm.elements['pokename'].value=="ナッシー(アローラ)")||
+		(document.nForm.elements['pokename'].value=="ガラガラ")||
+		(document.nForm.elements['pokename'].value=="ガラガラ(通常)")||(document.nForm.elements['pokename'].value=="ガラガラ(アローラ)")){
+		if(parseInt(num)==0){
+ 			document.nForm.elements['pokename'].value = document.nForm.elements['pokename'].value.replace(/\(アローラ\)/g,"");
+ 			document.nForm.elements['pokename'].value = document.nForm.elements['pokename'].value.replace(/\(通常\)/g,"");
+ 			document.nForm.elements['pokename'].value= "" + document.nForm.elements['pokename'].value + "(通常)";
+ 		}else if(parseInt(num)==1){
+ 			document.nForm.elements['pokename'].value = document.nForm.elements['pokename'].value.replace(/\(アローラ\)/g,"");
+ 			document.nForm.elements['pokename'].value = document.nForm.elements['pokename'].value.replace(/\(通常\)/g,"");
+ 			document.nForm.elements['pokename'].value= "" + document.nForm.elements['pokename'].value + "(アローラ)";
+ 		}
 	}else if(
 	(document.nForm.elements['pokename'].value=="フシギバナ")||(document.nForm.elements['pokename'].value=="メガフシギバナ")||
 	(document.nForm.elements['pokename'].value=="リザードン")||(document.nForm.elements['pokename'].value=="メガリザードンＸ")||(document.nForm.elements['pokename'].value=="メガリザードンＹ")||
@@ -531,14 +629,11 @@ function megachange(num){
 	(document.nForm.elements['pokename'].value=="タブンネ")||(document.nForm.elements['pokename'].value=="メガタブンネ")||
 	(document.nForm.elements['pokename'].value=="ディアンシー")||(document.nForm.elements['pokename'].value=="ディアンシー")){
 		if(parseInt(num)==0){
-			var index = document.nForm.elements['pokename'].value.indexOf("メガ");
-			if(index != -1){
- 				document.nForm.elements['pokename'].value = document.nForm.elements['pokename'].value.replace(/メガ/g,"");
- 			}
+			document.nForm.elements['pokename'].value = document.nForm.elements['pokename'].value.replace(/メガ/g,"");
  		}else if(parseInt(num)==1){
  			var index = document.nForm.elements['pokename'].value.indexOf("メガ");
  			if(index == -1){
- 				document.nForm.elements['pokename'].value="メガ"+ document.nForm.elements['pokename'].value;
+ 				document.nForm.elements['pokename'].value="メガ"+ document.nForm.elements['pokename'].value+"";
  			}
  		}
 	}
