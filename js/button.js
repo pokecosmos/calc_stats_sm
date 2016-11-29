@@ -87,8 +87,8 @@ function mega_button(){
 		document.nForm.elements['mega2'].value="ホワイト";
 		visi(3);
 	}else if((document.nForm.elements['pokename'].value=="ジガルデ")||
-		(document.nForm.elements['pokename'].value=="ジガルデ(10％)")||
-		(document.nForm.elements['pokename'].value=="ジガルデ(50％)")||
+		(document.nForm.elements['pokename'].value=="ジガルデ(10%)")||
+		(document.nForm.elements['pokename'].value=="ジガルデ(50%)")||
 		(document.nForm.elements['pokename'].value=="ジガルデ(パーフェクト)")){
 		document.nForm.elements['mega0'].value="10％";
 		document.nForm.elements['mega1'].value="50％";
@@ -433,13 +433,13 @@ function megachange(num){
  			document.nForm.elements['pokename'].value="ホワイトキュレム";
  		}
  	}else if((document.nForm.elements['pokename'].value=="ジガルデ")||
-		(document.nForm.elements['pokename'].value=="ジガルデ(10％)")||
-		(document.nForm.elements['pokename'].value=="ジガルデ(50％)")||
+		(document.nForm.elements['pokename'].value=="ジガルデ(10%)")||
+		(document.nForm.elements['pokename'].value=="ジガルデ(50%)")||
 		(document.nForm.elements['pokename'].value=="ジガルデ(パーフェクト)")){
 		if(parseInt(num)==0){
- 			document.nForm.elements['pokename'].value="ジガルデ(10％)";
+ 			document.nForm.elements['pokename'].value="ジガルデ(10%)";
  		}else if(parseInt(num)==1){
- 			document.nForm.elements['pokename'].value="ジガルデ(50％)";
+ 			document.nForm.elements['pokename'].value="ジガルデ(50%)";
  		}else if(parseInt(num)==2){
  			document.nForm.elements['pokename'].value="ジガルデ(パーフェクト)";
  		}
