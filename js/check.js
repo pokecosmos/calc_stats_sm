@@ -297,14 +297,13 @@ function ssum(){
 
 function pokeserach(){
 	var elm = hiraganaToKatagana(document.getElementById('pokename').value);
-	var elm2 = elm;
 	var j = 0;
 	var e = document.getElementById('combolist');
 	var e2 = '';
 	if(elm.length >= 1){
 		for(i=0; i<pokemon.length; i++){
 			var elm3 = pokemon[i][0];
-			var index = elm3.indexOf(elm2);
+			var index = elm3.indexOf(elm);
 			if(index != -1){
 				e2 += '<option value = "'+ pokemon[i][0] +'"></option>';
 				j++;
