@@ -291,15 +291,19 @@ function ssum(){
 }
 
 //ポケモン名を検索する
+//部分一致で表示できた　次は変換バグを直したい　入力中の文字がひらがなが1字になるごとにまとめて追加入力される　文字が増える
+//カタカナに変換してからでないと認識してくれない
+
+
 function pokeserach(){
 	var elm = hiraganaToKatagana(document.getElementById('pokename').value);
-	var elm2 = "a" + elm
+	var elm2 = elm;
 	var j = 0;
 	var e = document.getElementById('combolist');
 	var e2 = '';
 	if(elm.length >= 1){
 		for(i=0; i<pokemon.length; i++){
-			var elm3 = "a" + pokemon[i][0];
+			var elm3 = pokemon[i][0];
 			var index = elm3.indexOf(elm2);
 			if(index != -1){
 				e2 += '<option value = "'+ pokemon[i][0] +'"></option>';
@@ -309,7 +313,8 @@ function pokeserach(){
  				break;
  			}
 		}
-		document.getElementById('pokename').value = elm;
+		document.getElementById('pokename').value = elm;//挿入するけど2重になっていく
+		
 		while (e.firstChild){
 			e.removeChild(e.firstChild);
 		}
@@ -317,7 +322,6 @@ function pokeserach(){
 	}
 	
 }
-//--------------------------------------部分一致では表示できなかった。前方一致で追加するようにしたい。
 
 //ひらがな→カタカナ変換
 function hiraganaToKatagana(src) {
@@ -326,3 +330,4 @@ function hiraganaToKatagana(src) {
 		return String.fromCharCode(chr);
 	});
 }
+
