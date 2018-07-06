@@ -215,7 +215,7 @@ function mega_button(){
 	(document.nForm.elements['pokename'].value=="ハッサム")||(document.nForm.elements['pokename'].value=="メガハッサム")||
 	(document.nForm.elements['pokename'].value=="ヘラクロス")||(document.nForm.elements['pokename'].value=="メガヘラクロス")||
 	(document.nForm.elements['pokename'].value=="ヘルガー")||(document.nForm.elements['pokename'].value=="メガヘルガー")||
-	(document.nForm.elements['pokename'].value=="バンギラス")||(document.nForm.elements['pokename'].value=="バンギラス")||
+	(document.nForm.elements['pokename'].value=="バンギラス")||(document.nForm.elements['pokename'].value=="メガバンギラス")||
 	(document.nForm.elements['pokename'].value=="バシャーモ")||(document.nForm.elements['pokename'].value=="メガバシャーモ")||
 	(document.nForm.elements['pokename'].value=="サーナイト")||(document.nForm.elements['pokename'].value=="メガサーナイト")||
 	(document.nForm.elements['pokename'].value=="クチート")||(document.nForm.elements['pokename'].value=="メガクチート")||
@@ -245,7 +245,7 @@ function mega_button(){
 	(document.nForm.elements['pokename'].value=="ミミロップ")||(document.nForm.elements['pokename'].value=="メガミミロップ")||
 	(document.nForm.elements['pokename'].value=="エルレイド")||(document.nForm.elements['pokename'].value=="メガエルレイド")||
 	(document.nForm.elements['pokename'].value=="タブンネ")||(document.nForm.elements['pokename'].value=="メガタブンネ")||
-	(document.nForm.elements['pokename'].value=="ディアンシー")||(document.nForm.elements['pokename'].value=="ディアンシー")){
+	(document.nForm.elements['pokename'].value=="ディアンシー")||(document.nForm.elements['pokename'].value=="メガディアンシー")){
 		document.nForm.elements['mega0'].value="通常";
 		document.nForm.elements['mega1'].value="メガ";
 		visi(2);
@@ -597,7 +597,7 @@ function megachange(num){
 	(document.nForm.elements['pokename'].value=="ハッサム")||(document.nForm.elements['pokename'].value=="メガハッサム")||
 	(document.nForm.elements['pokename'].value=="ヘラクロス")||(document.nForm.elements['pokename'].value=="メガヘラクロス")||
 	(document.nForm.elements['pokename'].value=="ヘルガー")||(document.nForm.elements['pokename'].value=="メガヘルガー")||
-	(document.nForm.elements['pokename'].value=="バンギラス")||(document.nForm.elements['pokename'].value=="バンギラス")||
+	(document.nForm.elements['pokename'].value=="バンギラス")||(document.nForm.elements['pokename'].value=="メガバンギラス")||
 	(document.nForm.elements['pokename'].value=="バシャーモ")||(document.nForm.elements['pokename'].value=="メガバシャーモ")||
 	(document.nForm.elements['pokename'].value=="サーナイト")||(document.nForm.elements['pokename'].value=="メガサーナイト")||
 	(document.nForm.elements['pokename'].value=="クチート")||(document.nForm.elements['pokename'].value=="メガクチート")||
@@ -627,7 +627,7 @@ function megachange(num){
 	(document.nForm.elements['pokename'].value=="ミミロップ")||(document.nForm.elements['pokename'].value=="メガミミロップ")||
 	(document.nForm.elements['pokename'].value=="エルレイド")||(document.nForm.elements['pokename'].value=="メガエルレイド")||
 	(document.nForm.elements['pokename'].value=="タブンネ")||(document.nForm.elements['pokename'].value=="メガタブンネ")||
-	(document.nForm.elements['pokename'].value=="ディアンシー")||(document.nForm.elements['pokename'].value=="ディアンシー")){
+	(document.nForm.elements['pokename'].value=="ディアンシー")||(document.nForm.elements['pokename'].value=="メガディアンシー")){
 		if(parseInt(num)==0){
 			document.nForm.elements['pokename'].value = document.nForm.elements['pokename'].value.replace(/メガ/g,"");
  		}else if(parseInt(num)==1){
