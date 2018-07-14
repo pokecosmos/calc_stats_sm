@@ -262,6 +262,7 @@ function moji(){
 			}
 		}else{
 			text.value += "×";
+			text2 += "×";
 		}
 		if(i <5){
 			text.value += "-";
