@@ -154,6 +154,8 @@ function dsum(){
 //ステータスをテキストボックス外に表示する
 function moji(){
 	var text = document.nForm.elements['target'];
+	var text2 = "";//実数値
+	var text3 = "";//努力値
 	
 	text.value =document.nForm.elements['pokename'].value;
 	for(i=1; i<6; i++){
@@ -169,93 +171,111 @@ function moji(){
 	switch(i){
 		case 1:
 			if(j == 2){
-				text.value +=" さみしがり ";
+				text3 ="さみしがり";
 			}else if(j == 3){
-				text.value +=" いじっぱり ";
+				text3 ="いじっぱり";
 			}else if(j == 4){
-				text.value +=" やんちゃ ";
+				text3 ="やんちゃ";
 			}else if(j == 5){
-				text.value +=" ゆうかん ";
+				text3 ="ゆうかん";
 			}else{
-				text.value +=" ??? ";
+				text3 ="？？？";
 			}
 			break
 		case 2:
 			if(j == 1){
-				text.value +=" ずぶとい ";
+				text3 ="ずぶとい";
 			}else if(j == 3){
-				text.value +=" わんぱく ";
+				text3 ="わんぱく";
 			}else if(j == 4){
-				text.value +=" のうてんき ";
+				text3 ="のうてんき";
 			}else if(j == 5){
-				text.value +=" のんき ";
+				text3 ="のんき";
 			}else{
-				text.value +=" ??? ";
+				text3 ="？？？";
 			}
 			break
 		case 3:
 			if(j == 1){
-				text.value +=" ひかえめ ";
+				text3 ="ひかえめ";
 			}else if(j == 2){
-				text.value +=" おっとり ";
+				text3 ="おっとり";
 			}else if(j == 4){
-				text.value +=" うっかりや ";
+				text3 ="うっかりや";
 			}else if(j == 5){
-				text.value +=" れいせい ";
+				text3 ="れいせい";
 			}else{
-				text.value +=" ??? ";
+				text3 ="？？？";
 			}
 			break;
 		case 4:
 			if(j == 1){
-				text.value +=" おだやか ";
+				text3 ="おだやか";
 			}else if(j == 2){
-				text.value +=" おとなしい ";
+				text3 ="おとなしい";
 			}else if(j == 3){
-				text.value +=" しんちょう ";
+				text3 ="しんちょう";
 			}else if(j == 5){
-				text.value +=" なまいき ";
+				text3 ="なまいき";
 			}else{
-				text.value +=" ??? ";
+				text3 ="？？？";
 			}
 			break;
 		case 5:
 			if(j == 1){
-				text.value +=" おくびょう ";
+				text3 ="おくびょう";
 			}else if(j == 2){
-				text.value +=" せっかち ";
+				text3 ="せっかち";
 			}else if(j == 3){
-				text.value +=" ようき ";
+				text3 ="ようき";
 			}else if(j == 4){
-				text.value +=" むじゃき ";
+				text3 ="むじゃき";
 			}else{
-				text.value +=" ??? ";
+				text3 ="？？？";
 			}
 			break;
 		case 6:
 			if(j == 6){
-				text.value +=" まじめ ";
+				text3 ="まじめ";
 			}else{
-				text.value +=" ??? ";
+				text3 ="？？？";
 			}
 			break;
 	}
+	text.value += " "+ text3 + " ";
+	
 	for(i=0; i<6; i++){
 		if(document.nForm.elements[nn[i]].value >= 1){
 			text.value += document.nForm.elements[nn[i]].value;
+			text2 += document.nForm.elements[nn[i]].value;
 			if(document.nForm.elements[dn[i]].value > 0){
 				text.value +="(";
 				text.value +=document.nForm.elements[dn[i]].value;
 				text.value +=")";
+				if(i==0){text3 += "H"}
+				else if(i==1){text3 += " A"}
+				else if(i==2){text3 += " B"}
+				else if(i==3){text3 += " C"}
+				else if(i==4){text3 += " D"}
+				else if(i==5){text3 += " S"}
+				text3 += document.nForm.elements[dn[i]].value;
 			}
 		}else{
 			text.value += "×";
 		}
 		if(i <5){
 			text.value += "-";
+			text2 += "-";
 		}
 	}
+	text.value += "\n";
+	text.value += text2;
+	text.value += "\n";
+	text.value += text3;
+	
 }
+
+
 //種族値を代入する
 function setpokemon(){
 	mega_button();
@@ -296,7 +316,7 @@ function ssum(){
 
 
 function pokeserach(){
-	var elm = hiraganaToKatagana(document.getElementById('pokename').value);
+	var elm = hiraganaToKatakana(document.getElementById('pokename').value);
 	var j = 0;
 	var e = document.getElementById('combolist');
 	var e2 = '';
@@ -323,7 +343,7 @@ function pokeserach(){
 }
 
 //ひらがな→カタカナ変換
-function hiraganaToKatagana(src) {
+function hiraganaToKatakana(src) {
 	return src.replace(/[\u3041-\u3096]/g, function(match) {
 		var chr = match.charCodeAt(0) + 0x60;
 		return String.fromCharCode(chr);
