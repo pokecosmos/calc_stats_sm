@@ -112,6 +112,17 @@ function mega_button(){
 		document.nForm.elements['mega2'].value="ディフェンス";
 		document.nForm.elements['mega3'].value="スピード";
 		visi(6);
+	}else if((document.nForm.elements['pokename'].value=="ネクロズマ")||
+		(document.nForm.elements['pokename'].value=="ネクロズマ(通常)")||
+		(document.nForm.elements['pokename'].value=="ネクロズマ(日食)")||
+		(document.nForm.elements['pokename'].value=="ネクロズマ(月食)")||
+		(document.nForm.elements['pokename'].value=="ネクロズマ(ウルトラ)")||
+		(document.nForm.elements['pokename'].value=="ウルトラネクロズマ")){
+		document.nForm.elements['mega0'].value="通常";
+		document.nForm.elements['mega1'].value="日食";
+		document.nForm.elements['mega2'].value="月食";
+		document.nForm.elements['mega3'].value="ウルトラ";
+		visi(6);//----------------------------------------------------------------------------------------------------------------------------------この数字なんだっけ
 	}else if((document.nForm.elements['pokename'].value=="バケッチャ")||
 		(document.nForm.elements['pokename'].value=="バケッチャ(特大)")||
 		(document.nForm.elements['pokename'].value=="バケッチャ(大きい)")||
@@ -467,6 +478,21 @@ function megachange(num){
  			document.nForm.elements['pokename'].value="デオキシス(ディフェンス)";
  		}else if(parseInt(num)==3){
  			document.nForm.elements['pokename'].value="デオキシス(スピード)";
+ 		}
+ 	}else if((document.nForm.elements['pokename'].value=="ネクロズマ")||
+		(document.nForm.elements['pokename'].value=="ネクロズマ(通常)")||
+		(document.nForm.elements['pokename'].value=="ネクロズマ(日食)")||
+		(document.nForm.elements['pokename'].value=="ネクロズマ(月食)")||
+		(document.nForm.elements['pokename'].value=="ネクロズマ(ウルトラ)")||
+		(document.nForm.elements['pokename'].value=="ウルトラネクロズマ")){
+		if(parseInt(num)==0){
+ 			document.nForm.elements['pokename'].value="ネクロズマ(通常)";
+ 		}else if(parseInt(num)==1){
+ 			document.nForm.elements['pokename'].value="ネクロズマ(日食)";
+ 		}else if(parseInt(num)==2){
+ 			document.nForm.elements['pokename'].value="ネクロズマ(月食)";
+ 		}else if(parseInt(num)==3){
+ 			document.nForm.elements['pokename'].value="ネクロズマ(ウルトラ)";
  		}
  	}else if((document.nForm.elements['pokename'].value=="バケッチャ")||
 		(document.nForm.elements['pokename'].value=="バケッチャ(特大)")||

@@ -38,12 +38,13 @@ var nnn = 175;
 <font size="5" color="#87CEEB" face="ＭＳ Ｐ明朝,ＭＳ 明朝">ポケモンステータス計算機</font></br></br>
 <form name="nForm">
 <table border="0">
-<tr><td></td><td colspan="2"><input type="search" id ="pokename" name = "pokename" class="name" value="" autocomplete="off" list="combolist" placeholder="ポケモン名" onChange="pokeserach()" onblur="setpokemon()">
+<tr><td></td><td colspan="2"><input width="300" type="search" id ="pokename" name = "pokename" class="name" value="" autocomplete="off" list="combolist" placeholder="ポケモン名" onChange="pokeserach()" onblur="setpokemon()">
 <td  colspan="7"><input type="button" class="mega" name="mega0" value="通常" onclick="megachange(0)" visibility="hidden">
 <input type="button" class="mega" name="mega1" value="メガ" onclick="megachange(1)"> 
 <input type="button" class="mega" name="mega2" value="通常" onclick="megachange(2)"> 
 <input type="button" class="mega" name="mega3" value="通常" onclick="megachange(3)">
 </td></tr>
+<table border="0">
 <tr><td></td><td colspan="3"> Lv. <input type="number" name="L0" value="50" min="1" max="100" step="1"  onclick="ncalc(0);ncalc(1);ncalc(2);ncalc(3);ncalc(4);ncalc(5)" onblur="ncalc(0);ncalc(1);ncalc(2);ncalc(3);ncalc(4);ncalc(5)">
 <input type="button" class="button" value ="50" onclick="setvalue('L0', 50);ncalc(0);ncalc(1);ncalc(2);ncalc(3);ncalc(4);ncalc(5)">
 <input type="button" class="button" value ="100" onclick="setvalue('L0', 100);ncalc(0);ncalc(1);ncalc(2);ncalc(3);ncalc(4);ncalc(5)"></td></tr>
