@@ -92,8 +92,14 @@ function ncalc(num){
 			n = Math.floor(n*0.9);
 		}
 	}
+	var p = document.nForm.elements['pokename'].value;
+	if(p == "ヌケニン"){
+		if(num == 0){
+			n = 1;
+		}
+	}
 	document.nForm.elements[nn[num]].value=n;
-	moji();
+	moji(); k_color();
 }
 //努力値を逆算する
 function dcalc(num){
@@ -123,17 +129,18 @@ function dcalc(num){
 	}
 	n = Math.ceil(n * 100 / document.nForm.elements['L0'].value);
 	n = (n - parseInt(document.nForm.elements[sn[num]].value) *2 - parseInt(document.nForm.elements[kn[num]].value))*4;
+	if(n > 252){
+		document.nForm.elements[dn[num]].style.color = "red";
+	}else{
+		document.nForm.elements[dn[num]].style.color = "black";
+	}
 	if(n < 0){
 		document.nForm.elements[dn[num]].value = 0;
 		ncalc(num);
 	}else{
 		document.nForm.elements[dn[num]].value = n;
 	}
-	if(n > 252){
-		document.nForm.elements[dn[num]].style.color = "red";
-	}else{
-		document.nForm.elements[dn[num]].style.color = "black";
-	}
+	
 	dsum();moji();
 }
 //残り努力値の合計を計算する
@@ -301,6 +308,7 @@ function dreset(){
 		document.nForm.elements[dn[i]].style.color = "black";
 	}
 	dsum();moji();
+	ncalc(0);ncalc(1);ncalc(2);ncalc(3);ncalc(4);ncalc(5);
 }
 //種族値合計を計算する
 function ssum(){
@@ -311,36 +319,93 @@ function ssum(){
 	document.nForm.elements[sn[6]].value = n;
 }
 
-//ポケモン名を検索する
-//部分一致で表示できた　次は変換バグを直したい　入力中の文字がひらがなが1字になるごとにまとめて追加入力される　文字が増える
-//カタカナに変換してからでないと認識してくれない
+//個体値が変更されてるとき色を変える
+function k_color(){
+
+	for(i=0; i<6; i++){
+		if(document.nForm.elements[kn[i]].value == 31){
+			document.nForm.elements[kn[i]].style.color = "black";
+		}else{
+			document.nForm.elements[kn[i]].style.color = "red";
+		}
+	}
+}
 
 
+//耐久振り計算用
+function ncalc2(num, dnum){
+	
+	n = Math.floor(dnum / 4);
+	n += parseInt(document.nForm.elements[sn[num]].value) * 2 + parseInt(document.nForm.elements[kn[num]].value);
+	n = Math.floor(n * parseInt(document.nForm.elements['L0'].value) / 100);
+	if(num == 0){//H能力値の計算
+		n += 10 + parseInt(document.nForm.elements['L0'].value);
+	}else{//ABCDS能力値の計算
+		n += 5;
+		if(document.nForm.elements[chup[parseInt(num)]].checked == true){
+			n = Math.floor(n*1.1);
+		}else if(document.nForm.elements[chdw[parseInt(num)]].checked == true){
+			n = Math.floor(n*0.9);
+		}
+	}
+	return(n);
+}
+
+//耐久振りボタン計算
+function taikyu_tyosei(){
+	
+	now_nh = parseInt(document.nForm.elements[nn[0]].value); now_nb = parseInt(document.nForm.elements[nn[2]].value); now_nd = parseInt(document.nForm.elements[nn[4]].value);
+	now_dh = parseInt(document.nForm.elements[dn[0]].value); now_db = parseInt(document.nForm.elements[dn[2]].value); now_dd = parseInt(document.nForm.elements[dn[4]].value);
+	now_sisu_hb = now_nh * now_nb;
+	now_sisu_hd = now_nh * now_nd;
+	
+	d_max = parseInt(document.nForm.elements['d6'].value) + now_dh + now_db + now_dd;
+	
+	x_nh = 0; x_nb = 0; x_nd = 0; x_sisu_hbd = 0;
+	
+	var_dh = d_max;
+	if(var_dh > 252){
+		var_dh = 252;
+	}
+	for(var_dh; var_dh >= 0; var_dh--){
+		var_nh = ncalc2(0, var_dh);
+		var_db = d_max - var_dh;
+		if(var_db > 252){
+			var_db = 252;
+		}
+		for(var_db; var_db >= 0; var_db--){
+			var_nb = ncalc2(2, var_db);
+			var_dd = d_max - var_dh - var_db;
+			if(var_dd > 252){
+				break;
+			}
+			var_nd = ncalc2(4, var_dd);
+			
+			var_sisu_hb = var_nh * var_nb;
+			var_sisu_hd = var_nh * var_nd;
+			var_sisu_hbd = var_nh * var_nb * var_nd / (var_nb + var_nd);
+			
+			if((var_sisu_hb >= now_sisu_hb)&&(var_sisu_hd >= now_sisu_hd)){
+				if(x_sisu_hbd < var_sisu_hbd){
+					x_sisu_hbd = var_sisu_hbd;
+					x_nh = var_nh;
+					x_nb = var_nb;
+					x_nd = var_nd;
+				}
+			}
+		}
+	}
+	document.nForm.elements[nn[0]].value = x_nh;
+	document.nForm.elements[nn[2]].value = x_nb;
+	document.nForm.elements[nn[4]].value = x_nd;
+	dcalc(0);dcalc(2); dcalc(4);
+}
+
+
+//検索候補つくれてないのでとりあえずカタカナ変換だけ
 function pokeserach(){
 	var elm = hiraganaToKatakana(document.getElementById('pokename').value);
-	var j = 0;
-	var e = document.getElementById('combolist');
-	var e2 = '';
-	if(elm.length >= 1){
-		for(i=0; i<pokemon.length; i++){
-			var elm3 = pokemon[i][0];
-			var index = elm3.indexOf(elm);
-			if(index != -1){
-				e2 += '<option value = "'+ pokemon[i][0] +'"></option>';
-				j++;
- 			}
- 			if(j >= 20){
- 				break;
- 			}
-		}
-		document.getElementById('pokename').value = elm;//挿入するけど2重になっていく
-		
-		while (e.firstChild){
-			e.removeChild(e.firstChild);
-		}
-		e.innerHTML += e2;
-	}
-	
+	document.getElementById('pokename').value = elm;
 }
 
 //ひらがな→カタカナ変換

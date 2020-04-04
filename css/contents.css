@@ -20,6 +20,10 @@ input.button{
 	width: 30px;
 	padding: 1px;
 }
+input.taikyu{
+	width: 65px;
+	padding: 1px;
+}
 input.updown{
 	width: 19px;
 	padding: 1px;
@@ -32,8 +36,14 @@ input.check{
 	width: 20px;
 }
 input.mega{
-	width: 60px;
+	width: 70px;
+	height: 26px;
 	visibility: hidden;
 }
-input.
 
+/*-- スマホ版非表示設定  --*/
+@media screen and (max-width: 500px){
+	input.pc{
+		display:none;
+	}
+}

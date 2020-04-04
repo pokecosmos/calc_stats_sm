@@ -12,7 +12,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="keyword" content="努力値,個体値,ポケモン,ステータス,計算">
 <meta name="viewport" content="width=device-width,user-scalable=yes,initial-scale=1.0,maximum-scale=3.0">
-<title>ポケモンステータス計算機</title>
+<title>ポケモンステータス計算機 for アローラ</title>
 <link rel="stylesheet" type="text/css" href="css/contents.css">
 <script type="text/javascript" src="js/check.js"></script>
 <script type="text/javascript" src="js/button.js"></script>
@@ -33,7 +33,7 @@ var nnn = 175;
 </head>
 
 <body>
-<font size="5" color="#87CEEB" face="ＭＳ Ｐ明朝,ＭＳ 明朝">ポケモンステータス計算機</font></br></br>
+<font size="5" color="#87CEEB" face="ＭＳ Ｐ明朝,ＭＳ 明朝">ポケモンステータス計算機 for アローラ</font></br></br>
 <a href="https://pokecosmos.github.io/calc_stats_galar/">8世代用(ソード・シールド用)のステータス計算機</a>を公開しました。一部のポケモンの種族値が変更されています。
 <form name="nForm">
 <table border="0">
@@ -43,10 +43,12 @@ var nnn = 175;
 <input type="button" class="mega" name="mega2" value="通常" onclick="megachange(2)"> 
 <input type="button" class="mega" name="mega3" value="通常" onclick="megachange(3)">
 </td></tr>
-<table border="0">
-<tr><td></td><td colspan="3"> Lv. <input type="number" name="L0" value="50" min="1" max="100" step="1"  onclick="ncalc(0);ncalc(1);ncalc(2);ncalc(3);ncalc(4);ncalc(5)" onblur="ncalc(0);ncalc(1);ncalc(2);ncalc(3);ncalc(4);ncalc(5)">
+<tr><td></td><td width="80"> Lv. <input type="number" name="L0" value="50" min="1" max="100" step="1"  onclick="ncalc(0);ncalc(1);ncalc(2);ncalc(3);ncalc(4);ncalc(5)" onblur="ncalc(0);ncalc(1);ncalc(2);ncalc(3);ncalc(4);ncalc(5)"></td>
+<td  width="80">
 <input type="button" class="button" value ="50" onclick="setvalue('L0', 50);ncalc(0);ncalc(1);ncalc(2);ncalc(3);ncalc(4);ncalc(5)">
-<input type="button" class="button" value ="100" onclick="setvalue('L0', 100);ncalc(0);ncalc(1);ncalc(2);ncalc(3);ncalc(4);ncalc(5)"></td></tr>
+<input type="button" class="button" value ="100" onclick="setvalue('L0', 100);ncalc(0);ncalc(1);ncalc(2);ncalc(3);ncalc(4);ncalc(5)">
+</td></tr>
+<table border="0">
 <tr><td></td><td>能力値</td><td colspan="2">努力値</td><td>種族値</td><td colspan="2">個体値</td><td colspan="2"  align="center">性格</td></tr>
 <script type="text/javascript">
 <!--
@@ -68,8 +70,8 @@ for(i=0; i<6; i++){
 	'<input type="button" class="button" value ="252" onclick="setvalue(dn['+i+'],252); ncalc('+ i +'); dsum()"></td><td>',
 	'<input type="number" name = "' + sn[i] + '" value="100" min="1" max="999" step="1" onclick="ssum();ncalc('+ i +')" onblur="ssum();ncalc('+ i +')"></td><td>',
 	'<input type="number" name = "' + kn[i] + '" value="31" min="0" max="31" step="1"  onclick="ncalc('+ i +')" onblur="ncalc('+ i +')"></td><td>',
-	'<input type="button" class="button" value ="×" onclick="setvalue(kn['+i+'] ,-1); ncalc('+ i +')">',//------------------------------------------------------------×ボタン
-	'<input type="button" class="button" value ="0" onclick="setvalue(kn['+i+'] ,0); ncalc('+ i +') ">',//-----------0ボタン
+	'<input type="button" class="button pc" value ="×" onclick="setvalue(kn['+i+'] ,-1); ncalc('+ i +')">',//---------×ボタン
+	'<input type="button" class="button" value ="0" onclick="setvalue(kn['+i+'] ,0); ncalc('+ i +')">',//-----------0ボタン
 	'<input type="button" class="button" value ="31" onclick="setvalue(kn['+i+'] ,31); ncalc('+ i +')"></td>');//---31ボタン
 	if(i==0){
 		document.write('<td bgcolor="#FF97C2" align="center">＋</td><td bgcolor="#8EB8FF" align="center">－');
@@ -83,32 +85,18 @@ for(i=0; i<6; i++){
 }
 document.close();
 // --></script>
-<tr><td></td><td align="right">残り</td><td><input type="number" name = "d6" value="510" readonly><input type="button" class="ALL0" value="ALL0" onclick="dreset()"></td><td  align="right">合計</td><td><input type="number" name = "s6" value="600" readonly></td></tr>
-<tr><td>　</td></tr>
-<tr><td></td><td colspan="8"></td></tr>
+<tr><td></td><td align="right">残り</td>
+<td><input type="number" name = "d6" value="510" readonly><input type="button" class="ALL0" value="ALL0" onclick="dreset()"></td>
+<td  align="right">合計</td><td><input type="number" name = "s6" value="600" readonly></td>
+<td colspan="2" align="center"><input type="button" class="taikyu" name="taikyu" value="耐久振り" onclick="taikyu_tyosei()"></td></tr>
 </table>
-
-
+<br/>
 <hr/>
 <textarea placeholder="？？？　まじめ 175-120-120-120-120-120" rows="4" cols="80" class="hyoji" id="target" value=""></textarea><hr/>
 </form>
 性格、努力値などからポケモンの能力値を求められます。<br/>
 能力値から必要な努力値を逆算することもできます。<br/>
-メガシンカ、フォルムチェンジはボタンで切り替えられます。<br/>
-例：ボルトロスと入力すると化身、霊獣ボタンが表示され、押すと切り替えられます。<br/>
-<br/>
-オメガルビー、アルファサファイアのポケモンに対応<br/>
-</br>
-サンムーンのポケモンに対応<br/>
-<br/>
 制作者 @poke_cosmos<br/>
 <br/><br/>
-<datalist id="combolist">
-<option value="アイアント"></option>
-<option value="アギルダー"></option>
-<option value="アグノム"></option>
-<option value="アゲハント"></option>
-<option value="アサナン"></option>
-</datalist>
 </body>
 </html>
