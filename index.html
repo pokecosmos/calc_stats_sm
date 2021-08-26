@@ -14,9 +14,13 @@
 <meta name="viewport" content="width=device-width,user-scalable=yes,initial-scale=1.0,maximum-scale=3.0">
 <title>ポケモンステータス計算機 for アローラ</title>
 <link rel="stylesheet" type="text/css" href="css/contents.css">
+<link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" />
 <script type="text/javascript" src="js/check.js"></script>
 <script type="text/javascript" src="js/button.js"></script>
 <script type="text/javascript" src="js/pokesyuzokuti.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+<script type="text/javascript" src="js/autocomplete.js"></script>
 <script type="text/javascript">
 <!--
 //使用している配列
@@ -37,7 +41,7 @@ var nnn = 175;
 <a href="https://pokecosmos.github.io/calc_stats_galar/">8世代用(ソード・シールド用)のステータス計算機</a>を公開しました。一部のポケモンの種族値が変更されています。
 <form name="nForm">
 <table border="0">
-<tr><td></td><td colspan="2"><input width="300" type="search" id ="pokename" name = "pokename" class="name" value="" autocomplete="off" list="combolist" placeholder="ポケモン名" onChange="pokeserach()" onblur="setpokemon()">
+<tr><td></td><td colspan="2"><input width="300" type="search" id ="pokename" name = "pokename" class="name" value=""  list="combolist" placeholder="ポケモン名" onblur="setpokemon()">
 <td  colspan="7"><input type="button" class="mega" name="mega0" value="通常" onclick="megachange(0)" visibility="hidden">
 <input type="button" class="mega" name="mega1" value="メガ" onclick="megachange(1)"> 
 <input type="button" class="mega" name="mega2" value="通常" onclick="megachange(2)"> 
