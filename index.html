@@ -40,7 +40,7 @@ var nnn = 175;
 <font size="5" color="#87CEEB" face="ＭＳ Ｐ明朝,ＭＳ 明朝">ポケモンステータス計算機 for USUM</font></br></br>
 <form name="nForm">
 <table border="0">
-<tr><td></td><td colspan="2"><input width="300" type="search" id ="pokename" name = "pokename" class="name" value=""  list="combolist" placeholder="ポケモン名" onblur="setpokemon()">
+<tr><td></td><td colspan="2"><input width="300" type="search" id ="pokename" name = "pokename" class="name" value=""  list="combolist" placeholder="ポケモン名" onblur="setpokemon()" onchange="kotaiti_riset()">
 <td  colspan="7"><input type="button" class="mega" name="mega0" value="通常" onclick="megachange(0)" visibility="hidden">
 <input type="button" class="mega" name="mega1" value="メガ" onclick="megachange(1)"> 
 <input type="button" class="mega" name="mega2" value="通常" onclick="megachange(2)"> 
