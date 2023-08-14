@@ -13,6 +13,7 @@ $(function(){
 					//候補に追加
 					suggests.push(katakana);
 				}
+				
 			});
 
 			//ヒットしたポケモン名を候補として返す
